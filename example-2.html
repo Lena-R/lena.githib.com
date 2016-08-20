@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+<script>
+var app = angular.module('app', []);
+
+app.controller('main', function($scope) {
+    $scope.filters = { };
+    
+    $scope.links = [
+        {name: 'Apple', category: 'Fruit'},
+        {name: 'Pear', category: 'Fruit'},
+        {name: 'Almond', category: 'Nut'},
+        {name: 'Mango', category: 'Fruit'},
+        {name: 'Cashew', category: 'Nut'}
+    ];
+});
+</script>
+</head>
+    <body ng-controller="main">
+        <a ng-click="filters.category = ''">clear filter</a>
+        <div ng-repeat="link in links | filter:filters">
+            <strong>{{link.name}}</strong>
+            <a ng-click="filters.category = link.category">{{link.category}}</a>
+        </div>
+    </body>
+</html>

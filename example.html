@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" ng-app = "ProductsApp">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+
+	<script>
+	angular.module("ProductsApp", [])
+	.controller("defaultCtrl",
+function ($scope){
+$scope.filters = {};
+
+	$scope.products = [
+	{name : "Item 1", price : 300.12, category : "cat-1"},
+	{name : "Item 2", price : 80.01, category : "cat-2"},
+	{name : "Item 3", price : 50.18, category : "cat-3"},
+	{name : "Item 4", price : 350.12, category : "cat-1"},
+	{name : "Item 5", price : 60.42, category : "cat-2"},
+	{name : "Item 6", price : 72.50, category : "cat-3"},
+	{name : "Item 7", price : 450.27, category : "cat-1"},
+	{name : "Item 8", price : 110.40, category : "cat-2"},
+	{name : "Item 9", price : 115.89, category : "cat-3"},
+	{name : "Item 10", price : 400.00, category : "cat-1"}
+	];
+	
+$scope.sort = function (value){
+		return value.category == 'cat-1';
+}
+});
+	</script>
+	</head>
+<body ng-controller="defaultCtrl">
+<button ng-click = "filters.category = product.category">Sort Me</button>		
+
+		<table>
+			<tr ng-repeat = "product in products">
+				<td>{{product.name}}</td>
+				<td>{{product.category}}</td>
+				<td>{{product.price}}</td>
+			</tr>
+		</table>
+    
+<h2>Example of sorting</h2>
+		<table>
+			<tr ng-repeat = "product in products | filter : filters">
+				<td>{{product.name}}</td>
+				<td>{{product.category}}</td>
+				<td>{{product.price}}</td>
+			</tr>
+      </table>
+      </body>
+      </html>
