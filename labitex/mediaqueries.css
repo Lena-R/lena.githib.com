@@ -1,0 +1,369 @@
+@media screen and (max-width: 1024px) { 
+	.menu {
+	margin-right: 5%;
+    display: inline-block;
+    float: right;
+}
+
+.abstract {	
+position: relative;
+width:25%;
+height: 40%;
+position: absolute;  
+margin-top: 8%;
+margin-left: 39%;
+}
+.wrapradio {
+	width: 150px;
+	height: auto;
+	margin-left: 45%;
+	padding: 2% 0;
+}
+
+}
+
+@media screen and (max-width: 960px) { 
+	.menu {
+	margin-right: 5%;
+    display: inline-block;
+    float: right;
+}
+.abstract {	
+width: 25%;
+height: 40%;
+position: absolute;  
+margin-top: 8%;
+margin-left: 39%;   
+}	
+.form {
+	margin: 4% 0 4% 25%;
+	width: 42%;
+	height: auto;
+}
+.submit {
+	margin-left: 32%;
+}
+
+.bottommenu {
+	margin-left: 20%;
+}
+}
+
+@media screen and (max-width: 768px) { 
+	.logo {
+	margin-left: 5%;
+	margin-top: 2%;
+	width: 20%;
+}
+	.menu {
+	margin-right: 5%;
+    display: inline-block;
+    float: right;
+}
+.abstract {	
+width: 38%;
+height: 30%;
+position: absolute;  
+margin-top: 3%;
+margin-left: 33%;  
+}
+}
+
+@media screen and (max-width: 750px) { 
+.abstract {	
+width: 30%;
+height: 35%;
+position: absolute;  
+margin-top: 6%;
+margin-left: 36%;   
+}
+.photocontainer {
+	margin-left: 18%;    
+}
+
+.slidercontainer {
+	display: block;
+	width: 95%;
+	margin-left: 4%;
+}
+
+.slidercontainer-2,  .slidercontainer-3{
+	width: 95%;
+	margin-left: 4%;
+	display: none;
+}
+
+.sliderpic {
+	width: 29%;
+	display: inline-block;
+	float: left;
+	padding: 2% 2%;
+}
+.wrapradio {
+	width: 220px;
+	height: auto;
+	margin-left: 42%;
+	padding: 2% 0;
+}
+.form {
+	margin: 4% 0 4% 20%;
+	width: 60%;
+	height: auto;
+}
+
+.bottommenu {
+	margin-left: 10%;
+}
+}
+
+@media screen and (max-width: 736px) { 
+.abstract {	
+width: 20%;
+height: 40%;
+position: absolute;  
+margin-top: 11%;
+margin-left: 41%;   
+}
+.bottommenu {
+	margin-left: 30%;
+}
+}
+
+@media screen and (max-width: 667px) { 
+.abstract {	
+width: 23%;
+height: 45%;
+position: absolute;  
+margin-top: 11%;
+margin-left: 40%;   
+}
+
+.photocontainer {
+	margin-left: 9%;    
+}
+}
+
+@media screen and (max-width: 640px) { 
+.abstract {	
+width: 25%;
+height: 45%;
+margin-left: 40%;
+}	
+.stretch {
+	padding: 2% 10px;
+}
+.text {	
+	padding: 1% 10% 0 10%;
+}
+}
+
+@media screen and (max-width: 568px) {
+.abstract {	
+width: 18%;
+height: 35%;
+margin-left: 42%;
+margin-top: 13%;
+}
+	.form {
+	margin: 4% 0 4% 20%;	
+	height: auto;
+}
+
+.photocontainer {
+	margin-left: 30%;    
+}
+.photo {
+	width: 230px;
+	height: auto;
+	display: block;
+	float: none;
+	padding: 2% 2%;
+}
+
+.bottommenu {
+	margin-left: 5%;
+}
+	} 
+
+@media screen and (max-width: 480px) { 
+	.abstract {	
+width: 25%;
+height: 18%;
+margin-left: 39%;
+margin-top: 9%;
+}
+
+.stretch {
+	padding: 1% 5px;
+}
+.menu { 
+	margin-right: 1%;
+	margin-left: 12%;
+	float: none;
+}
+.logo {
+	width: 50%;
+	height: auto;
+}
+.text {	
+	padding: 1% 5% 0 5%;
+} 
+.photocontainer {
+	margin-left: 25%;    
+} 
+.imgblock {
+	display: none;
+	width: 100%;
+	height: auto;
+	background: #9a9a9a;
+	margin-top: -4px;
+}
+.submit {
+	margin-left: 28%;
+}
+.bottommenu {
+	margin-left: 5%;
+}
+ .bottommenu a {
+	font: 16px ProximaNovaRegular, sans-serif;
+	}
+}
+
+@media screen and (max-width: 432px) {
+.abstract {	
+width: 25%;
+height: 18%;
+margin-left: 39%;
+margin-top: 8%;
+}
+.stretch {
+	padding: 1% 2px;
+}
+
+.logo {
+	width: 50%;
+	height: auto;
+}
+.submit {
+	margin-left: 25%;
+} 
+}
+
+@media screen and (max-width: 414px) {
+.abstract {	
+width: 32%;
+height: 20%;
+margin-left: 35%;
+margin-top: 5%;
+}
+.wrapradio {
+margin-left: 38%;
+padding: 2% 0;
+}
+.photocontainer {
+	margin-left: 20%;    
+}	
+}
+
+@media screen and (max-width: 375px) {
+.abstract {	
+width: 30%;
+height: 15%;
+margin-left: 36%;
+margin-top: 8%;
+}
+
+.menu {
+	margin-right: 1%;
+	margin-left: 7%;
+    display: inline-block;
+    float: none;
+}
+.photocontainer {
+	margin-left: 20%;    
+}
+.wrapradio {
+	margin-left: 36%;
+	padding: 2% 0;
+}
+.submit {
+	margin-left: 20%;
+}
+}
+
+@media screen and (max-width: 320px) { 
+.logo {
+	margin-left: 25%;
+	width: 50%;
+	height: auto;
+}
+.abstract {	
+width: 25%;
+height: 18%;
+margin-left: 39%;
+margin-top: 8%;
+}
+.stretch {
+	padding: 1% 2px;
+}
+.menu { 
+	margin-right: 1%;
+	margin-left: 1%;
+	float: none;
+}
+.photocontainer {
+	margin-left: 20%;    
+}
+
+.photo>img {
+	width: 95%;
+	height: auto; 
+}
+
+.photo {
+	width: 200px;
+	height: auto;
+	display: block;
+	float: none;
+	padding: 2% 0%;
+}
+
+.wrapradio {
+	width: 100px;
+	margin-left: 34%;
+	padding: 2% 0;
+}
+
+.submit {
+	margin-left: 12%;
+} 
+
+ .bottommenu a {
+	font: 14px ProximaNovaRegular, sans-serif;
+	}
+}
+.bottommenu {
+	margin-left: 2%;
+}
+}
+
+@media screen and (max-width: 240px) { 
+.abstract {	
+width: 32%;
+height: 15%;
+margin-left: 35%;
+margin-top: 40%;
+}
+.submit {
+	width: 100px;
+	height: 40px;
+	font: 18px ProximaNovaRegular, sans-serif;
+	color: #ffffff;
+	background: #2c3e50;
+	margin-left: 0%;
+	margin-top: 5%;
+
+}
+}
+
+

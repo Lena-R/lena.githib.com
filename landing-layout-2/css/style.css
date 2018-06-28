@@ -1,0 +1,742 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-family: lato-black, sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+	font-family: 'lato-black';
+	src: url('fonts/Raleway-lato-black.eot');
+	src: url('fonts/Raleway-lato-black.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/Raleway-lato-black.woff') format('woff'),
+		 url('fonts/Raleway-lato-black.ttf') format('truetype'),
+		 url('fonts/Raleway-lato-black.svg#Raleway-lato-black') format('svg');
+	font-style: normal;
+	font-weight: normal;
+}
+
+
+body {
+	background: #fff;
+}
+
+.header {
+	width: 90%;
+	margin: 2% auto 0;
+}
+.header-divider {
+	width: 100%;
+	height: 1px;
+	background: #ccc;
+	margin-top: 2%;
+}
+
+.top-header-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.input-search {
+	border-bottom: 2px solid #120400;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	background-image: url("pic/search.jpg");
+	background-repeat: no-repeat;
+	padding-left: 25px;
+	padding-bottom: 0px;
+	height: 30px;
+}
+
+input {
+	outline: none;
+	background: #fff;
+}
+.search-submit {
+display: none;
+}
+
+.top-button {
+	border: none;
+	font-weight: 600;
+	background: none;
+	cursor: pointer;
+}
+
+.top-button:hover {
+	color: #686564;
+	transition: transform 1s;
+	transform: scale(1.1);
+}
+
+.logo {
+	text-transform: uppercase;
+	font: 24px Lato Regular, sans-serif;
+	padding: 5px 15px;
+	border: 1px solid #352f1f;
+}
+
+.signature {
+	font-family: 'Dancing Script', cursive;
+	font-size: 24px;
+	display: block;
+	margin: 10px 0 0 23px;
+	
+}
+
+.menu {
+	display: flex;
+	justify-content: center;
+}
+.menu-ul {
+	display: flex;
+	justify-content: center;
+}
+.item {
+	margin: 10% 10% 0 10%;
+}
+.item > a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #000;
+	font: 18px lato-black, sans-serif;
+}
+
+.dropdown {
+	width: 100%;
+	position: absolute;
+	color: #5b5b5b;
+	text-transform: uppercase;
+	background: #fff;
+	display: none;
+
+}
+.dropdown-inner {
+	width: 90%;
+	margin: 2% auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.dropdown-links a {
+	text-decoration: none;
+	color: #5b5b5b;
+	line-height: 1.5;
+}
+
+.pic-block>img {
+	margin-top: 10px;
+}
+
+.banners {	width: 100%;
+	
+}
+
+.first-block {
+	background-image: url('../img/denim-lily.jpg');
+	width: 100%;
+	height: auto;
+	background-size: cover;
+	background-position: center;
+	margin: 0 auto 1%;
+}
+
+.first-block-text {
+	padding: 12% 0;
+	text-align: center;
+}
+
+.h1 {
+	color: #fff;	
+	text-align: center;
+	text-shadow: 7px 7px 11px rgba(150, 150, 150, 1);
+	-webkit-text-shadow: 7px 7px 11px rgba(150, 150, 150, 1);
+	-moz-text-shadow: 7px 7px 11px rgba(150, 150, 150, 1);
+	font: 62px lato-black, sans-serif;
+	margin-bottom: 20px;
+}
+
+.h2 {
+	text-align: center;
+	text-transform: uppercase;
+	margin: 5%;
+	font-size: 36px;
+	font-weight: 600;
+}
+
+.view-all {
+	color: #fff;	
+	font: 20px lato-black, sans-serif;
+}
+
+.second-block {
+	background: #a1907e;
+	width: 100%;
+	display: flex;
+}
+
+.second-left {
+	width: 30%;
+}
+
+.second-right {
+	width: auto;
+	padding-top: 6%;
+	text-transform: uppercase;
+	display: block;
+	margin: 0 auto;
+}
+
+.bonus-cards-promo {
+	font: 24px lato-black, sans-serif;
+	color: #fff;
+	text-align: center;
+	font-weight: 600;
+}
+
+.sales {	
+	font: 62px lato-black, sans-serif;
+	color: #fff;
+	text-align: center;
+}
+
+.third-view-all {
+	font: 20px lato-black, sans-serif;
+	position: absolute;
+	right: 5%;
+	margin-top: -60px;	
+}
+
+.third-view-all a {
+	color: #000;
+}
+
+.slider-figcaption {
+text-align: center;
+font: 25px lato-black, sans-serif;
+margin-top: 20px;
+}
+
+.bx-wrapper .bx-controls-direction a {
+	margin-top: -50px !important;
+}
+.bx-wrapper .bx-prev {
+	left: -70px !important;
+}
+.bx-wrapper .bx-next {
+	right: -68px !important;
+}
+
+.bxslider>li>img {
+	width: 90%;
+}
+.bx-wrapper .bx-next {
+    right: -43px !important;
+}
+
+.bx-wrapper {
+	width: 80%;
+}
+
+.photos {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 5%;
+}
+
+.photo-wrapper {
+	text-align: center;
+	border: 4px solid #dacdbf;
+	z-index: 100;
+	
+}
+.photo-wrapper a {
+	background: #dacdbf;
+}
+
+.photo-wrapper:hover {
+	background: #dacdbf;
+	border: 4px solid #ccc;
+}
+
+.photo-link {
+	width: 400px;
+}
+
+  a:hover>.photo-link {
+     opacity: 0.5;     
+}
+
+.hover-text {
+	color: transparent;
+	margin-top: 40px;
+	z-index: 1;
+	position: absolute;
+	border: 4px solid transparent;
+	/*padding: 140px 40px 180px 25px;*/
+	margin-left: 40px;
+	padding: 200px 70px 180px 70px;
+}
+.hover-text>h2 {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	font-size: 24px;
+}
+.hover-text>h4 {
+		display: flex;
+	justify-content: center;
+}
+.hover-text:hover {
+	color: #fff;
+	border: 4px solid #fff;
+}
+
+.newsletter {
+	width: 100%;
+	background: #dacdbf;
+	text-align: center;
+	padding-bottom: 2%;
+}
+
+.newsletter>h2 {
+	text-align: center;
+	color: #fff;
+	font-size: 30px;
+	font-weight: 600;
+	padding-top: 5%;
+}
+
+.button-news {
+	width: 240px;
+	height: 50px;
+	padding-top:5px;
+	background: #fff;
+	font-size: 18px;
+	font-weight: 900;
+	text-transform: uppercase;
+	text-align: center;
+	border: 1px solid #dec6ac;
+}
+
+.letter-text {
+	color: #fff;
+	margin: 1% 0 2%;
+}
+
+.footer {
+	width: 90%;
+	margin: 0 auto;
+	padding: 0 0 2%;
+	display: block;
+
+}
+
+.footer-left, .footer-right {
+	display: inline-block;
+	width: 49%;
+	margin-top: 5%;
+	vertical-align: top;	
+}
+
+.footer-column {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 5%;
+}
+
+.footer-column>h3, .connect>h3 {
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-bottom: 1px;
+	padding-bottom: 10%;
+}
+
+.footer-column a {
+	text-decoration: none;
+	color: #000;
+	line-height: 1.5;
+}
+.footer-column a:hover {
+	color: #ccc;
+}
+.connect {
+	display: inline-block;
+}
+.languages {
+	display: inline-block;
+	vertical-align: top;
+	position: absolute;
+	right: 5%;
+}
+
+.languages>select {
+	border: none;
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	width: 90px;
+	margin-right: 20px;
+	padding-left: 10px;
+	display: inline-block;
+	background: url("../img/app.jpg") right;
+	background-repeat: no-repeat;
+	outline: none;
+	font-size: 16px;
+}
+
+.languages>select>option {
+	background: #eaeaea;
+
+}
+
+.footer-links {	
+	width: 100%;
+	margin-top: 2%;
+}
+
+.footer-links>a {
+	color: #000;
+	text-decoration: none;
+	margin-right: 2%;
+}
+.footer-links>a:hover {
+	color: #ccc;
+}
+.connect>a>img {
+	width: 20%;
+}
+
+.copyright {
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+	margin-top: 4%;
+}
+
+/*MEDIA-SCREEN*/
+
+@media screen and (max-width: 1280px) {
+.bx-wrapper .bx-next {
+    right: -70px !important;
+}
+}
+
+@media screen and (max-width: 1080px) {
+	.pic-block {
+		text-align: right;
+	}
+	.pic-block>img {
+     width: 90%;
+}
+}
+
+@media screen and (max-width: 1024px) {
+.sales {
+    font: 45px lato-black, sans-serif;
+}
+.bonus-cards-promo {
+	font: 24px lato-black, sans-serif;
+}
+.footer-column {
+	margin-right: 3%;
+}
+.dropdown-links {
+	display: block;
+	width: 50%;
+}
+}
+@media screen and (max-width: 998px) {
+.second-left {
+	width: 25%;
+}
+.second-left>img {
+	width: 120%;
+}
+.sales {
+    font: 30px lato-black, sans-serif;
+}
+.bonus-cards-promo {
+	font: 20px lato-black, sans-serif;
+}
+}
+
+@media screen and (max-width: 860px) {
+.first-block {
+	background-image: url('../img/denim-lily-pl.jpg');
+}
+}
+
+@media screen and (max-width: 854px) {
+.languages {
+		right: 2%;
+	}
+.languages>select {
+	margin-right: 10px;
+}
+.footer-column	{
+	margin-bottom: 20px;
+}
+}
+
+@media screen and (max-width: 800px) {
+.photo-link {
+	width: 320px;
+}
+.hover-text {
+    margin: 23px;
+    margin-left: 25px;
+    padding: 134px 46px 165px 46px;
+}
+}
+
+@media screen and (max-width: 768px) {
+.second-right {
+	padding-top: 4%;
+}
+.languages>select {
+    padding-left: 0px;
+    width: 75px;
+}
+}
+
+@media screen and (max-width: 640px) {
+.logo {
+    font: 16px lato-black, sans-serif;
+    padding: 5px 24px;
+}
+.signature {
+	margin: 10px 0 0 10px;
+}
+.right-buttons {
+	width: 30%;
+}
+
+.top-button {
+	margin-bottom: 10%;
+	float: right;
+	text-align: right;
+}
+.bx-wrapper {
+    width: 75%;
+}
+.photo-link {
+    width: 255px;
+}
+.hover-text {
+    margin: 14px;
+    margin-left: 15px;
+    padding: 107px 23px 121px 21px;
+}
+.languages {
+	margin-top: 50px;
+    display: block;
+}
+.footer-right {
+	text-align: right;
+}
+}
+
+@media screen and (max-width: 568px) {
+.first-block {
+	background-image: url('../img/denim-lily-pl.jpg');
+}	
+.second-right {
+	padding-top: 2%;
+}
+.h2 {
+	font-size: 28px;
+}
+.bx-wrapper {
+    width: 60%;
+}
+.bxslider>li {
+	width: 180px;
+}
+.photos {
+	display: block;
+}
+.hover-text {
+	border: none;
+	margin-left: 28%;	
+}
+.photo-wrapper {
+	width: 90%;
+	margin: 0 auto 5%;
+}
+.photo-wrapper:hover {
+	background: transparent;
+	border: 4px solid #ccc;
+}
+.dropdown-links>a {
+	font-size: 14px;
+}
+}
+
+@media screen and (max-width: 512px) {
+.header {
+	width: 98%;
+}
+.sales {
+    font: 27px lato-black, sans-serif;
+}
+.pic-block>h2 {
+	font-size: 12px;
+}
+}
+
+@media screen and (max-width: 480px) {
+.input-search {
+	width: 150px;
+}
+.hover-text {
+	margin-left: 25%;	
+}
+.dropdown-links {
+	width: 100%;
+}
+.pic-block>img {
+	display: none;
+}
+.h1 {
+	font-size: 28px;
+}
+.pic-block {
+    text-align: center;
+    width: 60%;
+}
+}
+
+@media screen and (max-width: 400px) {
+.input-search {
+	width: 135px;
+}
+.logo {
+    font: 16px Lato Regular, sans-serif;
+    padding: 5px 10px;
+    text-align: center;
+}
+.signature {
+    margin: 10px 0 0 0px;
+}
+.h1 {
+    font: 28px lato-black, sans-serif;
+}
+.second-left>img {
+    width: 140%;
+}
+.bonus-cards-promo {
+    font: 16px lato-black, sans-serif;
+}
+.hover-text {
+	margin-left: 20%;
+}
+.letter-text {
+    margin: 1% 1% 2%;
+}
+}
+
+@media screen and (max-width: 360px) {
+.signature {
+    font-size: 20px;
+    margin: 10px 0 0 5px;
+}
+.second-left>img {
+    display: none;
+}
+.second-right {
+	display: inline-block;
+	text-align: center;
+	margin: 0;
+}
+.bonus-cards-promo {
+    text-align: right;
+}
+.h2 {
+    font-size: 24px;
+}
+.third-view-all {
+	margin-top: -56px;
+	font-size: 16px;
+}
+.hover-text {
+    margin-left: 16%;
+}
+}
+
+@media screen and (max-width: 360px) {
+.bx-wrapper {
+    width: 50%;
+}
+.top-header-wrapper {
+	display: block;
+
+}
+.input-search {
+	width: 100%;
+}	
+.logo {
+	width: 140px;
+	margin: 20px auto 0;
+}
+.logo>.signature { 
+	display: block;
+	margin: 0 auto;
+
+}
+.right-buttons {
+	width: 100%;
+}
+.header-divider {
+	margin-top: 8%;
+}
+.menu-ul {
+    margin-left: 230px;
+}
+.item {
+    margin: 10% 5% 0 5%;
+}
+}
+
+@media screen and (max-width: 320px) {
+	
+}

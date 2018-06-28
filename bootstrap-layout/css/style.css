@@ -1,0 +1,153 @@
+.wrapper {
+	background: #F1F4F8;
+	padding-bottom: 5%;
+}
+.header {
+	box-shadow: 0px 4px 10px #d7d5d7;
+	padding: 1% 0;
+	background: #fff;
+	z-index: 100;
+}
+.header-inner {
+	margin: 0 auto;
+	z-index: 100;
+	width: 95%;
+}
+
+a.menu-link {
+line-height: normal;
+font-size: 16px;
+text-transform: uppercase;
+margin-left: 3%;
+color: #000;
+}
+
+a.menu-active {
+	color: #3899ED;
+}
+
+.menu {
+	padding-top: 40px;
+	padding-left: 10%;
+}
+
+.menu-button {
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-o-border-radius: 20px;
+	border: none;
+	box-shadow: -1px 1px 1px #d7d5d7;
+	padding: 5% 0;
+	background: transparent;
+	margin-top: -30px;
+}
+
+.btn-lang {
+	width: 150px;
+	display: inline;
+	margin-left: 20px;
+}
+.share-btn {
+	width: 40px;
+}
+
+.sidebar {
+	width: 15%;
+	padding-top: 2%;
+
+}
+.sidebar-link {
+	display: block;
+	border-radius: 0 10px 10px 0;
+	width: 200px;
+	text-align: left;
+	text-decoration: none;
+	color: #000;
+	background: transparent;
+	border: none;
+	line-height: 2.5;
+	padding-left: 10%;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.sidebar-active {
+	background: #3899ED;
+	color: #fff;
+	text-decoration: none;
+}
+
+
+.article-section {
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	o-border-radius: 5px;
+	background: #fff;
+	padding: 10px;
+	margin-top: 1%;
+}
+
+.picture-block {
+	width: 220px;
+	height: 180px;
+	background: #C4C4C4;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+
+.text-block {
+	border-right: 2px dashed #F2F2F2 !important;
+	border-radius: 0 5px 5px 0;
+}
+
+.h1 {
+	font-size: 18px;
+}
+
+h1 {
+	margin-top: 5px !important;
+}
+
+.text {
+	margin-top: 1%;
+}
+
+.post-info {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: flex-start;
+}
+
+.share-info {
+	border: none;
+	background: none;
+	color: #000;
+}
+
+.price-section {	
+	height: auto;
+	text-align: center;
+}
+
+.price {
+	line-height: 3;
+	font-size: 20px;
+	margin-top: 20px;
+}
+
+.btn-price {
+	background: #3899ED;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-o-border-radius: 20px;
+	padding-right: 20px;
+	padding-left: 20px;
+	color: #fff;
+}

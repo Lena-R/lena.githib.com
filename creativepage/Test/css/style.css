@@ -1,0 +1,311 @@
+﻿html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+.container {
+	position: relative;
+	margin: 120px auto;
+	padding: 3%;
+	width: 75%;
+	height: auto;
+	background: #fff;
+	border: 2px solid #fff;
+	box-shadow: inset 1px 1px 2px 2px #e5e5e5;
+	-webkit-box-shadow: inset 1px 1px 2px 2px #e5e5e5;
+	-moz-box-shadow: inset 1px 1px 2px 2px #e5e5e5;
+
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-o-border-radius: 4px;
+	behavior: url("PIE.htc");
+}
+
+.rightmenu {
+	position: relative;
+	width: 150px;
+	height: auto;
+	float: right;
+}
+
+.score {	
+	width: 12px;	
+	position: absolute;
+		border: 3px solid #fff;	
+		border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-o-border-radius: 15px;
+	behavior: url("PIE.htc");
+	box-shadow:  1px 1px 2px 2px #e5e5e5;
+	-webkit-box-shadow:  1px 1px 2px 2px #e5e5e5;
+	-moz-box-shadow: 1px 1px 2px 2px #e5e5e5;
+
+}
+
+.leftspace {
+	margin-left: 30px;
+}
+.pink {
+background: #ffabd6;
+height: 100px;
+margin-top: -120px;
+margin-left: 2px;
+}
+.pink-line {
+	display: block;
+	width: 6px;	
+	height: 94px;
+	margin-left: 3px;
+	margin-top: 2px;
+	position: absolute;
+	background: #ffd2e9;
+	border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	o-border-radius: 15px;
+	behavior: url("PIE.htc");
+	z-index: 1;	
+}
+
+.blue {
+background: #4badf3;
+margin-left: 33px;
+height: 50px;
+margin-top: -70px;
+}
+.blue-line {
+	width: 6px;	
+	height: 44px;
+	margin-left: 3px;
+	margin-top: 2px;
+	position: absolute;
+	background: #9ed3f9;
+	border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	o-border-radius: 15px;
+	behavior: url("PIE.htc");
+	z-index: 1;	
+}
+
+.grey {
+background: #9dafb8;
+margin-left: 36px;
+height: 20px;
+margin-top: -40px;
+}
+.grey-line {
+	width: 6px;	
+	height: 14px;
+	margin-left: 3px;
+	margin-top: 2px;
+	position: absolute;
+	background: #cad4d9;
+	border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	o-border-radius: 15px;
+	behavior: url("PIE.htc");
+	z-index: 1;	
+}
+
+.pictures {
+	float: left;
+	display: inline-block;
+}
+
+.wrap {
+	position: relative;
+	width: 75%;
+	height: auto;
+}
+
+.leftblock {
+    position: relative;
+	width: 47%;
+	height: auto;
+	float: left;	
+}
+
+.rightblock {
+    position: relative;
+	width: 47%;
+	height: auto;	
+	float: right;
+	border: 1px solid #ccc;
+	box-shadow: 1px 1px 1px 1px #e5e5e5;
+	-webkit-box-shadow: 1px 1px 1px 1px #e5e5e5;
+	-moz-box-shadow: 1px 1px 1px 1px #e5e5e5;
+    background: #ffffff;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-o-border-radius: 20px;
+	behavior: url("PIE.htc");
+}
+
+.insideblock {
+	position: relative;
+	padding: 3%;
+	width: 80%;
+	height: 80%;
+	margin: 5% auto;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-o-border-radius: 20px;
+	behavior: url("PIE.htc");
+	
+
+  border-image-source: url("pictures/dottedline.png");
+  border-image-slice: 2;
+  border-image-repeat: round;
+  border-image-width: 2px;
+
+}
+
+.blocktile {
+	position: relative;
+	width: 34px;
+	height: 30px;
+	background-image: url("pictures/tile.png");
+float: right;
+margin-right: 50px;
+top: -5px;
+}
+
+.invisible {
+	clear: both;
+}
+
+h1 {
+	text-align: center;
+	font: 24px Arial, sans-serif;
+	color: #dd567f;
+}
+
+p, h1 {
+	word-wrap: break-word;
+}
+
+.insideblock>p {
+	font: 16px Arial, sans-serif;
+	padding: 5%;
+	text-align: center;
+}
+
+.button{
+	position: relative;
+    width: 90%;
+    height: auto;
+    padding: 5%;
+    background-image: linear-gradient(to bottom, #54b4fd, #025274);
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #4e595e;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    o-border-radius: 25px;
+    behavior: url("PIE.htc");
+    font: 18px Arial, sans-serif;
+    text-align: center;
+    border: 2px solid #ffffff;
+    box-shadow: -1px 1px 1px 1px #e5e5e5;
+	-webkit-box-shadow: 1px 1px 1px 1px #e5e5e5;
+	-moz-box-shadow: 1px 1px 1px 1px #e5e5e5;
+}
+
+a {
+	text-decoration: none;
+}
+
+.zigzag {
+	width: 100%;
+	height: 7px;
+	background: url("pictures/zigzag.png");
+	margin: 10% 0 8% 0;
+}
+
+.lefttext {
+	font: 20px Arial, sans-serif;
+	font-weight: 900;
+	text-align: justify;
+}
+
+.bottomblock {
+	position: relative;
+	margin-top: 6%;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+
+.firstimage {
+	position: relative;
+	width: 90px;
+	height: 90px;
+	float: left;
+}
+
+.bottomtext {
+		position: relative;	
+		overflow: hidden;
+	padding: 0 2% 0 2%;
+	text-align: justify;
+}
+
+.secondimage {
+	position: relative;
+	width: 90px;
+	height: 90px;
+	float: right;
+
+}
+
+
+
+
+
+

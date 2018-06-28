@@ -1,0 +1,422 @@
+/*
+Theme Name: My Personal Blog;
+Description: Тема для персонального блога на движке Вордпресс;
+Version: 1.0;
+Author: lena.boruslav@gmail.com;
+*/
+
+
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+#wrapper {
+	margin: 0 auto;
+	width: 100%;
+	height: auto;
+	background: #a0a09d;
+}
+
+#header {
+	
+	background-image: url("3d-abstract.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 80%;
+	height: 35%;
+}
+
+.headertext {
+	font: 34px bradobrei;
+	margin-left: 5%;
+	padding-top: 2%;
+	width: 30%;
+	float: left;	
+	color:#5b5b59;
+    text-shadow: 1px 1px 3px #666,
+                -1px -1px 3px #FFF,
+                 1px 1px #666,
+                -1px -1px #FFF;
+    
+   	filter:progid:DXImageTransform.Microsoft.Shadow(color='#000000',direction='45');
+	zoom: 1; 
+  }
+
+.headertextsmall {
+	font: 18px bradobrei;	
+	margin-right: 5%;
+	padding-top: 2%;
+	margin-left: 70%;
+	text-shadow: -1px 0 black,
+	              0 1px black,
+	              1px 0 black,
+	              0 -1px black;
+    color: #fff; 
+    padding-bottom: 15%; 
+}
+
+@font-face {
+	font-family: bradobrei;
+	src: url(fonts/bradobrei.eot),
+		 url(fonts/bradobrei.woff),
+		 url(fonts/bradobrei.ttf),
+		 url(fonts/bradobrei.svg#bradobrei);
+	font-style: normal;
+	font-weight: normal;
+}
+
+#mainblock {
+	margin: 0 auto;
+	width: 95%;
+	overflow: hidden;
+	background-image: url("fon.jpg");
+	border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	behavior: url(PIE.htc);
+	border: 2px solid #8c8c8c;
+}
+
+.menu {
+	position: relative;
+	margin: 0 auto;
+	margin-top: 1%;
+	width: 95%;
+	overflow: hidden;
+	background-image: url("fonmenu.jpg"); 
+	border-radius: 2%;
+	-o-border-radius: 2%;
+	-moz-border-radius: 2%;
+	-webkit-border-radius: 2%;
+	behavior: url(PIE.htc);
+	border: 1px solid #5d5d5d;	
+	box-shadow:         0px -2px 5px 0px rgba(50, 50, 50, 0.75); 
+	-webkit-box-shadow: 0px -2px 5px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0px -2px 5px 0px rgba(50, 50, 50, 0.75);
+	-o-box-shadow:      0px -2px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+.top-menu {
+	float: left;    
+    font: 30px Calibri, italic;
+    text-shadow: 0 -3px 3px #f2f1f1;
+    -webkit-text-shadow: 0 -3px 3px #f2f1f1;
+    -moz-text-shadow: 0 -3px 3px #f2f1f1;
+    -o-text-shadow: 0 -3px 3px #f2f1f1;
+    -ms-text-shadow: 0 -3px 3px #f2f1f1;
+    padding: 2% 1%;
+}
+
+.top-menu a {
+    text-decoration: none;
+    color: #ffffff;
+   }
+   .top-menu a:hover {
+    text-decoration: none;
+    color: #000000;
+    text-shadow: 0 -3px 3px #111111;
+    -webkit-text-shadow: 0 -3px 3px #111111;
+    -moz-text-shadow: 0 -3px 3px #111111;
+    -o-text-shadow: 0 -3px 3px #111111;
+    behavior: url(PIE.htc);
+    transition-duration: 2s;
+    -moz-transition-duration: 2s;
+    -ms-transition-duration: 2s;
+    -webkit-transition-duration: 2s;
+    -o-transition-duration: 2s;
+   }
+
+
+.block-search {
+	width: 200px;
+	height: 30px;
+	float: right;
+	margin: 2% 1% 1% 0;
+}
+
+.searchfield {
+	width: 160px;
+	height: 30px;
+	border: 1px solid #525252;
+	box-shadow: inset 0 2px 2px 0 rgba(50, 50, 50, 0.75);
+	-webkit-box-shadow: inset 0 2px 2px 0 rgba(50, 50, 50, 0.75);
+	-moz-box-shadow: inset 0 2px 2px 0 rgba(50, 50, 50, 0.75);
+	-o-box-shadow: inset 0 2px 2px 0 rgba(50, 50, 50, 0.75);
+	background: #ffffff;
+	float: left;
+}
+
+.searchbutton {
+	display: block;
+	cursor: pointer;
+	width: 30px;
+	height: 30px;
+	border-radius: 3px;
+	-o-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	behavior: url(PIE.htc);
+	background-image: url("search.png");
+	background-size: cover;
+	margin-left: 170px;
+	margin-top: 3px;
+	box-shadow: 0 -2px 2px 0 #0a0a0a;
+	-webkit-box-shadow: 0 -2px 2px 0 #0a0a0a;
+	-moz-box-shadow: 0 -2px 2px 0 #0a0a0a;
+	-o-box-shadow: 0 -2px 2px 0 #0a0a0a;
+}
+
+.blockposts {
+	width: 70%;
+	height: auto;
+	display: inline-block;
+	margin: 4% 1% 1% 1%;
+	background: #ffffff;
+}
+
+.post {
+	width: 99%;
+	height: auto;
+	padding: 0 0 1% 1%;
+}
+
+.postname {
+	font: 30px bradobrei;
+    text-shadow: 0 1px 1px #302f2f;
+    -webkit-text-shadow: 0 1px 1px #302f2f;
+    -moz-text-shadow: 0 1px 1px #302f2f;
+    -o-text-shadow: 0 1px 1px #302f2f;
+    color: #646262;	
+}
+
+.postdate {
+	font: 16px Calibri;
+	padding: 0 0 2% 0;
+}
+
+.imgstyle {
+	float: left;
+	margin: 0 2% 2% 0;
+	width: 30%;
+	height: auto;
+}
+
+.posttext {
+	font: 16px Calibri;
+}
+
+.readmore-btn a{
+	position: relative;
+	text-decoration: none;
+	font: 20px Calibri;
+	width: 170px;
+	height: 25px;
+	text-align: center;
+	padding: 0 6px 0 6px;
+	background: #5b5a5a;
+	color: #ffffff;
+	border-radius: 2px;
+	-o-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	behavior: url(PIE.htc);
+	border: 2px solid #ffffff;
+	box-shadow: -1px -1px 4px 0 #1d1d1d;
+	-webkit-box-shadow: -1px -1px 4px 0 #1d1d1d;
+	-moz-box-shadow: -1px -1px 4px 0 #1d1d1d;
+	-o-box-shadow: -1px -1px 4px 0 #1d1d1d;
+	margin: 1% 1% 6% 4%;
+	float: right;
+}
+
+.readmore-btn a:hover{
+	background: #2f2e2e;
+	border: 2px solid #e3e1e1;
+}
+
+.readmore-btn a:active{
+	background: #2f2e2e;
+	border: 2px solid #e3e1e1;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-o-box-shadow: none;
+}
+.label {
+	font: 14px Calibri;
+	margin: 2% 0 6% 0;
+	padding: 0 0 1% 1%;
+	color: #000000;
+}
+.label a{
+	font: 12px Calibri;
+	margin: 2% 0 6% 0;
+	text-decoration: none;
+	color: #000000;
+}
+
+.invisible {
+	clear: both;
+}
+
+.pagenavigator {
+	font: 16px bradobrei;
+	color:#5b5b59;
+	margin: 8% 0 3% 0;
+	padding: 0 0 1% 1%;
+}
+
+
+
+.widget {
+	width: 25%;
+	height: auto;
+	margin: 4% 1% 1% 0;
+	background: #f0eded;
+	float: right;
+}
+
+.widget-title {
+	font: 20px bradobrei;
+	color:#000000;
+	background-image: url("fon-2.gif");
+	text-align: center;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	text-shadow: -1px 0 #ffffff,
+	              0 1px #ffffff,
+	              1px 0 #ffffff,
+	              0 -1px #ffffff;
+}
+
+.widget ul {
+	list-style: none;
+	padding: 2% 2%;
+	word-wrap: break-word;
+}
+
+.widget ul li {
+	border-bottom: 1px solid #c8bbbd;
+	border-top: 1px solid #fff;
+	color: #000;
+	font-family: bradobrei;
+	padding: 1% 0 1% 5%;
+	list-style-type: none;
+}
+
+.widget ul li:first-child {
+		border-top: none;
+}
+
+.widget ul li:last-child {
+	border-bottom: none;
+	
+}
+
+.widget ul li a {
+	font: 16px bradobrei;
+	color: #646262;
+	text-decoration: none;
+}
+
+.widget ul li a:hover {
+	font: 16px bradobrei;
+	color: #2f2e2e;
+}
+
+
+
+#footer {
+	overflow: hidden;
+	padding: 2% 10%;
+    background-image: url("footer-fon.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 35%;
+	
+}
+
+
+.menu-footer {
+    float: left;
+    padding-left: 10%;
+}
+
+.footer-text {
+	float: left;
+}
+
+.footer-text a {
+font: 28px Calibri;
+color: #2f2e2e;
+text-decoration: none;
+
+}
+.footer-text {
+   font: 16px Calibri;
+   color: #2f2e2e;
+}
+
+.menu-footer h2 {
+	font: normal 28px Calibri;
+	color: #2f2e2e;
+}
+
+.menu-footer ul {
+	list-style: none;
+}
+
+.menu-footer ul li a {
+	font: 16px Calibri;
+	color: #2f2e2e;
+	text-decoration: none;
+}
+
+.menu-footer ul li a:hover {
+	color: #5b5b59;
+}

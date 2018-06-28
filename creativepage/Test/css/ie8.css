@@ -1,0 +1,8 @@
+.container {
+	 border: solid 3px #f0eeee;
+	 outline: solid 4px #ffffff;
+}
+
+.button {
+    background-image: url("pictures/backgroundbtn.png");
+}

@@ -1,0 +1,35 @@
+.portfolio-text a{
+font: 40pt leaguegothic-regular-webfont, sans-serif;
+behavior: url(PIE.htc);}
+
+@font-face {
+    font-family: leaguegothic-regular-webfont;	
+	 src: url(fonts/leaguegothic-regular-webfont.eot);    
+	}
+
+.menu  a{
+font: 18pt leaguegothic-regular-webfont, sans-serif;
+}
+
+
+.hello{
+  text-shadow: 1px 1px white,
+               0 -1px 0 #444; 
+  transition: all 1s;
+  behavior: url(PIE.htc);}
+ 
+.header-text {
+  text-shadow: 1px 1px white,
+               0 -1px 0 #444; 
+  transition: all 1s;
+  behavior: url(PIE.htc);}
+
+@font-face {
+    font-family: Myriad Pro Semibold;	
+	      src: url(fonts/Myriad Pro Semibold.eot);
+	  	}
+		
+.block-textmywork {
+top:12px;
+}		
+		

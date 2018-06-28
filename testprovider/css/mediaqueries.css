@@ -1,0 +1,356 @@
+﻿@media screen and (max-width: 1280px) {
+	.describe-text {
+	font: 18px Roboto-Light, sans-serif;
+}
+ }
+
+@media screen and (max-width: 1024px) { 
+.listright {
+	float: right;
+	margin-right: 10%;
+	width: 40%;
+}
+.block-prices {
+	margin: 0 auto;
+	width: 60%;
+	height: auto;
+	padding: 2% 0;
+}
+.block-heading {
+font: 14px Roboto-Light, sans-serif;
+}
+.describe-text {
+	font: 16px Roboto-Light, sans-serif;
+}
+.greybtn {
+	margin: 35% 0 8% 0;
+}
+.text-field {
+	padding: 2% 0;
+	margin: 35% 0 7% 0;
+}
+.doublebtn {
+margin-top: 32%;
+}
+}
+
+@media screen and (max-width: 960px) {
+.block-prices {
+	width: 70%;
+}
+.describe-text {
+	font: 14px Roboto-Light, sans-serif;
+}
+.greybtn {
+	margin: 32% 0 8% 0;
+}
+.text-field {
+	padding: 2% 0;
+	margin: 32% 0 7% 0;
+}
+.doublebtn {
+margin-top: 30%;
+}
+}
+@media screen and (max-width: 800px) {
+.menu>img {
+	width: 150%;
+	height: auto;
+}
+.logo {
+margin-left: 5%;
+} 
+.listright {
+	float: right;
+	margin-right: 5%;
+	width: 50%;
+}
+.greybtn {
+	margin: 24% 0 8% 0;
+}
+
+.text-field {
+	padding: 2% 0;
+	margin: 24% 0 7% 0;
+}
+
+.doublebtn {
+margin-top: 20%;
+}
+}
+
+@media screen and (max-width: 768px) {
+.menu>img {
+	width: 150%;
+	height: auto;
+}
+.logo {
+margin-left: 5%;
+} 
+.listright {
+	float: right;
+	margin-right: 5%;
+	width: 50%;
+}
+.block-prices {
+	width: 90%;
+}
+.describe-text {
+	font: 16px Roboto-Light, sans-serif;
+}
+.greybtn {
+	margin: 32% 0 8% 0;
+}
+.text-field {
+	padding: 2% 0;
+	margin: 32% 0 7% 0;
+}
+.doublebtn {
+margin-top: 29%;
+}
+.footer-wrap {
+	margin: 0 auto;
+	width: 95%;
+	height: 150px;
+}
+}
+
+@media screen and (max-width: 736px) {
+.menu>img {
+	width: 150%;
+	height: auto;
+}
+.logo {
+	padding: 1% 0 0 0;
+	float: left;
+}
+ 
+.logo>img {
+width: 80%;
+height: auto;
+}
+.text {
+	font: 12px Roboto-Light, sans-serif;
+	color: #626262;
+	margin: 2% 0 0 0;
+	float: left;
+}
+.separator {
+	float: left;
+	margin-left: 1%;
+}
+.listright {
+	float: right;
+	margin-right: 5%;
+	width: 50%;
+}
+.footer-wrap {
+	margin: 0 auto;
+	width: 95%;
+	height: 150px;
+}
+}
+
+@media screen and (max-width: 667px) {
+.separator {
+	display: none;
+}
+.menu>img {
+	width: 100%;
+	height: auto;
+}
+.logo {
+	padding: 1% 0 0 0;
+	float: left;
+}
+.text {
+margin: 2% 0 0 4%;
+}
+.listright {
+	margin-right: 4%;
+	width: 55%;
+	padding-bottom: 1%;
+}
+.listitem {
+	padding-left: 5px;	
+}
+.greybtn {
+	margin: 36% 0 8% 0;
+}
+
+.text-field {
+	padding: 2% 0;
+	margin: 36% 0 7% 0;
+}
+
+.doublebtn {
+margin-top: 32%;
+}
+}
+
+@media screen and (max-width: 640px) {
+	.block-heading {
+font: 14px Roboto-Light, sans-serif;
+}
+.describe-text {
+	font: 12px Roboto-Light, sans-serif;
+}
+.greybtn {
+	margin: 34% 0 8% 0;
+}
+
+.text-field {
+	padding: 2% 0;
+	margin: 34% 0 7% 0;
+}
+
+.doublebtn {
+margin-top: 30%;
+}
+}
+
+@media screen and (max-width: 533px) {
+	.menu>img {
+	width: 130%;
+	height: auto;
+}
+.listright {
+	margin-right: 4%;
+	width: 70%;
+	padding-bottom: 1%;
+}
+.block-heading {
+font: 11px Roboto-Light, sans-serif;
+}
+.greybtn {
+	margin: 25% 0 8% 0;
+}
+.text-field {
+	padding: 2% 0;
+	margin: 25% 0 7% 0;
+}
+.doublebtn {
+margin-top: 18%;
+}
+.link-text{
+	display: block;
+	font: 10px Roboto-Light, sans-serif;
+	font-weight: 900;
+	padding-bottom: 4%;
+}
+}
+
+@media screen and (max-width: 480px) {
+.block-heading {
+font: 10px Roboto-Light, sans-serif;
+}
+.describe-text {
+	font: 11px Roboto-Light, sans-serif;
+}
+.greybtn {
+	margin: 45% 0 8% 0;
+}
+.text-field {
+	padding: 2% 0;
+	margin: 45% 0 7% 0;
+}
+.doublebtn {
+margin-top: 36%;
+}
+.footer-wrap {
+	margin: 0 auto;
+	width: 95%;
+	height: 250px;
+}
+.column {
+	width: 45%;
+	float: left;
+	margin: 3% 2%;
+	height: auto;
+}
+}
+
+@media screen and (max-width: 414px) {
+.text {
+	font: 12px Roboto-Light, sans-serif;
+	color: #626262;
+	margin: 2% 5% 0 2%;
+	float: right;
+}
+.listright {
+	margin-right: 4%;
+	width: 80%;
+	padding-bottom: 1%;
+}
+.blue-block,  .grey-block{
+	width: 46%;
+}
+
+.blue-block:hover, .grey-block:hover {
+	opacity: 1;	
+	margin-top: 0;
+}
+.block-heading {
+font: 14px Roboto-Light, sans-serif;
+}
+.describe-text {
+	font: 17px Roboto-Light, sans-serif;
+}
+.doublebtn {
+margin-top: 42%;
+}
+.footer-wrap {
+	margin: 0 auto;
+	width: 95%;
+	height: 350px;
+}
+.link-text{
+	display: block;
+	font: 14px Roboto-Light, sans-serif;
+	font-weight: 900;
+	padding-bottom: 4%;
+}
+
+.footer-text {
+	font: 13px Roboto-Light, sans-serif;
+}
+
+.copy {
+	font: 11px Roboto-Light, sans-serif;
+}
+}
+
+@media screen and (max-width: 384px) {
+.listright {
+	margin-right: 2%;
+	width: 98%;
+	padding-bottom: 1%;
+}
+}
+
+@media screen and (max-width: 320px) {
+.logo {
+	padding: 1% 1% 0 10%;
+}
+.listright {
+	float: right;
+	margin-right: 10%;
+	margin-top: 4%;
+	width: 28%;
+}
+.listitem {
+	font: 12px Roboto-Light, sans-serif;
+	color: #626262;
+	white-space: nowrap;
+	display: block;
+	padding-top: 5px;
+	float: none;
+	text-decoration: none;	
+}
+.listitem:last-child{
+	float: none;
+}
+.describe-text {
+	font: 16px Roboto-Light, sans-serif;
+}
+}

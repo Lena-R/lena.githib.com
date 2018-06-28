@@ -1,0 +1,446 @@
+﻿/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+#wrap {position:absolute;
+margin: 0 auto;
+width: 100%;
+min-width:640px;
+height: auto;
+background: url(fon.png);
+}
+
+#inwrap {
+margin: 0 auto;
+position: relative;
+width: 80%;
+top: 40px;
+}
+
+#header {
+position: relative;
+
+height:70px;
+width: auto;
+}
+
+.name-text a{
+position:relative;
+text-decoration: none;
+top: 5px;
+font: 14px Arial, sans-serif;
+color: #ce4453;
+text-transform: uppercase;
+behavior: url(PIE.htc);}
+.portfolio-text a{
+position:relative;
+font: 40pt leaguegothic-regular-webfont, sans-serif;
+color: #888687;
+text-transform: uppercase;
+text-decoration: underline;
+behavior: url(PIE.htc);}
+
+.portfolio-text a:hover{text-decoration:none;}
+
+@font-face {
+    font-family: leaguegothic-regular-webfont;	
+	    src: url(fonts/leaguegothic-regular-webfont.ttf);	
+        src: url(fonts/leaguegothic-regular-webfont.eot);
+	    src: url(fonts/leaguegothic-regular-webfont.woff);
+	}
+
+.menu  a{
+position:relative;
+top: -45px;
+font: 18pt leaguegothic-regular-webfont, sans-serif;
+color: #bdbbbc;
+text-transform: uppercase;
+text-decoration: none;
+display: inline-block;}
+
+.menu  a:hover {
+color: #888687;
+text-decoration: underline;}
+
+.hello{
+position:relative;
+margin-top: 5%;
+font: 42pt Myriad Pro Semibold, sans-serif;
+letter-spacing: -1px;
+font-weight:600;
+text-transform: uppercase;
+color: #8e8e8e;
+    text-shadow: 1px 1px white,
+               0 -1px 0 #444; 
+  transition: all 1s;
+  filter:shadow(color=white,direction=135,strength=5);
+  behavior: url(PIE.htc);}
+ 
+.header-text {
+position:relative;
+font: 42pt Myriad Pro Semibold, sans-serif;
+letter-spacing: -1px;
+color: #8e8e8e;
+    text-shadow: 1px 1px white,
+               0 -1px 0 #444; 
+  transition: all 1s;
+  filter:shadow(color=white,direction=135,strength=5);
+    behavior: url(PIE.htc);}
+
+@font-face {
+    font-family: Myriad Pro Semibold;	
+	    src: url(fonts/Myriad Pro Semibold.ttf);	
+        src: url(fonts/Myriad Pro Semibold.eot);
+	    src: url(fonts/Myriad Pro Semibold.woff);
+	}
+
+.blockabout {
+margin-top:5%;
+float:left;
+position: relative;
+width: 48%;
+height: auto;
+margin-left:2%;
+}
+
+.block-text {
+position:relative;
+font: 30pt leaguegothic-regular-webfont, sans-serif;
+color: #ce4453;
+text-transform: uppercase;
+letter-spacing:1px;
+padding-left: 10px;
+}
+
+.hr {
+margin-top:-5px;
+height:4px;
+background-color: #e0dfdd;
+border:none;}
+
+.face{
+width: 99px;
+height:97px;
+background: url(face.jpg);
+margin-left: 10px;
+margin-right: 10px;
+float:left;
+}
+
+.aboutme-text {
+font: 11pt leaguegothic-regular-webfont, sans-serif;
+color: #8e8e8e;
+padding-right: 10px;
+
+text-align:justify;
+}
+
+.block-skills {
+float:left;
+width:48%;
+margin-left:2%;}
+
+.web {
+font: 18pt leaguegothic-regular-webfont, sans-serif;
+color: #8e8e8e;
+text-transform: uppercase;}
+
+li {
+margin-left: 15px;
+list-style-image: url(red.png);
+color: #8e8e8e;
+font: 11pt Myriad Pro Semibold, sans-serif;}
+
+.blockmywork {
+margin-top:3%;
+float:left;
+position: relative;
+width: 100%;
+height: auto;
+margin-left:2%;
+}
+
+.block-textmywork {
+top:32px;
+position:relative;
+font: 30pt leaguegothic-regular-webfont, sans-serif;
+color: #ce4453;
+text-transform: uppercase;
+letter-spacing:1px;
+padding-left: 10px;}
+
+.mywork-menu a{
+position:relative;
+top:-10px;
+font: 8pt Myriad Pro Semibold, sans-serif;
+color: #8e8e8e;
+text-transform: uppercase;
+text-decoration: none;
+display: inline-block;}
+
+.mywork-menu a:hover{
+color: #ce4453;}
+
+.pic {
+z-index:1;position:absolute;		
+margin: 1% 2% 2% 2%;
+position: relative;
+width:222px;
+height:132px;
+float:left;
+ -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    -o-box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+	
+		
+	filter:
+        progid:DXImageTransform.Microsoft.Shadow(color='#444444', Direction=90, Strength=6)
+        progid:DXImageTransform.Microsoft.Shadow(color='#444444', Direction=270, Strength=6);
+            
+        
+}
+   
+.pic:before {
+	content: '';
+	width: 10px;
+	height: 125px;
+	position: absolute;
+		top: 5px;
+	left: 15px;
+    z-index: -1;
+    -webkit-box-shadow: -15px 0 10px rgba(0,0,0,0.6);
+    -moz-box-shadow: -15px 0 10px rgba(0,0,0,0.6);
+    -o-box-shadow: -15px 0 10px rgba(0,0,0,0.6);
+    box-shadow: -15px 0 10px rgba(0,0,0,0.6);
+	-webkit-transform: rotate(-4deg);
+    -moz-transform: rotate(-4deg);
+    -o-transform: rotate(-4deg);
+    transform: rotate(-4deg);
+	}
+	
+	
+	
+.pic:after{
+	content: '';
+	width: 10px;
+	height: 125px;
+	position: absolute;
+		top: 5px;
+	left: 198px;
+    z-index: -1;
+	
+    -webkit-box-shadow: 15px 0 10px rgba(0,0,0,0.6);
+    -moz-box-shadow: 15px 0 10px rgba(0,0,0,0.6);
+    -o-box-shadow: 15px 0 10px rgba(0,0,0,0.6);
+    box-shadow: 15px 0 10px rgba(0,0,0,0.6);
+    -webkit-transform: rotate(4deg);
+    -moz-transform: rotate(4deg);
+    -o-transform: rotate(4deg);
+    transform: rotate(4deg);
+	}
+
+
+.textpic {
+position:relative;
+margin-top:1%;
+font: 9pt Myriad Pro Semibold, sans-serif;
+color: #8e8e8e;
+}
+
+.blockcontact {
+margin-top:3%;
+float:left;
+position: relative;
+width: 100%;
+height: auto;
+margin-left:2%;
+clear:left;
+}
+
+.contactform {
+left:-10px;
+position:relative;
+width:100%;
+height:auto;
+}
+.contact-text {
+margin-left:-10px;
+margin-top:1%;
+font: 18pt leaguegothic-regular-webfont, sans-serif;
+color: #8e8e8e;
+text-transform: uppercase;}
+
+.field1{
+position:relative;
+float:left;
+width:49%;
+height:auto;}
+
+.field-text{
+position:relative;
+margin-top:5%;
+padding-bottom:1%;
+font: 9pt Myriad Pro Semibold, sans-serif;
+color: #8e8e8e;}
+
+.fieldinput {
+position:relative;
+float:left;
+width:93%;
+height:30px;
+background: #e8e8e8;
+border-left:1px solid grey;
+border-top:1px solid grey;
+z-index:1;}
+
+.textarea-text{
+position:relative;
+top:10px;
+font: 9pt Myriad Pro Semibold, sans-serif;
+color: #8e8e8e;}
+
+.textareainput{
+position:relative;
+top:10px;
+width:94%;
+height:120px;
+background: #e8e8e8;
+border-left:1px solid grey;
+border-top:1px solid grey;}
+
+.send {
+position:relative;
+height:38px;
+width:100px;
+margin-top:25px;
+background: #d07072;
+font: 20pt leaguegothic-regular-webfont, sans-serif;
+color:white;
+text-transform: uppercase;
+padding-top:2px;
+border-right:2px solid #a64647;
+border-bottom:2px solid #a64647;
+}
+
+.block-adress{
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-flow: row wrap;
+  align-items: stretch;
+  justify-content: space-around;
+}
+
+.first {flex: 1 300px; float:left; padding-right:40px;}
+.second {  flex: 1 250px;}
+
+.adress-text {
+letter-spacing:1px;
+font: 12pt Myriad Pro Semibold, sans-serif;
+color: #8e8e8e;
+font-weight:600;
+}
+.adress-text-small{
+letter-spacing:2px;
+font: 9pt Myriad Pro Semibold, sans-serif;
+color: #8e8e8e;
+}
+.email-text-small{
+letter-spacing:2px;
+font: 9pt Myriad Pro Semibold, sans-serif;
+color: #d07072;
+}
+
+.invisiblecontent{content:''; float:right; position:relative;}
+
+.footer {
+
+position: relative;
+width: 100%;
+height: auto;
+background: url(fon.png);
+clear:left;
+}
+.hr1{
+margin-top:40px;
+height:4px;
+background-color: #e0dfdd;
+border:none;
+left:2%;
+width:80%;}
+
+.footertext{
+padding-bottom:2%;
+margin-left:10%;
+font: 8pt Myriad Pro Semibold, sans-serif;
+color: #8e8e8e;
+float:left;}
+
+.socialicons{
+margin-right:10%;
+position:relative;
+content:'';
+float:right;
+text-align:right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

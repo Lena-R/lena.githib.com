@@ -1,0 +1,15 @@
+.headertext {
+    text-shadow: 1px 1px 3px #666666;
+    color:#5b5b59; 
+     
+}
+
+.headertextsmall {
+	text-shadow: -1px 0 #000000;
+}
+
+ .top-menu {
+	
+    filter: progid:DXImageTransform.Microsoft.Shadow(color=#0000FF,direction=45);
+ 
+}

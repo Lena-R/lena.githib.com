@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body class = "wrapper">
+<section class = "inner-wrapper">
+<div class = "form">
+<input type = "text" class = "city" value = "">
+<input type = "submit" value = "search" class = "btn">
+</div>
+<div class="block"><!-- <img src="images/weather2/XXXXXXXXXXXXXXXX.png">  --></div>  <!-- Вставляем картинку погоды -->
+
+<div class="block-temp">City name</div>         <!-- Вставляем температуру воздуха  -->
+</section>
+<script type="text/javascript">
+let fillBlock = document.querySelector('.block');
+let fillTemp = document.querySelector('.block-temp');
+
+
+
+var sendData = function(){
+ var valueInput = document.querySelector('.city').value;
+
+let url = 'http://api.openweathermap.org/data/2.5/weather?q=' +  valueInput +
+  '&mode=json&units=metric&appid=166eef7848ca92bcda0a6956f4d11519';
+console.log(url);
+ let j = fetch(url, {method: 'get'})
+
+	.then(response => {
+		if (response.ok) {
+			return response.json();
+		} else {
+			throw('server error');
+		}
+	})
+	.then(data => {
+		console.log(data);
+		console.log('Temp: ' + Math.round(data.main.temp,1));
+		console.log('Icon: ' + data.weather[0].icon);
+
+		fillTemp.innerHTML = '<p>' + Math.round(data.main.temp)  + ' <font color = "#fff">*C</font>'+'</p>';
+		fillBlock.innerHTML = '<img src ="http://openweathermap.org/img/w/' + data.weather[0].icon + '.png">';
+
+
+
+	}); 
+
+}
+
+	//let j = fetch('http://api.openweathermap.org/data/2.5/weather?id=703448&mode=json&units=metric&appid=166eef7848ca92bcda0a6956f4d11519', {method: 'get'})
+
+
+	var clickBtn = document.querySelector('.btn');
+clickBtn.addEventListener('click', sendData, false);
+ </script>	
+</body>
+</html>

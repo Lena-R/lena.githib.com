@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ТЗ</title>
+	<link  rel = "stylesheet" 	type="text/css"  href = "style.css"/>
+	<link href="style800.css" rel="stylesheet" media = "screen"/>
+
+<script src="jquery-1.7.1.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$('#tab-link-2').click(function(){
+			$('.tab-content-2').css({"display":"block"});
+			$('.tab-content-1').css({"display":"none"});
+			$('.tab-content-3').css({"display":"none"});
+			$('#tab-link-2').addClass('tab-link-selected');
+			$('#tab-link-1').removeClass('tab-link-selected').addClass('tab-link');
+			$('#tab-link-3').removeClass('tab-link-selected').addClass('tab-link');
+		});	
+
+		$('#tab-link-3').click(function(){
+			$('.tab-content-3').css({"display":"block"});
+			$('.tab-content-2').css({"display":"none"});
+			$('.tab-content-1').css({"display":"none"});
+			$('#tab-link-3').addClass('tab-link-selected');
+			$('#tab-link-1').removeClass('tab-link-selected').addClass('tab-link');
+			$('#tab-link-2').removeClass('tab-link-selected').addClass('tab-link');
+		});	
+
+		$('#tab-link-1').click(function(){
+			$('.tab-content-1').css({"display":"block"});
+			$('.tab-content-2').css({"display":"none"});
+			$('.tab-content-3').css({"display":"none"});
+			$('#tab-link-1').addClass('tab-link-selected');
+			$('#tab-link-2').removeClass('tab-link-selected').addClass('tab-link');
+			$('#tab-link-3').removeClass('tab-link-selected').addClass('tab-link');
+		});	
+
+		});	
+ 	
+</script>
+
+ <!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+ <script src="respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+<div id = "header">
+<div class = "header-text">Header</div>
+</div>
+
+<div id = "content">
+	<div class = "text">
+		<img src = "pretext.png" align = "left" alt = "" />
+		<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. </p>
+	</div>
+	<div class = "subscription">- Michael Brown/<span>CDS IUndustry Inc</span></div>
+
+	<div class = "wrapblock-1">	
+	 <div class = "picture-text-1">
+	 <img src = "fruit-1.jpg" class = "picture" alt = "" />
+	<h2>Lorem ipsum dolor sit amet, consectetur adipisicing</h2><br/>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. 
+	</div>
+	<a href = "#"><div class = "readmore">&nbsp;><span>&nbsp;&nbsp;Read&nbsp;more</span></div></a>
+	</div>
+	<div class = "wrapblock-2">	
+	<div class = "picture-text-2">
+	<img src = "fruit-2.jpg" class = "picture" alt = "" />
+	<h2>Lorem ipsum dolor sit amet, consectetur adipisicing</h2><br/>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. 
+	</div>
+	<a href = "#"><div class = "readmore">&nbsp;><span>&nbsp;&nbsp;Read&nbsp;more</span></div></a>
+	</div>
+
+	<div class = "tabs-sector">
+	<div class = "tab-menu"><a name = "label"></a>
+		<a href = "#label"><div class = "tab-link-selected" id = "tab-link-1">Popular Articles</div></a>
+			<a href = "#label"><div class = "tab-link" id = "tab-link-2">Recent Blog Posts</div></a>
+			<a href = "#label"><div class = "tab-link" id = "tab-link-3">Latest News</div></a>
+</div>
+		<div class="tab-content-1">
+		<img src = "fruit-1.jpg" class = "tab-picture" alt = ""/>
+		<h2>Lorem ipsum dolor sit amet</h2>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			<br/><br/>
+            <a href = "#"><div class = "tab-readmore">&nbsp;><span>&nbsp;&nbsp;Read&nbsp;more</span></div></a>
+		</div>
+		<div class="tab-content-2">
+		<img src = "fruit-2.jpg" class = "tab-picture" alt = ""/>
+		<h2>Lorem ipsum dolor sit amet</h2>
+			Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text 
+			Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text
+			Text Text Text Text Text Text Text Text  Text Text Text Text Text Text Text Text
+			<br/><br/>
+			<a href = "#"><div class = "tab-readmore">&nbsp;><span>&nbsp;&nbsp;Read&nbsp;more</span></div></a>
+		</div>
+		<div class="tab-content-3" >
+		<img src = "fruit-3.jpg" class = "tab-picture" alt = ""/>
+		<h2>Lorem ipsum dolor sit amet</h2>
+			Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст
+			Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст
+			Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст
+			<br/><br/>
+			<a href = "#"><div class = "tab-readmore">&nbsp;><span>&nbsp;&nbsp;Read&nbsp;more</span></div></a>
+		</div>
+		</div>
+	
+	<div class = "links-sector">
+		<div class = "tab-menu"><p class = "header-links-sector">Why Choose Us</p></div>
+		<ul>
+		<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+		<li>sed do eiusmod tempor incididunt ut labore et</li>
+		<li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</li>
+		<li>laboris nisi ut aliquip ex ea commodo consequat</li>
+		<li>Duis aute irure dolor in reprehenderit in voluptate</li>
+		<li>Excepteur sint occaecat cupidatat non proident</li>
+		</ul>
+	</div>	
+</div>
+
+<div id = "footer">
+	<div class = "footer-text">Footer</div>
+</div>
+
+</body>
+</html>

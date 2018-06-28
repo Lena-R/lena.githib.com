@@ -1,0 +1,169 @@
+@media screen and (max-width: 960px) {
+#header {	
+	background-image: url("3d-abstract-960.png");	
+}
+.top-menu {
+    float: left;    
+    font: 20px Calibri, italic;
+    text-shadow: 0 -3px 3px #f2f1f1;
+    padding: 2% 1%;
+}
+}
+
+
+
+@media screen and (max-width: 750px) { 
+.menu-footer h2 {
+	font: normal 20px Calibri;
+	color: #2f2e2e;
+}
+
+.footer-text a {
+font: 20px Calibri;
+color: #2f2e2e;
+text-decoration: none;
+}
+}
+
+
+
+@media screen and (max-width: 640px) {
+.headertext {
+	font: 30px bradobrei;
+	}
+.headertextsmall {
+	font: 14px bradobrei;	
+	margin-right: 5%;
+	padding-top: 2%;
+	margin-left: 70%;
+    padding-bottom: 15%;   
+}	
+.blockposts {
+	width: 100%;
+	height: auto;
+	margin: 1% 1% 1% 0;
+	background: #ffffff;
+}
+
+.postname {
+	font: 20px bradobrei;
+}
+
+.readmore-btn a{
+	position: relative;
+	text-decoration: none;
+	font: 16px Calibri;
+	width: 150px;
+	height: 25px;
+	text-align: center;
+	padding: 0 6px 0 6px;
+	margin: 1% 1% 6% 4%;
+}
+
+.widget {
+	width: 100%;
+	margin: 1% 0 1% 0;
+	background: #ffffff;
+
+	}
+}
+
+@media screen and (max-width: 570px) {
+	.menu-footer {
+    float: none;
+    padding-top: 4%;
+}
+.footer-text {
+	float: none;
+	padding-top: 4%;
+	
+}
+.menu-footer ul li a{
+	font: 18px Calibri;
+}
+
+}
+
+
+@media screen and (max-width: 540px) {
+.menu{
+	width: 100%;
+}
+.imgstyle {
+	float: none;
+	margin: 0 2% 2% 0;
+	width: 90%;
+	height: auto;
+}
+#footer {
+	overflow: hidden;
+	padding: 2% 10%;
+}
+
+.menu-footer {
+    float: none;
+    padding-top: 4%;
+}
+.footer-text {
+	float: none;
+	padding-top: 4%;
+	
+}
+.menu-footer ul li a{
+	font: 18px Calibri;
+}
+}
+
+
+@media screen and (max-width: 480px) {
+#header {	
+	background-image: url("3d-abstract-480.png");	
+}	
+.headertext {
+	font: 26px bradobrei;
+	}
+.headertextsmall {
+	font: 10px bradobrei;	
+	margin-right: 5%;
+	padding-top: 2%;
+	margin-left: 70%;
+    padding-bottom: 15%;   
+}
+#footer {
+	overflow: hidden;
+	padding: 2% 5%;
+	background-size: 80%;
+	}	
+}
+
+
+@media screen and (max-width: 320px) {
+.headertext {
+	font: 18px bradobrei;
+	}
+.headertextsmall {
+	font: 10px bradobrei;	
+	margin-right: 0;
+	padding-top: 2%;
+	margin-left: 70%;
+    padding-bottom: 5%;
+    color: #000;
+    text-shadow: 1px 1px 1px #282929;   
+}
+.footer-text {
+   font: 10px Calibri;
+   color: #2f2e2e;
+}
+
+.menu-footer h2 {
+	font: normal 20px Calibri;
+	color: #2f2e2e;
+}	
+}
+
+@media screen and (max-width: 240px) {
+	.headertextsmall {
+		word-wrap: break-word;
+	}
+
+}

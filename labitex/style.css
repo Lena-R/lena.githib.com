@@ -1,0 +1,348 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+.head {
+	width: 100%;
+	height: auto;
+	background: #2c3e50;
+}
+
+.logo {
+	margin-left: 16%;
+}
+
+.menu {
+	margin-right: 16%;
+    display: inline-block;
+    float: right;
+}
+
+.menu a {
+	color: #687e95;	
+	font: 18px ProximaNovaRegular, sans-serif;
+	text-decoration: none;
+}
+
+.menu a:hover {
+color: #ffffff;	
+}
+
+.stretch {	
+	display: inline-block;
+	padding: 5% 20px; /*чому цифру у % padding справа і зліва - остання li падає вниз?  */	
+}
+
+.invisible {
+	content: '';
+	clear: both;
+}
+
+@font-face {
+	font-family: 'ProximaNovaRegular';
+	src: url('fonts/ProximaNovaRegular.eot');
+	src: url('fonts/ProximaNovaRegular.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/ProximaNovaRegular.woff') format('woff'),
+		 url('fonts/ProximaNovaRegular.ttf') format('truetype'),
+		 url('fonts/ProximaNovaRegular.svg#') format('svg');
+	font-style: normal;
+	font-weight: normal;
+}
+
+.divider {
+	width: 100%;
+	height: 2px;
+	background: #253342;
+}
+
+.pic {	
+	margin-top: 10%;
+	margin-left: 30%; /*як точно вирівняти по центру?  */
+	padding-bottom: 5%;
+}
+
+.pic>img {
+	position: relative;
+	width: 60%;
+	height: auto;
+	z-index: 2;
+}
+
+
+.abstract {	
+position: relative;
+width:25%;
+height: 50%;
+position: absolute;  
+margin-top: 9%;
+margin-left: 39%;   
+
+	animation-name: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+		@keyframes rotate {
+    0% {
+        transform: rotate(0deg); 
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.heading {
+	padding-top: 4%;
+	padding-bottom: 1%;
+	text-align: center;
+	font: 32px ProximaNovaRegular, sans-serif;
+	color: #6b6b6b;
+}
+
+.text {	
+	padding: 1% 20% 0 20%;
+	text-align: center;
+	font: 16px ProximaNovaRegular, sans-serif;
+	color: #6b6b6b;
+}
+
+.pic2 {	
+	margin-top: 4%;
+	margin-left: 30%; /*як точно вирівняти по центру?  */
+	padding-bottom: 2%;
+}
+
+.pic2>img {
+	width: 60%;
+	height: auto;
+}
+
+.text2 {	
+	padding: 1% 15% 4% 15% !important;
+}
+
+.section2 {
+	background: #eeeeee;
+	width: 100%;
+	height: auto;
+}
+
+.photocontainer {
+	margin-left: 10%;    
+}
+
+.photo {
+	width: 230px;
+	height: auto;
+	display: inline-block;
+	float: left;
+	padding: 2% 2%;
+}
+
+.phtext {
+	text-align: center;
+	padding: 0 !important;
+	line-height: 1.5;
+}
+
+.name {
+	font-size: 18px;
+	font-weight: 900;
+}
+
+.adress {
+	margin-left: 70px;
+	margin-top: 20px;
+}
+
+.slidercontainer {
+	display: block;
+	width: 80%;
+	margin-left: 17%;
+}
+
+.slidercontainer-2,  .slidercontainer-3{
+	width: 80%;
+	margin-left: 17%;
+	display: none;
+}
+
+.sliderpic {
+	width: 25%;
+	display: inline-block;
+	float: left;
+	padding: 2% 2%;
+}
+
+.sliderpic>img {
+	width: 100%;
+	height: auto;
+}
+
+.imgblock {
+	width: 100%;
+	height: auto;
+	background: #9a9a9a;
+	margin-top: -4px;
+}
+
+.picturetext {
+	font: 14px ProximaNovaRegular, sans-serif;
+	color: #ffffff;
+	padding: 2%;	
+}
+
+.htext {
+	font: 18px ProximaNovaRegular, sans-serif;
+	color: #ffffff;
+	padding: 2%;
+}
+
+.wrapradio {
+	width: 150px;
+	height: auto;
+	margin-left: 49%;
+	padding: 2% 0;
+}
+
+.round {
+	background: #ffffff;
+	margin-left: 10px;
+	border-radius: 50px;
+	border: 1px solid #9a9a9a;
+	padding: 1px 10px;
+}
+
+input[type="radio"]{
+	display: none;
+}
+
+input[type="radio"]:checked+label{
+	background: #9a9a9a;
+}
+
+.form {
+	margin: 4% 0 4% 30%;
+	width: 42%;
+	height: auto;
+}
+
+.inputdata {
+	width: 100%;
+	height: 30px;
+	font: 14px ProximaNovaRegular, sans-serif;
+	color: #9a9a9a;
+	margin: 5px 0;
+	padding-left: 10px;
+}
+
+.areadata {
+	width: 100%;
+	height: 100px;
+	font: 14px ProximaNovaRegular, sans-serif;
+	color: #9a9a9a;
+	margin: 5px 0;
+	padding-left: 10px;
+}
+
+.submit {
+	width: 150px;
+	height: 40px;
+	font: 18px ProximaNovaRegular, sans-serif;
+	color: #ffffff;
+	background: #2c3e50;
+	margin-left: 38%;
+	margin-top: 5%;
+	border: none;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-o-border-radius: 2px;
+	behavior: url(PIE.htc);
+}
+
+input[type="submit"]:disabled{
+	background: #9a9a9a;
+}
+
+.infoerror{
+	width: 150px;
+	height: 20px;
+	background: #ccc;
+	display: none;
+}
+
+.infoerroremail{
+	width: 150px;
+	height: 20px;
+	background: #ccc;
+	display: none;
+}
+
+.f {
+	background: #ffffff;
+}
+
+.bottommenu {
+	margin-left: 30%;
+}
+
+ .bottommenu a {
+	color: #6f6f6f;	
+	font: 18px ProximaNovaRegular, sans-serif;
+	text-decoration: none;
+}
+
+.ttt {
+		color: #6f6f6f;	
+	font: 18px ProximaNovaRegular, sans-serif;
+}
+
+
+
+
+
+
