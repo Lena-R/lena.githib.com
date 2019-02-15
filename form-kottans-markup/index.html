@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class = "wrapper">
+	<header class = "header-wrapper">
+		<div class = "header">
+	<input type = "button" class = "go-back header-btn" value = "go back">
+	<image class = "header-img" alt = "logo" src = "img/header-img.jpg">
+	<input type = "button" class = "sign-in header-btn" value = "sign in">		
+		</div>
+		</header>
+		<div class = "content-wrapper">
+		<div class = "content-inner-wrapper">
+			<h1>Select what you want to translate</h1>
+			<hr>
+
+<form method = "post" action = "" name = "">
+	<div class = "three-blocks doc-wrapper  ">
+	<label>			
+  <input type="radio" name="radio" >
+  <div class="doc box-img">
+    <img src = "img/translate-1.jpg">
+    <figcaption class = "caption">Website</figcaption>
+  </div>
+</label>
+<br>
+<label>
+  <input type="radio" name="radio" checked>
+  <div class="doc box-img">
+    <img src = "img/translate-2.jpg"><figcaption class = "caption">Documents</figcaption>
+  </div>
+</label>
+<br>
+<label>
+  <input type="radio" name="radio">
+  <div class="doc box-img">
+    <img src = "img/translate-3.jpg"><figcaption class = "caption">Social account</figcaption>
+  </div>
+</label>
+</div>
+	</form>			
+		<!--	<section class = "three-blocks">
+			<div class = "block-translate translate-one"><img src = "img/translate-1.jpg"><figcaption class = "caption">Website</figcaption></div>
+			<div class = "block-translate translate-two"><img src = "img/translate-2.jpg"><figcaption class = "caption">Documents</figcaption></div>
+			<div class = "block-translate translate-three"><img src = "img/translate-3.jpg"><figcaption class = "caption">Social account</figcaption></div>
+			</section>  -->
+
+			<section class = "wrapper-section">
+				<p class = "round-number-text"><span class = "round-number">1</span>Upload your documents</p>
+				<div class="buttons-wrapper">
+				<input type = "file" class = "file">
+				<div class = "load-btn main-btn"><img src = "img/cloud.png" class = "cloud">  Upload a new file <span class = "attached"></span></div>
+				</div>
+			</section>
+		<form method = "post" action = "" name = "">
+		<section class = "wrapper-section">
+			<p class = "round-number-text"><span class = "round-number">2</span>Choose your languages pairing</p>
+			<div class="buttons-wrapper">
+			<span class = "pre-select">from</span><select class = "language main-btn">
+				<option>English</option>
+				<option>German</option>
+				<option>Franch</option>
+				<option>Spanish</option>
+			</select>
+			<br>
+			<span class = "pre-select to">to</span><select class = "language main-btn">
+				<option>Arabic</option>
+				<option>German</option>
+				<option>Franch</option>
+				<option>Spanish</option>
+			</select>
+			<select class = "language main-btn to">
+				<option>Kurdish</option>
+				<option>German</option>
+				<option>Franch</option>
+				<option>Spanish</option>
+			</select>			
+			</div>	
+		</section> 
+</form>
+		<section class = "half-wrapper-section tone">
+			<p class = "round-number-text"><span class = "round-number">3</span>Select your desired tone</p>
+			<div class="buttons-wrapper">
+		<div class = "tone">
+<form method = "post" action = "" name = "">	
+<label>
+  <input type="radio" name="radio" >
+  <div class="front-end box">
+    <span>Frendly/Casual</span>
+  </div>
+</label>
+<br>
+<label>
+  <input type="radio" name="radio" checked>
+  <div class="front-end box">
+    <span>Corporate/Pro</span>
+  </div>
+</label>
+<br>
+<label>
+  <input type="radio" name="radio">
+  <div class="front-end box">
+    <span>Medical/Formal</span>
+  </div>
+</label>
+</form>
+			</div>
+		</section>	
+
+		<section class = "half-wrapper-section job">
+		<p class = "round-number-text"><span class = "round-number">4</span>Tell us ho urgent this job is</p>
+		<form method = "post" action = "" name = "">
+		<input type="range" min="0" max ="100"> 
+		</form>
+		<div class = "timeline border-radius">
+			<h2 class = "i-heading"><span class = "i">i</span>Timeline info</h2>
+			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. </p>
+		</div>
+		</section>
+
+		<section class = "wrapper-section">
+		<p class = "round-number-text"><span class = "round-number">5</span>Sign up and choose a payment method</p>
+		<div class="buttons-wrapper">
+		<p class = "payment-text">Already have an account with us? Sign in.</p>
+		<form method = "post" action = "" name = "">
+		<label class = "input-label">Full name</label>
+		<br>
+		<input type = "text" class = "input-name border-radius" required>
+		<br>
+<div class = "wrapper-fields">
+		<label class = "input-label">Email</label>
+		<br>
+		<input type = "email" class = "input-name border-radius" required pattern="^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$">
+</div>
+<div class = "wrapper-fields">
+		<label class = "input-label">Choose a password</label>
+		<br>
+	<input type = "password" class = "input-name border-radius" required>
+</div>	
+		</form>
+
+	<form method = "post" action = "" name = "">
+	<div class = "three-blocks">
+	<label>			
+  <input type="radio" name="radio" >
+  <div class="card box-img">
+    <img src = "img/visa.jpg">
+  </div>
+</label>
+<br>
+<label>
+  <input type="radio" name="radio" checked>
+  <div class="card box-img">
+    <img src = "img/visa.jpg">
+  </div>
+</label>
+<br>
+<label>
+  <input type="radio" name="radio">
+  <div class="card box-img">
+    <img src = "img/visa.jpg">
+  </div>
+</label>
+</div>
+	</form>	
+			<form method = "post" action = "" name = "" class = "margin-top">
+		<label class = "input-label">Card number</label>
+		<br>
+		<input type = "text" class = "input-name border-radius" required>
+		
+<div class = "wrapper-fields">
+		<label class = "input-label label-margin">Expiry date</label>
+		<br>
+		<input type = "number" class = "input-expiry input-field border-radius" required pattern="" placeholder = "DD\MM\YY">
+</div>
+<div class = "wrapper-fields">
+		<label class = "input-label label-margin">Code</label>
+		<br>
+	<input type = "number" class = "input-code input-field border-radius" required>
+</div>	
+		</form>
+		</div>
+		</section>
+<section class = "wrapper-section">
+		 <div class = "section-agree">
+<div class ="checkbox"><input type = "checkbox">  I agree to the <a href= "" class = "link">Terms and Conditions</a></div>
+<input type = "submit" class = "input-button border-radius submit" value = "place order">
+<input type = "button" class = "input-button border-radius print" value = "print a quote">
+</div>
+		</section>
+
+			</div>
+		</div>
+<footer class = "footer">
+<div class = "footer-block footer-text"><h2>What we do</h2>
+<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. </p>
+</div>
+<div class = "footer-block"><h2>Our main office</h2>
+Dubai OAE <br>
+FO Box <br>
+Phone: +38111111
+</div>
+<div class = "footer-block"><h2>Connect with us</h2>
+<a href = "" class = "footer-link">Facebook</a>  <br>
+<a href = "" class = "footer-link">Twitter</a>   <br>
+<a href = "" class = "footer-link">LinkedIn</a>   <br>
+
+</div>
+<div class = "footer-block"><img src = "img/footer-img.jpg" alt = "footer ico" class = "footer-img"></div>
+
+</footer>	
+	</div>
+
+</body>
+</html>
