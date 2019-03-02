@@ -1,0 +1,146 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.form-wrapper {
+	width: 32%;
+	height: auto;
+	border: 3px solid #ccc;
+	margin: 5% auto;
+	padding: 1%;
+	background: #333 repeating-linear-gradient(90deg,
+    rgba(255,255,255,.01), rgba(255,255,255,.01) 5px,
+    rgba(255,255,255,0) 5px, rgba(255,255,255,0) 10px);
+
+}
+
+.label {
+display: block;
+text-align: center;
+font: 32px Calibri, sans-serif;
+}
+
+.input-field {
+	width: 40%;
+	padding: 1%;
+	border: 2px solid #5C5C66;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	margin: 0 auto;
+	display: block;
+	outline: none;
+-webkit-box-shadow: inset 1px 0px 3px 2px rgba(173,171,173,1);
+-moz-box-shadow: inset 1px 0px 3px 2px rgba(173,171,173,1);
+box-shadow: inset 1px 0px 3px 2px rgba(173,171,173,1);
+font: 28px Calibri, sans-serif;
+color: #080335;
+font-weight: 900;
+text-align: center;
+}
+.clearfix {
+	clear: both;
+}
+.h1 {
+  text-shadow: -1px -1px #000,
+               0 1px 0 #444;
+  color: #222;
+  transition: all 1s;
+  }
+  .h1:hover {
+    text-shadow: -1px -1px #000,
+               0 1px 0 #444;
+    color: #1A1A1A;
+    }
+
+.sign {
+	float: right;
+
+}
+
+.submit {
+	width: 160px;
+	height: 160px;
+	background: url('btn-on.png');
+	background-position: center;
+	display: block;
+	float: left;
+	border: none;
+	cursor: pointer;
+}
+
+.checkbox {
+	float: right;
+	display: block;
+	visibility: hidden;
+}
+.submit-ch {
+		width: 160px;
+	height: 160px;
+	background: url('btn-off.png');
+	background-position: center;
+	display: block;
+	float: right;
+	border: none;
+	cursor: pointer;
+	margin-right: -20px;
+
+}
+.temp-block {
+	width: 200px;
+	margin: 10px auto;
+	height: 80px;
+	font: 48px Calibri, sans-serif;
+	display: block;
+	border: 2px solid blue;	
+}
+
+.minute{
+height:100px;
+width:100px;
+background:#6700ff;
+color: yellow;
+font-size: 25pt;
+
+}
+
