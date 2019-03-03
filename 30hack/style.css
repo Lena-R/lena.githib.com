@@ -51,7 +51,6 @@ table {
 	background: #333 repeating-linear-gradient(90deg,
     rgba(255,255,255,.01), rgba(255,255,255,.01) 5px,
     rgba(255,255,255,0) 5px, rgba(255,255,255,0) 10px);
-
 }
 
 .label {
@@ -82,21 +81,19 @@ text-align: center;
 	clear: both;
 }
 .h1 {
-  text-shadow: -1px -1px #000,
-               0 1px 0 #444;
-  color: #222;
-  transition: all 1s;
+  font-size: 30px;
+  font-weight: normal;
+  cursor: pointer;
+  text-shadow: 1px 1px 1px silver,
+               -1px 1px 1px silver;
+  color: white;
+  transition: all .5s;
   }
   .h1:hover {
-    text-shadow: -1px -1px #000,
-               0 1px 0 #444;
-    color: #1A1A1A;
-    }
-
-.sign {
-	float: right;
-
-}
+    text-shadow: -1px -1px 1px silver,
+                 1px -1px 1px silver;
+    color: white;
+ }
 
 .submit {
 	width: 160px;
@@ -115,7 +112,7 @@ text-align: center;
 	visibility: hidden;
 }
 .submit-ch {
-		width: 160px;
+	width: 160px;
 	height: 160px;
 	background: url('btn-off.png');
 	background-position: center;
@@ -124,7 +121,6 @@ text-align: center;
 	border: none;
 	cursor: pointer;
 	margin-right: -20px;
-
 }
 .temp-block {
 	width: 200px;
@@ -135,12 +131,23 @@ text-align: center;
 	border: 2px solid blue;	
 }
 
-.minute{
+.temp-suvid {
+	width: 80px;
+	height: 25px;
+	background: #fff;
+	font: 20px Calibri, sans-serif;
+	font-weight: 900;
+	padding: 1%;
+}
+.text-temp {
+	margin-top: 10px;
+	color: #fff;
+}
+.minute {
 height:100px;
 width:100px;
 background:#6700ff;
 color: yellow;
 font-size: 25pt;
-
 }
 

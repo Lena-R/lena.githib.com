@@ -1,162 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
-<style>
-  html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-body {
-  line-height: 1;
-}
-ol, ul {
-  list-style: none;
-}
-blockquote, q {
-  quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-.form-wrapper {
-  width: 32%;
-  height: auto;
-  border: 3px solid #ccc;
-  margin: 5% auto;
-  padding: 1%;
-  background: #333 repeating-linear-gradient(90deg,
-    rgba(255,255,255,.01), rgba(255,255,255,.01) 5px,
-    rgba(255,255,255,0) 5px, rgba(255,255,255,0) 10px);
-
-}
-
-.label {
-display: block;
-text-align: center;
-font: 32px Calibri, sans-serif;
-}
-
-.input-field {
-  width: 40%;
-  padding: 1%;
-  border: 2px solid #5C5C66;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -o-border-radius: 5px;
-  margin: 0 auto;
-  display: block;
-  outline: none;
--webkit-box-shadow: inset 1px 0px 3px 2px rgba(173,171,173,1);
--moz-box-shadow: inset 1px 0px 3px 2px rgba(173,171,173,1);
-box-shadow: inset 1px 0px 3px 2px rgba(173,171,173,1);
-font: 28px Calibri, sans-serif;
-color: #080335;
-font-weight: 900;
-text-align: center;
-}
-.clearfix {
-  clear: both;
-}
-.h1 {
-  text-shadow: -1px -1px #000,
-               0 1px 0 #444;
-  color: #222;
-  transition: all 1s;
-  }
-  .h1:hover {
-    text-shadow: -1px -1px #000,
-               0 1px 0 #444;
-    color: #1A1A1A;
-    }
-
-.sign {
-  float: right;
-
-}
-
-.submit {
-  width: 160px;
-  height: 160px;
-  background: url('btn-on.png');
-  background-position: center;
-  display: block;
-  float: left;
-  border: none;
-  cursor: pointer;
-}
-
-.checkbox {
-  float: right;
-  display: block;
-  visibility: hidden;
-}
-.submit-ch {
-    width: 160px;
-  height: 160px;
-  background: url('btn-off.png');
-  background-position: center;
-  display: block;
-  float: right;
-  border: none;
-  cursor: pointer;
-  margin-right: -20px;
-}
-.temp-block {
-  width: 200px;
-  margin: 10px auto;
-  height: 80px;
-  font: 48px Calibri, sans-serif;
-  display: block;
-  border: 2px solid blue; 
-}
-
-.minute{
-height:100px;
-width:100px;
-background:#6700ff;
-color: yellow;
-font-size: 25pt;
-}
-</style>
+	<title></title>
+<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <div class = "form-wrapper">
- <form action="" method="post" class = "">
-<p class = "">Температура СуВид</p>
-<input type = "number" value = "" disabled> 
+	<div class = "form-wrapper">
+ <form action="http://192.168.1.8:8050/device" method="GET" class = "">
+<p class = "text-temp">Температура СуВид, &deg;C</p>
+<p class = "temp-suvid" id = "temp-suvid"></p>
 
-
-  <p class = "label h1">Температура приготовления, &deg;C</p>
-  <br>
+<br>
+ 	<p class = "label h1">Температура приготовления, &deg;C</p>
+ 	<br>
   <input type="number" name="temp" value = "" class = "input-field">
 
   <div class = "clearfix"></div>
@@ -173,17 +29,19 @@ font-size: 25pt;
 </form>
  <form>
  <label for="BKЛ">
-  <input type = "checkbox" class = "checkbox" name = "switchoff" checked>
+  <input type = "checkbox" class = "checkbox" name = "switchoff" id = "switch">
   </label>
-   <input type="submit" value="" class = "submit-ch"> 
+   <input type="submit" value="" class = "submit-ch" id = "submit-ch"> 
 </form>
 <div class = "clearfix"></div>
+<p id = "js"></p>
+
 <!--<div id="timer"></div>  -->
 <!--<div class = "minute" id = "minute"></div> --> 
 <!--<div id="textarea" class = "btn" onclick="myFunction()">OK</div> -->
 </div> 
 
-<script>
+	<script>
 function minute(){
 var timerId = document.querySelector('.minute');
 var timerId = setInterval(function tick() {
@@ -191,30 +49,7 @@ var timerId = setInterval(function tick() {
 }, 1000);
 };
 
-//minute();
-
-//setTimeout(function() {
-  //clearInterval(timerId);
-  //alert( 'стоп' );
-//}, 5000);
-
-
-
-
-//function minute(){
-//var timer = document.querySelector('.minute');
-//window.timer = setInterval(function(){
-//var now = (new Date()).getMinutes();
-//var finish =59 -(new Date()).getMinutes();
-
-//if(now === 0) clearInterval(timer);
-//timer.innerHTML = finish;
-//});
-//}
-//minute();
-
-
-
+/*TIMER*/
 
 var seconds = 0, stop = 10, counterStarted = false, counter;
 function myFunction(){
@@ -229,7 +64,6 @@ counter = setInterval(function(){
   }else{
  document.getElementById('minute').innerHTML = 'ready';
 
- //document.getElementById('textarea').setAttribute("disabled", "disabled");
         clearInterval(counter);
         counterStarted = false;
         seconds = 0;
@@ -237,23 +71,25 @@ counter = setInterval(function(){
     },1000)
   }
 }
-  </script>
+	</script>
 
-  <script>
-var xhr = new XMLHttpRequest();
-var url = "http://192.168.1.3:8050/api/v1";
-xhr.open("POST", url, true);
-xhr.setRequestHeader("Content-type", "application/json");
-xhr.onreadystatechange = function () {
-    if (xhr.readyState === 4 && xhr.status === 200) {
-        var json = JSON.parse(xhr.responseText);
-        console.log(json.temp + ", " + json.counter);
-    }
-};
-var data = JSON.stringify({"temp": "25.3125", "counter": "135"});
-xhr.send(data);
+	<script>
+var url = "http://192.168.1.8:8050/api/v1";
+fetch(url)
+.then(res => res.json())
+.then((out) => {
+  console.log('Checkout this JSON! ', out);
 
-  </script>
+ document.getElementById('temp-suvid').innerHTML = out.temp;
+ document.getElementById('js').innerHTML = out.balance;
+
+  if(out.state === 0) {
+    document.getElementById('submit-ch').disabled = "disabled";
+    document.getElementById('submit-ch').style.visibility = "hidden";
+  }
+})
+.catch(err => { throw err });
+</script>     
 
 </body>
 </html>
