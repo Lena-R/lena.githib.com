@@ -59,15 +59,16 @@ text-align: center;
 font: 32px Calibri, sans-serif;
 }
 
-.input-field {
+.input-field {	
+	margin-left: 26%;
+	display: block;
 	width: 40%;
 	padding: 1%;
 	border: 2px solid #5C5C66;
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
 	-o-border-radius: 5px;
-	margin: 0 auto;
-	display: block;
+
 	outline: none;
 -webkit-box-shadow: inset 1px 0px 3px 2px rgba(173,171,173,1);
 -moz-box-shadow: inset 1px 0px 3px 2px rgba(173,171,173,1);
@@ -75,7 +76,6 @@ box-shadow: inset 1px 0px 3px 2px rgba(173,171,173,1);
 font: 28px Calibri, sans-serif;
 color: #080335;
 font-weight: 900;
-text-align: center;
 }
 .clearfix {
 	clear: both;
