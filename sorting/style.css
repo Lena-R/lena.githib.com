@@ -1,0 +1,46 @@
+
+
+.inner-field {
+	width: 360px;
+	height: 20px;
+	border: 1px solid #ccc;
+	float: left;
+}
+
+.text-input {
+	border: none;
+}
+.inner-field > label {
+	/*margin-top: -20px;*/
+}
+
+.add {
+	margin-left: 20px;
+}
+
+.clearfix {
+	clear: both;
+}
+
+.result-wrapper {
+	
+	min-width: 350px;
+}
+
+.text-area {
+	width: 360px;
+	height: auto;
+	min-height: 300px;
+	border: 1px solid #ccc;
+	margin-top: 40px;
+	float: left;
+}
+
+.area-buttons {
+
+	
+}
+
+.btn {
+	
+}
