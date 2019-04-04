@@ -37,6 +37,16 @@ var del = function(del) {
 	secondArr.length = 0;
 }
 
+var xml = function(addtags) {
+	var xmlinsert = document.getElementById("text-input").value;
+	var htmlText = '';
+	 for (var i = 0; i < firstArr.length; i += 1) {
+        htmlText += ('<li>' + firstArr[i] + '</li>');
+    }
+document.getElementById('text-area').innerHTML = htmlText;
+    console.log(htmlText);
+    }
+
 
 var clickbtn = document.getElementById('add');
 clickbtn.addEventListener('click', addclick, false);
@@ -49,3 +59,6 @@ clickvalue.addEventListener('click', sortvalue, false);
 
 var clickdel = document.getElementById('delete');
 clickdel.addEventListener('click', del, false);
+
+var clickxml = document.getElementById('xml');
+clickxml.addEventListener('click', xml, false);

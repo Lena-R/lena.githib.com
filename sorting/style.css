@@ -1,5 +1,7 @@
 
-
+.wrapper {
+	width: 550px;
+}
 .inner-field {
 	width: 360px;
 	height: 20px;
@@ -10,9 +12,6 @@
 .text-input {
 	border: none;
 }
-.inner-field > label {
-	/*margin-top: -20px;*/
-}
 
 .add {
 	margin-left: 20px;
@@ -22,8 +21,7 @@
 	clear: both;
 }
 
-.result-wrapper {
-	
+.result-wrapper {	
 	min-width: 350px;
 }
 
@@ -37,10 +35,40 @@
 }
 
 .area-buttons {
-
-	
+	display: block;
+	width: 150px;
+	float: right;
+	margin-right: 20px;
+	margin-top: 40px;	
 }
 
 .btn {
-	
+	margin-bottom: 20px;
+	display: block;	
+}
+
+@media screen and (max-width: 460px) {
+.btn, .add {
+	width: 100px;
+	height: 40px;	
+}
+.text-input {
+	height: 40px;
+	font-size: 18px;
+}
+.inner-field {
+	height: 45px;
+}
+
+input {
+	width: 170px;
+   }
+}
+
+@media screen and (max-width: 320px) {
+	.btn, .add {
+	font-size: 20px;
+	height: 50px;
+	margin-bottom: 30px;	
+}
 }
