@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	
+	.bg {
+		background-image: url("images.jpg");
+		width: 90%;
+		height: auto;
+
+	}
+
+	.inner {
+		margin: 0 auto;
+		display: block;
+		width: 70%;
+	}
+	#eye {
+		width: 100px;
+		height: auto;		
+		display: none;
+		position: relative;
+	}
+
+
+	
+	</style>
+	<script type="text/javascript">
+	window.onload = function(){
+var eyeblock = document.getElementById("eye");
+var arr = ["eye1.png", "eye2.png", "eye3.png", "eye4.png", "eye5.png", "eye6.png", "eye7.png", "eye8.png", "eye9.png"];
+
+var sleepblock = document.getElementById("sleep");
+var arr2 = ["eyedefect-1.png", "eyedefect-2.png", "eyedefect-3.png", "eyedefect-4.png", "eyedefect-5.png"];
+
+var showEye = function() {
+  eye.style.display = "block";
+
+  var x = Math.floor(Math.random() * 600);
+  var y = Math.floor(Math.random() * 600);
+
+ var bg = arr[Math.floor(Math.random()*arr.length)];
+
+
+
+  eye.style.top = y + "px";
+  eye.style.left = x + "px";
+
+  eye.src = bg;
+};
+setInterval(showEye, 7000);
+
+
+var hideEye = function() {
+   eye.style.display = "none";
+};
+setInterval(hideEye, 3000);
+
+
+var sleepEye = function() {
+
+
+var bg2 = arr2[Math.floor(Math.random()*arr2.length)];
+
+eye.src = bg2;
+}
+var clickeye = document.getElementById('eye');
+clickeye.addEventListener('click', sleepEye, false);
+
+        document.addEventListener('tizenhwkey', function onTizenHwKey(e) {
+            if (e.keyName === 'back') {
+                tizen.application.getCurrentApplication().exit();
+            }
+        });
+ var sound = function() {
+var audio = new Audio();
+audio.src = 'op.mp3';
+audio.autoplay = true;
+}
+
+  var soundeye = document.getElementById('eye');
+ if (soundeye.addEventListener) {
+  soundeye.addEventListener('click', sound, false);
+}
+
+}
+	</script>
+</head>
+<body class = "bg">
+	<div class = "inner">
+		<img src = "" id = "eye">
+	</div>
+</body>
+</html>
