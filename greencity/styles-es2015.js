@@ -639,9 +639,9 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! D:\User\Site\SoftServe\GreenCityPWA-7\GreenCityClient\node_modules\@angular\material\prebuilt-themes\deeppurple-amber.css */"./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css");
-__webpack_require__(/*! D:\User\Site\SoftServe\GreenCityPWA-7\GreenCityClient\node_modules\bootstrap\dist\css\bootstrap.min.css */"./node_modules/bootstrap/dist/css/bootstrap.min.css");
-module.exports = __webpack_require__(/*! D:\User\Site\SoftServe\GreenCityPWA-7\GreenCityClient\src\styles.css */"./src/styles.css");
+__webpack_require__(/*! D:\User\Site\SoftServe\GreenCityPWA-9\GreenCityClient\node_modules\@angular\material\prebuilt-themes\deeppurple-amber.css */"./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css");
+__webpack_require__(/*! D:\User\Site\SoftServe\GreenCityPWA-9\GreenCityClient\node_modules\bootstrap\dist\css\bootstrap.min.css */"./node_modules/bootstrap/dist/css/bootstrap.min.css");
+module.exports = __webpack_require__(/*! D:\User\Site\SoftServe\GreenCityPWA-9\GreenCityClient\src\styles.css */"./src/styles.css");
 
 
 /***/ })
