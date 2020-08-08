@@ -1,0 +1,294 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	background: #404040;
+	padding: 2%;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+p {
+	color: #ffffff;
+}
+
+@font-face {
+	font-family: 'Parimatch-Regular';
+	src: url('fonts/Parimatch-Regular.eot');
+	src: url('fonts/Parimatch-Regular.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/parimatch-regular-webfont.woff') format('woff'),
+		 url('fonts/parimatch-regular-webfont.woff2') format('woff2'),
+		 url('fonts/Parimatch-Regular.ttf') format('truetype'),
+		 url('fonts/Parimatch-Regular.svg#Parimatch-Regular') format('svg');
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Parimatch-Light';
+	src: url('fonts/Parimatch-Light.eot');
+	src: url('fonts/Parimatch-Light.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/parimatch-light-webfont.woff') format('woff'),
+		 url('fonts/parimatch-light-webfont.woff2') format('woff2'),
+		 url('fonts/Parimatch-Light.otf') format('truetype'),
+		 url('fonts/Parimatch-Light.svg#Parimatch-Light') format('svg');
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Inter-Regular';
+	src: url('fonts/Inter-Regular.eot');
+	src: url('fonts/Inter-Regular.eot?#iefix') format('embedded-opentype'),
+
+		 url('fonts/Inter-Regular.ttf') format('truetype'),
+		 url('fonts/Inter-Regular.svg#Inter-Regular') format('svg');
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'RobotoCondensed-Bold';
+	src: url('fonts/RobotoCondensed-Bold.eot');
+	src: url('fonts/RobotoCondensed-Bold.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/RobotoCondensed-Bold.ttf') format('truetype'),
+		 url('fonts/RobotoCondensed-Bold.svg#RobotoCondensed-Bold') format('svg');
+	font-style: normal;
+}
+
+.wrapper {
+	max-width: 1248px;
+	margin: 0 auto;
+}
+header {
+	display: flex;
+	justify-content: space-between;
+}
+
+h1 {
+	color: #FFFFFF;
+	text-transform: uppercase;
+	font: 60px 'Parimatch-Regular', sans-serif;
+	font-style: italic;
+	font-weight: bold;
+	line-height: 56px;
+}
+
+.main-info {
+	margin-top: 45px;
+}
+
+.main-font {
+	font: 16px 'Inter-Regular', sans-serif;
+	line-height: 24px;
+}
+
+.user-block {
+	display: flex;
+	justify-content: space-between;
+	min-width: 160px;
+}
+
+.user-name {
+	color: #ffffff;
+	font: 12px 'Inter', sans-serif;
+    line-height: 20px;
+}
+
+.text-top {
+	margin-top: 16px;
+}
+
+.step {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 40px;
+}
+
+.step-icon-wrapper {
+	width: 60px;
+}
+
+.step-icon {
+	width: 40px;
+	height: 40px;
+	background: #F8FF13;
+	box-shadow: 0px 4px 16px rgba(248, 255, 19, 0.3);
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-o-border-radius: 8px;
+	color: #262626;
+}
+
+.step-icon > svg {
+	margin: 6px 0 0 8px;
+}
+
+.step-content {
+	width: 90%;
+}
+
+h2 {
+	color: #FFFFFF;
+	text-transform: uppercase;
+	font: 24px 'Parimatch-Regular', sans-serif;
+	font-style: italic;
+	font-weight: 850;
+	line-height: 28px;
+}
+
+.step-text {
+	color: #9D9D9D;
+	font: 12px 'Inter-Regular', sans-serif;
+	line-height: 20px;
+	margin-top: 8px;
+}
+
+.palochka {
+	width: 0px;
+	height: 72px;
+	margin: -50px 0px 0px 20px;
+	border: 1px solid transparent;
+ 	border-bottom: 100px solid #F8FF13;
+}
+
+.button-container {
+	margin-top: 40px;
+	display: flex;
+	justify-content: center;
+}
+
+.btn {
+	height: 48px;
+	background: #F8FF13;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-o-border-radius: 4px;
+	border: none;
+	cursor: pointer;
+	font: 16px 'RobotoCondensed-Bold', sans-serif;
+    font-weight: bold;
+	line-height: 24px;
+	text-align: center;
+	color: #000000;
+}
+
+.btn-width {
+	width: 335px;
+}
+
+.grey-wrapper {
+	padding: 2%;
+	background: #333333;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-o-border-radius: 8px;
+}
+
+.center {
+	text-align: center;
+}
+
+.promo {
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 1px solid #9D9D9D;
+	background: transparent;
+	width: 295px;
+	height: 36px;
+	outline: none;
+}
+
+.btn-promo {
+	width: 295px;
+}
+
+input[placeholder] {
+	color: #9D9D9D;
+	font: 12px 'Inter-Regular', sans-serif;
+	line-height: 20px;
+	margin-top: 8px;
+}
+
+footer {
+	margin-top: 64px;
+}
+
+.footer-logo {
+	text-align: center;
+}
+
+
+.popup-wrapper {
+	display: flex;
+	justify-content: center;
+}
+
+.popup {
+	width: 95%;
+	max-width: 600px;
+	margin: 5% auto;
+	background: #333333;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-o-border-radius: 8px;
+	position: fixed;
+	top: 5%;
+	z-index: 100;
+	display: none;
+}
+
+.close-btn {
+	width: 20px;
+	height: 20px;
+	border: none;	
+	position: absolute;
+	right: 20px;
+	top: 20px;
+}
+
+.popup-content {
+	padding: 5%;
+}
+
+.grn {
+	color: #F8FF13;
+}
