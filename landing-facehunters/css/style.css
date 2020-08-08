@@ -25,7 +25,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-	background: #606060;
+	background: #262626;
 	padding: 2%;
 }
 ol, ul {
@@ -341,11 +341,19 @@ footer {
 }
 
 @media screen and (max-width: 568px) {
-	body {
+	body, .grey-wrapper {   
 		padding: 20px;
 	}
 
-	.btn-width {
+	.btn-width, .btn-promo {
+		width: 100%;
+	}
+
+	.btn-promo {
+		margin-bottom: 20px;
+	}
+
+	.promo {
 		width: 100%;
 	}
 }
