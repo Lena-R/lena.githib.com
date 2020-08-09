@@ -244,6 +244,7 @@ h3 {
 	background: transparent;
 	border: 1px solid #f4f4f4;
 	color: #f4f4f4;
+	margin-top: 15px;
 }
 
 .btn-reg:hover {
@@ -366,8 +367,8 @@ footer {
 		width: 100%;
 	}
 
-	.btn-promo {
-		margin-bottom: 20px;
+	.btn-reg {
+		margin-top: 8px;
 	}
 
 	.promo {
