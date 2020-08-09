@@ -360,7 +360,9 @@ footer {
 		padding: 20px;
 	}
 
-	.btn-width, .btn-promo {
+	.btn-width,
+	.btn-promo,
+	.btn-login {
 		width: 100%;
 	}
 
