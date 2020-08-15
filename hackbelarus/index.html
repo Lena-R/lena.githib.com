@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Two buttons</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class = "container">
+      <header>
+        <div class = "header-wrapper">
+          <img src = "img/logo.svg" alt = "logo">
+          <p class = "logo-text">People Finder</p>
+        </div>
+      </header>
+      <section class = "main-content">
+        <img src = "img/flag.svg" alt = "flag" class = "">
+        <form method = "" action = "" enctype="multipart/form-data" class = "form">
+          <div class="file-upload">
+            <input type = "file" class = "btn btn-danger upload-photo" accept=".jpg, .jpeg, .png" value = "Загрузить фото" id="imgInp">
+          </div>
+          <button class = "btn btn-upload">Загрузить фото</button>
+          <br>
+          <img id="blah" src="#" alt="" />
+          <br><br>
+          <button type = "Submit" class = "btn btn-default btn-submit">Отправить</button>
+        </form>
+        <form  method = "" action = "" enctype="multipart/form-data" class = "form">
+          <div class="file-upload">
+            <input type = "file" class = "btn btn-danger find-photo" accept=".jpg, .jpeg, .png" id="imgInp2">
+            <button class = "btn btn-search">Найти по фото</button>
+            <br>
+            <img id="hide" src="#" alt="" />
+            <br><br>
+            <button type = "Submit" class = "btn btn-default btn-submit-2">Отправить</button>
+          </form>
+        </section>
+      </div>
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="js/bootstrap.min.js"></script>
+      <script type="text/javascript">
+      function readURL(input) {
+      if (input.files && input.files[0]) {
+      var reader = new FileReader();
+      
+      reader.onload = function (e) {
+      $('#blah').attr('src', e.target.result);
+      }
+      
+      reader.readAsDataURL(input.files[0]);
+      }
+      }
+      
+      $("#imgInp").change(function(){
+      readURL(this);
+      });
+      function readURL2(input) {
+      if (input.files && input.files[0]) {
+      var reader = new FileReader();
+      
+      reader.onload = function (e) {
+      $('#hide').attr('src', e.target.result);
+      }
+      
+      reader.readAsDataURL(input.files[0]);
+      }
+      }
+      $("#imgInp2").change(function(){
+      readURL2(this);
+      });
+      </script>
+      <script>
+      document.querySelector('.upload-photo').addEventListener('change', function(){
+      if( this.value ){
+      console.log( this.value );
+      document.querySelector('.btn-submit').style.display = "block";
+      } else {
+      console.log( "Файл не выбран" );
+      }
+      });
+      document.querySelector('.find-photo').addEventListener('change', function(){
+      if( this.value ){
+      console.log( this.value );
+      document.querySelector('.btn-submit-2').style.display = "block";
+      } else {
+      console.log( "Файл не выбран" );
+      }
+      });
+      </script>
+    </body>
+  </html>
