@@ -424,7 +424,6 @@ table {
 
 .team-member {
   width: 30%;
-  min-width: 100%;
   margin: 5% 0;
 }
 
@@ -1010,6 +1009,10 @@ table {
     line-height: 1;
     margin-top: 1%;
     font-size: 14px;
+  }
+
+  .team-member {
+    width: 100%;
   }
 }
 
