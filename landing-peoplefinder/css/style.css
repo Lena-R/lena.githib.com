@@ -184,7 +184,7 @@ table {
 .wrapper-menu {
   width: 100%;
   height: 80px;
-  background: #ffffff;
+  background: transparent;
   margin: 0px auto;
 }
 
@@ -446,6 +446,7 @@ table {
 .describe {
   font: 16px Open-Sans, sans-serif;
   line-height: 1.8;
+  text-align: center;
 }
 
 .link-block {
