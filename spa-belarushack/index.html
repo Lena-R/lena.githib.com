@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>People finder</title>
+    <meta name="description" content="The HTML5 Herald" />
+    <meta name="author" content="SitePoint" />
+
+    <link rel="stylesheet" href="css/styles.css?v=1.0" />
+  </head>
+
+  <body>
+    <div class="backgound">
+      <div class="rows rows__first">
+        <img id="logo" class="logo" src="img/logo.svg" alt="logo" />
+      </div>
+      <div class="rows rows__second">
+        <img
+          id="logo-mobile"
+          class="logo-small"
+          src="img/logo.svg"
+          alt="logo"
+        />
+        <img id="logo-desktop" class="logo-big" src="img/man.svg" alt="logo" />
+      </div>
+      <div class="rows rows__third">
+        <div class="offset-top">
+          <input type="file" id="upload" class="btn-upload" />
+          <button id="upload-btn" class="btn-find">Upload photo</button>
+          <button id="send-btn" class="btn-find">Send photo</button>
+          <img id="img" src="#" alt="your image" />
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

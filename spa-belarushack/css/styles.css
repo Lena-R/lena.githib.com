@@ -1,0 +1,90 @@
+html,
+body {
+  height: 100%;
+}
+
+.backgound {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.rows {
+  height: calc(100% / 3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rows__first {
+  background-color: #d6d6d6;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.rows__second {
+  background-color: #c68989;
+}
+.rows__third {
+  align-items: flex-start;
+  background-color: #d6d6d6;
+}
+
+.logo {
+  height: 20%;
+  margin: 20px;
+  display: none;
+}
+.logo-small {
+  height: 50%;
+  display: none;
+}
+.logo-big {
+  height: 200%;
+  margin: 0 auto;
+  display: none;
+}
+
+.offset-top {
+  margin-top: -20px;
+  text-align: center;
+}
+#upload {
+  display: none;
+}
+#send-btn {
+  display: none;
+}
+#img {
+  display: none;
+  width: 200px;
+  margin: 10px auto;
+}
+.btn-find {
+  padding: 20px 60px;
+  display: block;
+  background-color: #cc0001;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 60px auto 0;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.container {
+  margin: 0 auto;
+  width: 50%;
+  height: 250px;
+  border-radius: 3px;
+  text-align: center;
+}
+
+@media screen and (max-width: 568px) {
+  .btn-find {
+    font-size: 48px !important;
+  }
+}
