@@ -64,14 +64,14 @@ body {
 .btn-find {
   padding: 20px 60px;
   display: block;
-  background-color: #cc0001;
+  background-color: rgb(23, 208, 172);
   color: #fff;
   border: 2px solid #fff;
   border-radius: 5px;
   text-transform: uppercase;
   font-weight: 600;
   margin: 60px auto 0;
-  font-size: 20px;
+  font-size: 1rem;
   cursor: pointer;
 }
 
@@ -83,8 +83,3 @@ body {
   text-align: center;
 }
 
-@media screen and (max-width: 568px) {
-  .btn-find {
-    font-size: 48px !important;
-  }
-}

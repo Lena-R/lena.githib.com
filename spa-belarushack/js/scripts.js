@@ -7,7 +7,9 @@ $(document).ready(function () {
     $('#logo-mobile').show();
     $('#logo-desktop').hide();
     $('#logo').hide();
-    $('#upload-btn').css('font-size', '3rem');
+    $('#upload-btn').css('font-size', '6rem');
+    $('#send-btn').css('font-size', '6rem');
+    $('#img').css('width', '90%');
   } else {
     $('#logo-mobile').hide();
     $('#logo-desktop').show();
