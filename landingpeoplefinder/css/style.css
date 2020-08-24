@@ -124,6 +124,10 @@ table {
   border-spacing: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @font-face {
   font-family: 'Raleway-SemiBold';
   src: url('fonts/Raleway-SemiBold.eot');
@@ -335,6 +339,11 @@ table {
   width: 90%;
 }
 
+.float-image > ul > li > a {
+  color: #17d0ac;
+  font-weight: 550;
+}
+
 /*  Second Block  */
 
 .second-block {
@@ -483,35 +492,6 @@ table {
   color: #777777;
 }
 
-.picture-1 {
-  background: url('../img/member-1.jpg');
-  z-index: 1;
-  width: 270px;
-  height: 300px;
-  display: block;
-}
-.picture-2 {
-  background: url('../img/member-2.jpg');
-  z-index: 1;
-  width: 270px;
-  height: 300px;
-  display: block;
-}
-.picture-3 {
-  background: url('../img/member-3.jpg');
-  z-index: 1;
-  width: 270px;
-  height: 300px;
-  display: block;
-}
-.picture-4 {
-  background: url('../img/member-4.jpg');
-  z-index: 1;
-  width: 270px;
-  height: 300px;
-  display: block;
-}
-
 .member-picture-3 {
   z-index: 1;
 }
@@ -576,23 +556,6 @@ table {
   overflow: hidden;
   float: left;
   margin-top: -20px;
-}
-
-/*  BX-Slider  */
-.bx-wrapper .bx-pager,
-.bx-wrapper {
-  display: block !important;
-  text-align: center !important;
-  margin: 0 auto;
-}
-.bx-controls-direction {
-  display: none;
-}
-.bx-wrapper .bx-pager.bx-default-pager a {
-  background: #d4d3d4 !important;
-}
-.bx-pager.bx-default-pager a.active {
-  background: #1ab798 !important;
 }
 
 /*  Footer  */
@@ -937,6 +900,18 @@ table {
   .contact-us {
     background-image: url('../img/footer-bg-640.jpg');
   }
+
+  .team-member {
+    width: 48%;
+  }
+
+  .float-image {
+    line-height: 1.5;
+  }
+
+  .first-heading-3 {
+    line-height: 1.2;
+  }
 }
 @media screen and (max-width: 600px) {
   .header {
@@ -976,7 +951,7 @@ table {
     display: none;
   }
   .first-inner-wrapper {
-    width: 49%;
+    width: 100%;
   }
   .slider-text {
     line-height: 1.2;
