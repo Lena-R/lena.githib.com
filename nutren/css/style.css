@@ -1,0 +1,320 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+	font-family: 'Lato-Regular';
+	src: url('fonts/Raleway-SemiBold.eot');
+	src: url('fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/Lato-Regular.woff') format('woff'),
+		 url('fonts/Lato-Regular.ttf') format('truetype'),
+		 url('fonts/Lato-Regular.svg#Lato-Regular') format('svg');
+	font-style: normal;
+	font-weight: normal;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1248px;
+    font-family: 'Helvetica', sans-serif;
+}
+
+.blue-rectangle {
+    width: 90%;
+    max-width: 1006px;
+    background-image: linear-gradient(180deg, #d0e5f0 0%, #bddeef 100%);
+    display: block;
+    margin: 130px auto 0;
+    height: 443px;
+}
+
+.figure-rectangle-top {
+    position: absolute;
+    top: 110px;
+    margin-left: 20%;
+}
+
+.blue-rectangle-inner {
+    padding: 5%;
+}
+
+.logo-section {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.blue-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.text-wrapper {
+    width: 195px;
+}
+
+.blue-text {
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #174985;
+    font-family: "Lato";
+    font-size: 40px;
+}
+
+.video-wrapper {
+    border: 6px solid #0095cc;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    width: 392px;
+    height: 214px;
+    z-index: 1;
+}
+
+.figure-rectangle-bottom {
+    margin-top: -110px;
+    margin-left: 30%;
+    z-index: -10;
+}
+
+.blue-line {
+    width: 95%;
+    max-width: 1074px;
+    height: 112px;
+    background-color: #273574;
+    display: block;
+    margin: 0 auto;
+}
+
+.inner-section {
+    width: 100%;
+    max-width: 1248px;
+    position: relative;
+}
+
+.first-section {
+    width: 75%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.first-text {
+    line-height: 25px;
+    font-size: 18px;
+    font-weight: 600;;
+}
+
+.free-sample {
+    position: absolute;    
+    height: 237px;
+    width: 180px;
+    right: 20px;
+    margin-top: 66px;
+    background-image: url('free-sample.png');
+    z-index: 100;
+ }
+
+ .free-sample-text {
+     transform: rotate(90deg);
+     color: #fff;
+     text-transform: uppercase;
+     margin-top: 130px;
+     margin-left: -38px;
+     width: 160px;
+ }
+
+ .first-section-blue-block {
+    background-image: linear-gradient(to right, rgba(208, 229, 240, 0) 0%, #bddeef 100%);
+    margin-top: 76px;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+ }
+
+ .first-section-blue-block > img {
+     display: inline-block;
+ }
+
+ .lack-energy {
+     display: inline-block;
+     margin-left: -20%;
+}
+
+ .lack-energy-content {
+    margin-top: 20px;
+    margin-left: 20%;
+ }
+
+ .lack-energy-content > h2 {
+    width: 350px;
+    text-transform: uppercase;
+    color: #174985;
+    font-size: 26px;
+    display: inline-block;
+ }
+
+ .lack-energy-content > p {
+     margin-top: 10px;
+     line-height: 20px;
+     color: #373737;
+ }
+
+ .red-button-field {
+     display: flex;
+     justify-content: center;
+     margin-top: 20px;
+ }
+
+ .take-test-btn {
+     width: 173px;
+     height: 31px;
+     background-image: url('take-test-btn.png');
+     border: none;
+ }
+
+ .small-figure {
+     position: absolute;
+     right: 0;
+     bottom: 20px;
+ }
+
+ .second-section {
+    
+ }
+
+ .second-section > h2 {
+    line-height: 37px;
+    color: #174985;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 30px;
+    margin-top: 20px;
+    text-align: center;
+ }
+
+ .second-section > p {
+    line-height: 30px;
+    color: #273574;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    max-width: 648px;
+    text-align: center;
+    margin: 10px auto 20px;
+ }
+
+ .two-bloks-container {
+     display: block;
+     margin: 36px auto;
+     width: 648px;
+ }
+
+ .two-bloks {     
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .second-section-block {
+     width: 300px;
+ }
+
+ .second-section-block > img {
+     display: block;
+     margin: 0 auto;
+ }
+
+ .second-section-block > h3 {
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #273574;
+    font-family: "Helvetica", sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 55px;
+ }
+
+ .second-section-block > p {
+    line-height: 25px;
+    color: #273574;
+    font-family: "Helvetica", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+ }
+
+ .third-section {
+     width: 90%;
+     margin: 60px auto;
+     background: #ddf3fe;
+ }
+
+ .section-inner {
+     width: 80%;
+     margin: 20px auto;
+     display: flex;
+     justify-content: space-between;  
+     padding: 40px 0;   
+ }
+
+ .h2 {
+    line-height: 34px;
+    text-transform: uppercase;
+    color: #174985;
+    font-family: "Helvetica", sans-serif;
+    font-size: 27px;
+ }
+ .optimum-features > ul {
+     margin-top: 20px;
+ }
+
+ .optimum-features > ul > li {
+    height: 25px;
+    color: #273574;
+    font-family: "Helvetica", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+ }
+
