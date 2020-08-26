@@ -8,9 +8,23 @@
     <title>Nestle HealthScience | Nutren</title>
 
     <link href="css/style.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="slick/slick.js"></script>
-    <link rel="stylesheet" type="text/css" href="slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css">  -->
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css"
+    />
+    <!--[if (lt IE 9)
+    ]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.helper.ie8.js"></script
+    ><![endif]-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script
+    src="https://kit.fontawesome.com/18d919ba4a.js"
+    crossorigin="anonymous"
+    ></script>
+    <script src="./js/slider.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -96,7 +110,7 @@
                         <li>• 50% high quality whey protein</li>
                         <li>• Healthy fat blend, met AHA (2006) & ADA (2008) guidelines</li>
                         <li>• High in MUFA (22% TEI)</li>
-                        <li>Ѡ6 : Ѡ3 = 5:1</li>
+                        <li>• Ѡ6 : Ѡ3 = 5:1</li>
                         <li>• 3g of Prebio¹ (70% FOS :30% Inulin) per serving</li>
                         <li>• 550 million cfu of Probiotics (Lactobacillus Paracasei) per serving</li>
                         <li>• 41 mgαTE of Vitamin E per serving</li>
@@ -116,9 +130,292 @@
                 <div><img src = "img/slick-6.jpg" alt = "slick-6"></div>
                   </div>
         </section>
-        <section class = "fifth-section"></section>
+        <section class = "fifth-section">
+            <h2 class = "h2">Where to buy</h2>
+            <div class = "blue-buy-wrapper">
+                <div class = "cart-block"></div>
+                <div class = "small-figure-buy"><img src = "img/figure-mini.svg" alt = "small figure"></div>
+                <div class = "blue-line-buy">
+                    <div class = "blue-inner-content">
+                    <div class = "blue-text-block">
+                        <h3>PURCHASE ONLINE</h3>
+                        <p>CLICK BELOW TO PURCHASE PRODUCT</p>
+                    </div>
+                    <div class = "blue-content-wrapper-btn">
+                        <a href = ""><button class = "blue-btn">BUY NOW 400g</button></a>
+                        <a href = ""><button class = "blue-btn">BUY NOW 800g</button></a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
         <section class = "second-section">
+          <div class = "right-top-figure"><img src = "img/figure.svg" alt = "figure rectangles"></div>
             <h2 class = "h2">IDEAL CONSUMPTION</h2>
+            <div class = "centered-compact-block">
+                <div class = "inner-consumption-content">
+                    <div class = "consumption-line">
+                        <div class = "consumption-item">
+                            <div class = "consumption-item-content-left">
+                                <p>For pre & post-operative nutrition</p>
+                            </div>
+                            <div class = "consumption-photo">
+                                <img src = "img/item-1.png" alt = "photo">
+                            </div>
+                        </div>
+                        <div class = "consumption-item">
+                            <div class = "consumption-item item-bottom">  
+                                <div class = "consumption-photo-right">
+                                    <img src = "img/item-1.png" alt = "photo">
+                                </div>
+                                <div class = "consumption-item-content-right">
+                                    <p>For pre & post-operative nutrition</p>
+                                </div>
+                            </div>                           
+                        </div>
+                    </div>
+                    <div class = "consumption-line">
+                        <div class = "consumption-item">
+                            <div class = "consumption-item-content-left">
+                                <p>For pre & post-operative nutrition</p>
+                            </div>
+                            <div class = "consumption-photo">
+                                <img src = "img/item-1.png" alt = "photo">
+                            </div>
+                        </div>
+                        <div class = "consumption-item">
+                            <div class = "consumption-item item-bottom">  
+                                <div class = "consumption-photo-right">
+                                    <img src = "img/item-1.png" alt = "photo">
+                                </div>
+                                <div class = "consumption-item-content-right">
+                                    <p>For pre & post-operative nutrition</p>
+                                </div>
+                            </div>                           
+                        </div>
+                    </div>
+                    <div class = "consumption-line">
+                        <div class = "consumption-item">
+                            <div class = "consumption-item-content-left">
+                                <p>For pre & post-operative nutrition</p>
+                            </div>
+                            <div class = "consumption-photo">
+                                <img src = "img/item-1.png" alt = "photo">
+                            </div>
+                        </div>
+                        <div class = "consumption-item">
+                            <div class = "consumption-item item-bottom">  
+                                <div class = "consumption-photo-right">
+                                    <img src = "img/item-1.png" alt = "photo">
+                                </div>
+                                <div class = "consumption-item-content-right">
+                                    <p>For pre & post-operative nutrition</p>
+                                </div>
+                            </div>                           
+                        </div>
+                    </div>
+                    <div class = "consumption-small-figure"><img src = "img/small-figure.svg" alt = "small figure"></div>   
+                </div>
+              </div>
+              <div class = "left-bottom-figure-wrapper"></div>
+              <div class = "left-bottom-figure"><img src = "img/figure.svg" alt = "figure rectangles"></div>
+        </section>
+        <section class = "sixth-section">
+          <div class = "centered-compact-block">
+          <div class = "sixth-block">
+          <h2 class = "h2">HOW TO PREPARE NUTREN OPTIMUM</h2>          
+          <div class = "outher-content-wrapper"> 
+            <div class = "img-center-block"> 
+            <div class = "img-wrapper">
+              <img src = "img/preparing-1.png" alt = "preparing">
+              <img src = "img/preparing-2.png" alt = "preparing">
+              <img src = "img/preparing-3.png" alt = "preparing">
+              <img src = "img/preparing-4.png" alt = "preparing">
+            </div>
+          </div>
+            <div class = "reminders">
+              <h3>Reminders</h3>
+              <ol>
+                <li>1. All prepared products should be tightly covered & consumed within 6 hours at room temperature or within 24 hours if refrigerated.</li>
+                <li>2. Once opened, use within 1 month. </li>
+                <li>3. Store in a cool, dry place.</li>
+                <li>4. Not suitable for children below 4 years of age. </li>
+              </ol>
+            </div>
+            <div class = "link-content-wrapper">
+            <div class = "text-info-wrapper">
+              <p class = "text-info">Click</p><a href = ""><span class = "here"></span></a> <p class = "text-info">for full nutritional info</p>
+            </div>
+            </div>
+            </div>
+            </div>
+          </div>
+        </section>
+        <section class = "second-section">
+          <h2 class = "h2">NUTRITION RESOURCES FOR YOU</h2>
+          <div class="centered-compact-block">
+            <div class = "resources-wrapper">
+              <div class = "resource-item">
+                <div class = "resource-photo">
+                  <img src = "img/item-1.png" alt = "photo">
+                </div>
+                  <div class = "resource-blue-block">
+                    <h3>ADAPTING TO CHANGING NUTRITIONAL NEEDS IN AGEING</h3>
+                    <p>Changes in energy metabolism and body composition commonly occur in older people. That’s why nutrition plays a vital role for older adults to maintain health and achieve longevity.</p>
+                    <a href = ""><button class = "blue-read-more">Read more</button></a>
+                    <div class = "blue-mini-figure"><img src = "img/figure-mini.svg" alt = "small figure"></div>
+                  </div>                
+              </div>
+              <div class = "resource-item">
+                <div class = "resource-photo">
+                  <img src = "img/item-1.png" alt = "photo">
+                </div>
+                  <div class = "resource-blue-block">
+                    <h3>INCREASED NEED FOR PROTEIN</h3>
+                    <p>Even the healthiest of the elderly population, are at risk for inadequate protein intake.</p>
+                    <a href = ""><button class = "blue-read-more">Read more</button></a>
+                    <div class = "blue-mini-figure"><img src = "img/figure-mini.svg" alt = "small figure"></div>
+                  </div>                
+              </div>
+              <div class = "resource-item">
+                <div class = "resource-photo">
+                  <img src = "img/item-1.png" alt = "photo">
+                </div>
+                  <div class = "resource-blue-block">
+                    <h3>MAINTAINING MOBILITY</h3>
+                    <p>Muscle, bone and joint health – along with proper weight management - are essential for active and independent living as we age.</p>
+                    <a href = ""><button class = "blue-read-more">Read more</button></a>
+                    <div class = "blue-mini-figure"><img src = "img/figure-mini.svg" alt = "small figure"></div>
+                  </div>                
+              </div>
+            </div>
+          </div>
+      </section>
+
+        <section class = "second-section">
+            <h2 class = "h2">SLIDER</h2>
+            <p>97% of Malaysians said they would recommend Nutren Optimum, giving it a 4.8/5 rating.</p>
+            <div class="slider-container">
+                <div class="navSlider">
+                  <div class="navSliderItem">
+                    <div class="navSliderItemContent">
+                      <h3 class="sliderItemHeader">
+                      pourquoi Une machine à thé ?
+                      </h3>
+                      <div class="imageHoverable">
+                        <div class="imgHolder">
+                          <img
+                          src="./img/pourquoi-une-machine.png"
+                          alt="Pourquoi une machine à thé?
+                          "
+                          srcset=""
+                          />
+                        </div>
+                        <div class="overlay">
+                          <a
+                            href="https://fr.special-t.com/fr/tout-savoir-sur-le-the/machine.html"
+                            class="cta"
+                          >en savoir plus</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="navSliderItem">
+                    <div class="navSliderItemContent">
+                      <h3 class="sliderItemHeader highlighted">
+                      préparer votre thé<br />
+                      <br />
+                      </h3>
+                      <div class="imageHoverable">
+                        <img
+                        src="./img/preparer.png"
+                        alt="Préparer votre thé
+                        "
+                        srcset=""
+                        />
+                        <div class="overlay">
+                          <a
+                            href="https://fr.special-t.com/fr/tout-savoir-sur-le-the/preparer.html"
+                            class="cta"
+                          >en savoir plus</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="navSliderItem">
+                    <div class="navSliderItemContent">
+                      <h3 class="sliderItemHeader">
+                      nos engagements<br />
+                      <br />
+                      </h3>
+                      <div class="imageHoverable">
+                        <img
+                        src="./img/nos-engagements.jpg"
+                        alt="Nos Engagements
+                        "
+                        srcset=""
+                        />
+                        <div class="overlay">
+                          <a
+                            href="https://fr.special-t.com/fr/tout-savoir-sur-le-the/engagements.html"
+                            class="cta"
+                          >en savoir plus</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="navSliderItem">
+                    <div class="navSliderItemContent">
+                      <h3 class="sliderItemHeader">
+                      Le monde du thé<br />
+                      <br />
+                      </h3>
+                      <div class="imageHoverable">
+                        <img
+                        src="./img/tea-field.png"
+                        alt="Le monde du thé
+                        "
+                        srcset=""
+                        />
+                        <div class="overlay">
+                          <a
+                            href="https://fr.special-t.com/fr/tout-savoir-sur-le-the/the.html"
+                            class="cta"
+                          >en savoir plus</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="navSliderItem">
+                    <div class="navSliderItemContent">
+                      <h3 class="sliderItemHeader">
+                      Inspiration recettes<br />
+                      <br />
+                      </h3>
+                      <div class="imageHoverable">
+                        <img
+                        src="./img/recettes.png"
+                        alt="Inspirations recettes
+                        "
+                        srcset=""
+                        />
+                        <div class="overlay">
+                          <a
+                            href="https://fr.special-t.com/fr/tout-savoir-sur-le-the/recettes.html"
+                            class="cta"
+                          >en savoir plus</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
         </section>
     </div>
 
