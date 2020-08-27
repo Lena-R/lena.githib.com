@@ -1,0 +1,516 @@
+@media screen and (max-width: 1152px) {
+    .free-sample {
+        right: 5px;
+        margin-top: 140px;
+    }
+
+    .right-top-figure {
+        right: 20px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .blue-rectangle {
+        height: auto;
+        width: 100%;
+    }
+
+    .blue-line {
+        width: 100%;
+    }
+
+    .video-wrapper {
+        margin-top: 40px;
+    }
+
+    .free-sample {
+        width: 50px;
+        right: 0;
+        margin-top: 66px;
+        background: red;
+        z-index: 100;
+    }
+
+    .free-sample-text {
+        margin-left: -52px;
+    }
+
+    .third-section {
+        width: 100%;
+    }
+
+    .fifth-section {
+        width: 100%;
+    }
+
+    .sixth-block {
+        width: 100%;
+    }
+
+    .resource-blue-block {
+        width: 230px;
+    }
+
+    .resource-photo {
+        left: 45px;
+    }
+
+    .img-wrapper > img {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 998px) {
+    .blue-rectangle {
+        margin: 30px auto 0;
+    }
+
+    .figure-rectangle-top {
+        top: 0;
+    }
+
+    .lack-energy {
+        margin-left: -25%;
+    }    
+}
+
+@media screen and (max-width: 940px) {
+    .lack-energy-content {
+        margin-left: 6%;
+    }
+}
+
+@media screen and (max-width: 868px) {
+    .lack-energy-content > h2 {
+        width: 320px;
+        font-size: 22px;
+    }
+
+    .resource-photo {
+        left: 25px;
+    }
+
+    .resource-blue-block {
+        width: 196px;
+    }
+
+    .section-inner > img {
+        height: 210px;
+    }
+
+    .small-figure {
+        right: 0;
+        bottom: -27px;
+    }
+}
+
+@media screen and (max-width: 824px) {
+    .lack-energy-content > h2 {
+        width: 290px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .resources-wrapper {
+        display: block;
+        justify-content: center;
+        margin-top: 0;
+    }
+
+    .resource-blue-block {
+        width: 95%;
+        height: 270px;
+        margin-top: 75px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .first-section {
+        width: 100%;
+    }
+
+    .first-text {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .free-sample {
+        margin-top: 105px;
+    }
+
+    .section-inner {
+        width: 90%;
+    }
+
+    .section-inner > img {
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 724px) {
+    .blue-line-buy {
+        width: auto;
+    }
+
+    .lack-energy-content {
+        width: 90%;
+    }
+
+    .outher-content-wrapper {
+        width: 100%;
+    }
+
+    .reminders {
+        width: 83%;
+        margin: 0 auto;
+    }
+
+    .img-wrapper {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .img-wrapper > img {
+        width: 55%;
+    }
+
+    .cart-block {
+        left: -10px;
+    }
+}
+
+@media screen and (max-width: 714px) {
+    .consumption-line {
+        display: block;
+    }
+
+    .consumption-item-content-left {
+        width: 290px;
+    }
+
+    .consumption-item-content-left,
+    .consumption-item-content-right {
+        background-image: none;
+    }
+
+    .consumption-item-content-left > p {
+        margin-top: 92px;
+        margin-left: 32px;
+    }
+
+    .consumption-item-content-right > p {
+        margin-left: 56px;
+        margin-top: 14px;
+    }
+}
+
+@media screen and (max-width: 714px) {
+    .cart-block {
+        left: -2px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .two-bloks-container {
+        width: 100%;
+    }
+
+    .second-section > p {
+        max-width: none;
+    }
+
+    .second-section-block {
+        width: 45%;
+    }
+
+    .cart-block {
+        left: 0px;
+    }
+
+    .second-section-block > p {
+        padding: 10px;
+}
+
+    .blue-inner-content {
+        margin-left: 115px;
+        display: block; 
+        justify-content: space-between;
+}
+
+    .blue-buy-wrapper {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .blue-text-block,
+    .blue-content-wrapper-btn {
+        text-align: center;
+    }
+
+    .lack-energy-content > h2 {
+        width: auto;
+    }
+
+    .second-section > h2 {
+        line-height: 0px;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .red-button-field {
+        margin-top: 10px;
+    }
+
+    .blue-line {
+        height: 30px;
+    }
+
+    .small-figure {
+        bottom: -50px;
+    }
+}
+
+@media screen and (max-width: 514px) {
+    .blue-content {
+        margin-top: 60px;
+    }
+
+    .blue-text {
+        line-height: 30px;
+        font-size: 24px;
+    }
+
+    .text-wrapper {
+        width: auto;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .first-text {
+        font-size: 16px;
+    }
+
+    .first-section-blue-block {
+        display: block;
+    }
+
+    .first-section-blue-block > img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .lack-energy {
+        margin-left: 5%;
+        width: 95%;
+    }
+    .lack-energy-content > h2 {
+        width: 95%;
+    }
+
+    .lack-energy-content {
+        width: auto;
+    }
+
+    .red-button-field {
+        margin-top: 20px;
+        padding-bottom: 5%;
+    }
+
+    .resource-blue-block {
+        height: 292px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .second-section > h2 {
+        line-height: 37px;
+    }
+
+    .blue-line-buy {
+        height: auto;
+    }
+
+    .two-bloks {
+        display: block;
+    }
+
+    .second-section-block {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .first-section-blue-block > img {
+        width: 100%;
+    }
+
+    .second-section > h2, .h2 {
+        font-size: 22px;
+    }
+
+    .optimum-features > ul > li {
+        line-height: 20px;
+    }
+
+    .third-section {
+        width: 100%;
+        display: block;
+        margin: 20px auto;
+    }
+
+    .section-inner {
+        display: block;
+    }
+
+    .section-inner > img {
+        margin: 0 auto;
+        display: block;
+    }
+
+    .consumption-photo > img,
+    .consumption-photo-right > img {
+        right: 0px;
+    }
+
+    .consumption-item-content-left > p {
+        width: 144px;
+    }
+
+    .consumption-item-content-right > p {
+        width: 170px;
+        margin-left: 74px;
+    }
+
+    .figure-rectangle-bottom {
+        margin-left: 0;
+    }
+
+    .text-info-wrapper {
+        width: 405px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .video-wrapper, 
+    .video-wrapper > img {
+        width: 100%;
+    }
+
+    .video-wrapper {
+        height: 164px;
+    }
+
+    .text-info-wrapper {
+        width: 300px;
+    }
+
+    .consumption-photo, .consumption-photo-right {
+        display: none;
+    }
+
+    .consumption-photo > img{
+        left: 0px;
+        width: 100%;
+    }
+
+    .consumption-item-content-right {
+        width: 160px;
+        margin-left: 0;
+    }
+
+    .consumption-item-content-left {
+        width: 250px;
+        margin-right: 0;
+    }
+
+    .consumption-item-content-left > p {
+        margin-top: 92px;
+        margin-left: 0;
+        margin-top: 0;
+        text-align: center;
+        width: 320px;
+        font-size: 16px;
+    }
+
+    .item-bottom {
+        margin-top: 0;
+    }
+
+    .consumption-item {
+        display: flex;
+        justify-content: center;
+    }
+
+    .consumption-item-content-right > p {
+        width: 320px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .fifth-section {
+        margin-bottom: 96px;
+    }
+
+    .consumption-item-content-left {
+        height: 40px;
+    }
+
+    .consumption-item {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .reminders {
+        width: 81%;
+    }
+
+    .text-info-wrapper {
+        width: 277px;
+        display: block;
+        margin-left: 20px;
+    }
+
+    .resource-blue-block {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .figure-rectangle-top {
+        margin-left: 0%;
+    }
+
+    .video-wrapper {
+        height: 144px;
+    }
+
+    .consumption-item-content-right > p,
+    .consumption-item-content-left > p {
+        width: 300px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .reminders {
+        width: 79%;
+    }
+
+    .consumption-small-figure {
+        margin-left: 197px;
+    }
+
+    .reminders {
+        width: 80%;
+    }
+
+    .second-section > h2, .h2 {
+        width: 99%;
+    }
+
+    .fifth-section {
+        margin-bottom: 125px;
+    }
+}
