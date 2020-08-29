@@ -3,6 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no" >
+  	<link rel="manifest" href="manifest.json" >
 	<style type="text/css">
 	
 	.bg {
@@ -22,10 +24,7 @@
 		height: auto;		
 		display: none;
 		position: relative;
-	}
-
-
-	
+	}	
 	</style>
 	<script type="text/javascript">
 	window.onload = function(){
@@ -86,7 +85,12 @@ audio.autoplay = true;
 }
 
 }
-	</script>
+</script>
+<script>
+	navigator.serviceWorker && navigator.serviceWorker.register('/sw.js').then(function(registration) {
+  	console.log('Excellent, registered with scope: ', registration.scope);
+});
+</script>
 </head>
 <body class = "bg">
 	<div class = "inner">
