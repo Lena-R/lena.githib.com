@@ -48,31 +48,60 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script>
+    //var picblock = document.getElementById("picture");
+    //var arr = ["eye1.png", "eye2.png", "eye3.png", "eye4.png", "eye5.png", "eye6.png", "eye7.png", "eye8.png", "eye9.png"];
+      //screen.orientation.lock("portrait")
+  //.then(function() {
+    //alert('Locked');
+     //picture.style.display = "block";
+
+    //var bg = arr[Math.floor(Math.random()*arr.length)];
+    //picture.src = bg;
+
+
+          //setTimeout(showPic, 2000);
+
+  //})
+  //.catch(function(error) {
+    //alert(error);
+  //});
 
 var picblock = document.getElementById("picture");
 var bgblock = document.getElementById("bg");
 var arr = ["eye1.png", "eye2.png", "eye3.png", "eye4.png", "eye5.png", "eye6.png", "eye7.png", "eye8.png", "eye9.png"]; 
 
 
-  
-var orientation = (screen.orientation || {}).type || screen.mozOrientation || screen.msOrientation;
+  var mql = window.matchMedia("(orientation: portrait)");
 
-if (orientation === "landscape-primary") {
-  console.log("That looks good.");
-      
-} else if (orientation === "landscape-secondary") {
-  console.log("Mmmh... the screen is upside down!");
-           picture.style.display = "none";
-        bgblock.style.background = "yellow";
-} else if (orientation === "portrait-secondary" || orientation === "portrait-primary") {
-  var bg = arr[Math.floor(Math.random()*arr.length)]; 
-        picture.src = bg;
+if(mql.matches) {  
+    // Портретная ориентация
+            var bg = arr[Math.floor(Math.random()*arr.length)]; 
+picture.src = bg;
+        picture.style.display = "block";
+
+    
+} else {  
+    // Горизонтальная ориентация
+
+   
+}
+
+// Прослушка события изменения ориентации
+mql.addListener(function(m) {
+    if(m.matches) {
+        // Изменено на портретный режим
+        var bg = arr[Math.floor(Math.random()*arr.length)]; 
+picture.src = bg;
         picture.style.display = "block";
         bgblock.style.background = "green";
-  console.log("Mmmh... you should rotate your device to landscape");
-} else if (orientation === undefined) {
-  console.log("The orientation API isn't supported in this browser :("); 
-}
+        alert("Портретная ориентация");
+    }
+    else {
+        // Изменено на горизонтальный режим
+         picture.style.display = "none";
+        bgblock.style.background = "yellow";
+    }
+});
     </script>
   </body>
 </html>
