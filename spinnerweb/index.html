@@ -48,32 +48,13 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script>
-    //var picblock = document.getElementById("picture");
-    //var arr = ["eye1.png", "eye2.png", "eye3.png", "eye4.png", "eye5.png", "eye6.png", "eye7.png", "eye8.png", "eye9.png"];
-      //screen.orientation.lock("portrait")
-  //.then(function() {
-    //alert('Locked');
-     //picture.style.display = "block";
-
-    //var bg = arr[Math.floor(Math.random()*arr.length)];
-    //picture.src = bg;
-
-
-          //setTimeout(showPic, 2000);
-
-  //})
-  //.catch(function(error) {
-    //alert(error);
-  //});
-
-var picblock = document.getElementById("picture");
-var bgblock = document.getElementById("bg");
-var arr = ["eye1.png", "eye2.png", "eye3.png", "eye4.png", "eye5.png", "eye6.png", "eye7.png", "eye8.png", "eye9.png"]; 
 
 
   var mql = window.matchMedia("(orientation: portrait)");
 
+
 if(mql.matches) {  
+ 
     // Портретная ориентация
             var bg = arr[Math.floor(Math.random()*arr.length)]; 
 picture.src = bg;
@@ -83,11 +64,15 @@ picture.src = bg;
 } else {  
     // Горизонтальная ориентация
 
-   
+   alert("Landscape orientation");
+  // bgblock.style.background = "#000";
 }
 
 // Прослушка события изменения ориентации
 mql.addListener(function(m) {
+    var picblock = document.getElementById("picture");
+var bgblock = document.querySelector("#bg");
+var arr = ["eye1.png", "eye2.png", "eye3.png", "eye4.png", "eye5.png", "eye6.png", "eye7.png", "eye8.png", "eye9.png"];
     if(m.matches) {
         // Изменено на портретный режим
         var bg = arr[Math.floor(Math.random()*arr.length)]; 
@@ -100,6 +85,7 @@ picture.src = bg;
         // Изменено на горизонтальный режим
          picture.style.display = "none";
         bgblock.style.background = "yellow";
+        alert("Landsc ориентация");
     }
 });
     </script>
