@@ -41,53 +41,39 @@
  <body class = "bg">
   <div class = "inner">
     <img src = "" id = "picture">
+    <button onclick="start()">
+  Start
+</button>
   </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-    <script>
-
-
-  var mql = window.matchMedia("(orientation: portrait)");
-
-
-if(mql.matches) {  
- 
-    // Портретная ориентация
-            var bg = arr[Math.floor(Math.random()*arr.length)]; 
-picture.src = bg;
-        picture.style.display = "block";
-
-    
-} else {  
-    // Горизонтальная ориентация
-
-   alert("Landscape orientation");
-  // bgblock.style.background = "#000";
+<script>
+function start() {
+  /* Start application when in correct orientation */
 }
+async function rotate() {
+  try {
+    await screen.orientation.lock("landscape");
+    start();
+  } catch (err) {
+    console.error(err);
+  }
+  const matchLandscape = matchMedia("(orientation: landscape)");
+  if (matchLandscape.matches) return start();
+  addEventListener("orientationchange", function listener() {
+    matchLandscape.addListener(function mediaChange(e) {
+      if (!e.matches) return;
+      removeEventListener("orientationchange", listener);
+      matchLandscape.removeListener(mediaChange);
+      start();
+    });
+  });
+  alert("To start, please rotate your screen to landscape.");
+}
+</script>
 
-// Прослушка события изменения ориентации
-mql.addListener(function(m) {
-    var picblock = document.getElementById("picture");
-var bgblock = document.querySelector("#bg");
-var arr = ["eye1.png", "eye2.png", "eye3.png", "eye4.png", "eye5.png", "eye6.png", "eye7.png", "eye8.png", "eye9.png"];
-    if(m.matches) {
-        // Изменено на портретный режим
-        var bg = arr[Math.floor(Math.random()*arr.length)]; 
-picture.src = bg;
-        picture.style.display = "block";
-        bgblock.style.background = "green";
-        alert("Портретная ориентация");
-    }
-    else {
-        // Изменено на горизонтальный режим
-         picture.style.display = "none";
-        bgblock.style.background = "yellow";
-        alert("Landsc ориентация");
-    }
-});
-    </script>
   </body>
 </html>
