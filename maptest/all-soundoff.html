@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ua">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" description = "Об'єкти доступності на карті Тернополя для людей з обмеженими можливостями. Всі об'єкти на карті" keywords = "доступний Тернопіль, для людей з обмеженими можливостями, сервіс для інвалідів, доступні об'єкти для інвалідів, пандуси Тернопіль, для сліпих тернопіль, споруди для інвалідів Тернопіль, будинки для інвалідів Тернопіль, об'єкти доступності Тернопіль">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Доступний Тернопіль | Всі об'єкти</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/media.css">
+    <link rel="stylesheet" type="text/css" href="css/map.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+      integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+      crossorigin=""/>
+      <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@700&display=swap" rel="stylesheet">
+      <script src="https://kit.fontawesome.com/18d919ba4a.js" crossorigin="anonymous"></script>
+      <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    </head>
+    <body>
+      <header>
+        <div class = "header-wrapper">
+          <div class = "outher-wrapper">
+            <img src = "img/logo.png" class = "logo">
+            <div class = "inner-wrapper">
+              <div class = "menubutton top-button">
+                <i class="fas fa-bars"></i>
+              </div>
+              <nav class="navbar menu">
+                <ul>
+                  <li class="main-page-link"><a href="index.html">Головна сторінка</a></li>
+                  <li class="about-link"><a href="about.html">Про проект</a></li>
+                  <li class = "questions-link"><a href="faq.html">Питання-Відповіді</a></li>
+                </ul>
+              </nav>
+              <div class = "acessibility">
+                <!--<div class = "top-button border inline sound-eye-accessability-on">
+                  <i class="far fa-eye fml" title = "версія для слабозорих"></i>
+                </div>  -->
+                <a href = "all.html">
+                  <div class = "top-button border inline ml sound-off-btn">
+                    <i class="fas fa-volume-up fml" title = "Увімкнути звук"></i>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class = "content-section">
+        <div class = "map-main-content">
+          <p>Зупинки по маршрутах:
+            <br>
+            <div class = "colors-wrapper">
+              <div class = "color-wrapper">16 автобус - <span class = "red round"></span></div>
+              <div class = "color-wrapper">1 тролейбус - <span class = "dark-blue round"></span></div>
+              <div class = "color-wrapper">1А автобус - <span class = "yellow round"></span></div>
+              <div class = "color-wrapper">35 автобус - <span class = "violet round"></span></div>
+            </div>
+          </p>
+          <div id = "map"></div>
+        </div>
+      </section>
+      <footer>
+        <div class = "inner-footer">
+          <p><span class = "copyright">© 2020 «Open Data Campus. Тернопіль». Всі права захищено.</span><br>
+        Даний веб-ресурс був розроблений за підтримки «Open Data Campus. Тернопіль» в контексті концепції «Відкриті дані міст».</p>
+        <div class = "signs-wrapper">
+          <img src = "img/MDT-ua.png" alt = "Міністерство цифрової трансформації">
+          <img src = "img/usaid.png" alt = "US AID">
+          <img src = "img/uk-aid.png" alt = "UK AID">
+          <img src = "img/eurasia-foundation.png" alt = "Euraia Foundation">
+          <img src = "img/texty.png" alt = "Texty ORG UA">
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script>
+  $(".menubutton").click(function() {
+  $(".menu").slideToggle(100);
+  });
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+  integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+  crossorigin=""></script>
+  <script src="js/wheelchairs.js" type="text/javascript"></script>
+  <script src="js/movedefects.js" type="text/javascript"></script>
+  <script src="js/brailfont.js" type="text/javascript"></script>
+  <script src="js/transport.js" type="text/javascript"></script>
+  <script src="js/all-coord.js" type="text/javascript"></script>
+</body>
+</html>
