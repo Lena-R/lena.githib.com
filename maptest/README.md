@@ -1,1 +1,1 @@
-# dostupnyiternopil.github.io
+# test for geomixer
