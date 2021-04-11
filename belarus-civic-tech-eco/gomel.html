@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ua">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" description = "" keywords = "">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Карта | Легкие города</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/media.css">
+    <link rel="stylesheet" type="text/css" href="css/map.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+      integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+      crossorigin=""/>
+      <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@700&display=swap" rel="stylesheet">
+      <script src="https://kit.fontawesome.com/18d919ba4a.js" crossorigin="anonymous"></script>
+      <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    </head>
+    <body>
+      <header>
+        <div class = "header-wrapper">
+          <div class = "outher-wrapper">
+            <img src = "img/logo.png" class = "logo">
+            <div class = "inner-wrapper">
+              <div class = "menubutton top-button">
+                <i class="fas fa-bars"></i>
+              </div>
+            <nav class="navbar menu">
+              <ul>
+                <li class="main-page-link"><a href="index.html">Главная страница</a></li>
+                <li class="about-link"><a href="about.html">О проекте</a></li>
+                <li class = "questions-link"><a href="faq.html">Справочник растений</a></li>
+                <li class = "questions-link"><a href="faq.html">Фотоотчет участников</a></li>
+              </ul>
+            </nav>
+            <button class = "button-sert">Заказать сертификат</button> 
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class = "content-section">
+        <div class = "map-main-content">
+          <!--<p>Зупинки по маршрутах:
+            <br>
+            <div class = "colors-wrapper">
+              <div class = "color-wrapper">16 автобус - <span class = "red round"></span></div>
+              <div class = "color-wrapper">1 тролейбус - <span class = "dark-blue round"></span></div>
+              <div class = "color-wrapper">1А автобус - <span class = "yellow round"></span></div>
+              <div class = "color-wrapper">35 автобус - <span class = "violet round"></span></div>
+            </div>
+          </p>-->
+          <div id = "map"></div>
+        </div>
+      </section>
+      <footer>
+        <div class = "inner-footer">
+          <p><span class = "copyright">© 2021 «Легкие города». Все прва защищены.</span><br>
+        Вебприложение было разработано при поддержке CivicHack</p>
+        <div class = "signs-wrapper">
+<img src = "img/osyb.webp" alt = "ОСИБ">
+<img src = "img/KN_Logo_online_ex_po.webp" alt = "Kingdom of the Netherlands">
+<img src = "img/slovakaid.webp" alt = "Slovak Aid">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class = "formpopup">
+  <div class = "innerform">
+ <form method="post" action="">
+  <div class = "buttonclose">X</div>
+  <div class = "formcontent">
+    <div class = "form-inner-content">
+ <label>Ваше имя</label>
+ <br>
+ <input type="text" class="form-field" name="name"  required>
+ <br>
+ <label>Ваш телефон</label>
+ <br>
+<input type="number" class="form-field" name="phone"  required>
+<br>
+<label>Ваш email</label>
+<br>
+<input type="email" class="form-field" name="email"  required>
+<br>
+<input type="submit" name="button" class="btn-submit" value="Заказать звонок">
+</div>
+</div>
+</form>
+</div>
+</div>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script>
+  $(".menubutton").click(function() {
+  $(".menu").slideToggle(100);
+  });
+
+  var showPopup = function() {
+  var formblock = document.querySelector(".formpopup");
+  formblock.style.display = "block";
+};
+var clickbtn = document.querySelector(".button-sert");
+clickbtn.addEventListener('click', showPopup, false);
+
+var hidePopup = function() {
+  var formblock = document.querySelector(".formpopup");
+  formblock.style.display = "none";
+};
+var clickclose = document.querySelector(".buttonclose");
+clickclose.addEventListener('click', hidePopup, false);
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+  integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+  crossorigin=""></script>
+  <script src="js/wheelchairs.js" type="text/javascript"></script>
+  <script src="js/movedefects.js" type="text/javascript"></script>
+  <script src="js/brailfont.js" type="text/javascript"></script>
+  <script src="js/transport.js" type="text/javascript"></script>
+  <script src="js/all-coord.js" type="text/javascript"></script>
+  <script src="js/map-sounds.js" type="text/javascript"></script>
+</body>
+</html>

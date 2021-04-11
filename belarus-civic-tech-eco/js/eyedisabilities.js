@@ -1,0 +1,37 @@
+var addStyles = function() {
+	document.querySelector('.inner-wrapper').style.background = "#212121";
+	document.querySelector('.far').style.color = "#ffffff";
+	document.querySelector('.far').style.color = "#ffffff";
+	document.querySelector('.main-page-link > a').style.color = "#ffffff";
+	document.querySelector('.about-link > a').style.color = "#ffffff";
+	document.querySelector('.questions-link > a').style.color = "#ffffff";
+	document.querySelector('a > div > .fas').style.color = "#ffffff";
+	document.querySelector('.heading-block').style.color = "#000000";
+	document.querySelectorAll('.item a h2')[0].style.color = "#000000";
+	document.querySelectorAll('.item a h2')[1].style.color = "#000000";
+	document.querySelectorAll('.item a h2')[2].style.color = "#000000";
+	document.querySelectorAll('.item a h2')[3].style.color = "#000000";
+	document.querySelectorAll('.item a h2')[4].style.color = "#000000";
+	document.querySelectorAll('.item a h2')[0].style.fontSize = "48px";
+	document.querySelectorAll('.item a h2')[1].style.fontSize = "48px";
+	document.querySelectorAll('.item a h2')[2].style.fontSize = "48px";
+    document.querySelectorAll('.item a h2')[3].style.fontSize = "48px";
+    document.querySelectorAll('.item a h2')[4].style.fontSize = "48px";	
+	document.querySelectorAll('.item a img')[0].style.display = "none";
+	document.querySelectorAll('.item a img')[1].style.display = "none";
+	document.querySelectorAll('.item a img')[2].style.display = "none";
+	document.querySelectorAll('.item a img')[3].style.display = "none";
+	document.querySelectorAll('.item a img')[4].style.display = "none";
+	document.querySelectorAll('.item-text')[0].style.fontSize = "30px";
+	document.querySelectorAll('.item-text')[1].style.fontSize = "30px";
+    document.querySelectorAll('.item-text')[2].style.fontSize = "30px";
+    document.querySelectorAll('.item-text')[3].style.fontSize = "30px";
+    document.querySelectorAll('.item-text')[4].style.fontSize = "30px";
+    document.querySelectorAll('.item-text')[0].style.color = "#000000";
+	document.querySelectorAll('.item-text')[1].style.color = "#000000";
+    document.querySelectorAll('.item-text')[2].style.color = "#000000";
+    document.querySelectorAll('.item-text')[3].style.color = "#000000";
+    document.querySelectorAll('.item-text')[4].style.color = "#000000";
+}
+    var stylesOn = document.querySelector('.sound-eye-accessability-on');     
+        stylesOn.addEventListener('click', addStyles, false);

@@ -1,0 +1,262 @@
+@media screen and (max-width: 1280px) {
+	.banner {
+		height: 350px;
+	}
+
+	.item > a > h2 {
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 1080px) {
+	.signs-wrapper > img {
+		height: 40px;	
+	}
+}
+
+@media screen and (max-width: 980px) {
+	.banner {
+		height: 300px;
+	}
+
+	.content-wrapper > img {
+		margin-right: 10%;
+		width: 45%;	
+	}
+}
+
+@media screen and (max-width: 860px) {
+	.header-wrapper {
+		width: 100%;
+	}
+
+	.inner-wrapper {
+		width: 100%;
+	}
+
+	.menubutton {
+		display: block;
+	}
+
+	.menu {
+		display: none;
+		position: absolute;
+		z-index: 3;
+		margin-top: 80px;
+		margin-left: 30px;
+		width: 60%;
+		z-index: 3;
+		padding: 0 20px 20px 0;
+		background-color: #00255b;
+		left: 0;
+		top: 10px;
+		z-index: 10000;
+	}
+
+	.navbar > ul {
+		display: block;		
+	}
+
+	.banner {
+    	height: 200px;
+	}
+
+	.content-wrapper {
+    	width: 55%;
+	}
+
+	.h1-wrapper > h1 {
+		font-size: 60px;
+	}
+
+	.menu > ul > li {
+		border-bottom: 2px solid #ffffff;
+	}
+
+	.menu > ul > li > a {
+		color: #ffffff;
+	}
+
+	.heading-wrapper {
+    	height: 243px;
+	}
+
+	.signs-wrapper  {
+    	flex-wrap: wrap;
+	}
+
+	.signs-wrapper > img {
+		margin-top: 10px;
+	}
+}
+
+
+@media screen and (max-width: 768px) {
+	.heading-wrapper {
+		width: 71%;
+	}
+}
+
+@media screen and (max-width: 680px) {
+	.heading-wrapper {
+    	width: 86%;
+	}
+
+	.h1-wrapper > h1 {
+    	font-size: 50px;
+	}
+
+	.content-wrapper > img {
+    	width: 35%;
+	}
+
+	.items-wrapper {
+    	display: block;
+	}
+
+	.item {
+    	width: 100%;
+   		margin-top: 10%;
+	}
+
+	.item > a {
+    	display: flex;
+    	justify-content: flex-start;
+	}
+
+	.item > a > h2 {
+		display: flex;
+    	align-items: center;
+	}
+
+	.item-text {
+    	margin-top: 10px;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.content-wrapper > img {
+    	width: 32%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.h1-wrapper > h1 {
+    	font-size: 40px;
+	}
+
+	.heading-block {
+   		font-size: 30px;
+   		padding: 10px 15px;
+	}
+
+	.item > a > img {
+		width: 60px;
+	}
+}
+
+@media screen and (max-width: 568px) {
+	header {
+		height: 84px;
+	}
+
+	.header-wrapper {
+		height: 50px;
+	}
+
+	.inner-wrapper {
+		height: 53px;
+	}
+	.menubutton > i, .top-button > i {
+		margin-top: 14px;
+		margin-left: 14px;
+		font-size: 26px;
+	}
+
+	.top-button {
+		width: 53px;
+		height: 53px;
+	}
+
+	.banner {
+		background-image: url('../img/ternopil-600.jpg');
+	}
+
+	.item {    
+    	margin-top: 5%;
+	}
+}
+
+@media screen and (max-width: 514px) {
+	.banner {
+    	height: 150px;
+	}
+
+	.heading-wrapper {
+    	height: 200px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.blue {
+		width: 64%;
+	}
+
+	.h1-wrapper {
+		width: 50%;
+	}
+
+	.content-wrapper {
+    	width: 100%;
+	}
+
+	.heading-wrapper {
+    	width: 90%;
+	}
+
+	.content-wrapper > img {
+    	width: 80px;
+	}	
+	.h1-wrapper > h1 {
+   		font-size: 35px;
+	}
+}
+
+@media screen and (max-width: 414px) {
+	.h1-wrapper > h1 {
+    	font-size: 30px;
+	}
+
+	.heading-block {
+    	width: 200px;
+	}
+
+	.clear-border {
+    	width: 230px;
+	}
+}
+
+@media screen and (max-width: 360px) {
+	.banner {
+    	height: 120px;
+	}
+
+	.blue {
+    	width: 75%;
+	}
+
+	.heading-block {
+    	font-size: 24px;
+    	padding: 5px 15px;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.blue {
+    	width: 80%;
+	}
+
+	.signs-wrapper, .signs-wrapper > img {
+		display: block;
+	}
+}
