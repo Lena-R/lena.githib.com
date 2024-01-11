@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Scoped CSS variables and JS</title>
+
+    <!-- Bootstrap -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <h1>Update CSS Variables with <span class = "heading">JS</span></h1>
+    <div class = "controls">
+      <label for = "spacing">Spacing:</label>
+      <input type = "range" name = "spacing" min = "10" max = "200" value = "10" data-sizing = "px">
+
+      <label for = "blur">Blur:</label>
+      <input type = "range" name = "blur" min = "0" max = "25" value = "10" data-sizing = "px">
+
+      <label for = "base">Base Color</label>
+      <input type = "color" name = "base" value = "#ffc600">
+
+      <img src = "https://fastly.picsum.photos/id/8/5000/3333.jpg?hmac=OeG5ufhPYQBd6Rx1TAldAuF92lhCzAhKQKttGfawWuA">
+
+    </div>
+    <script type="text/javascript">
+      const inputs = document.querySelectorAll('.controls input');
+
+      function handleUpdate() {
+        const suffix = this.dataset.sizing || ''; //dataset - it is the object that contains all attributes of element (it adds the integer "px" to a number; the value '' is for unit of colour integer (#)))
+        document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
+      }
+        inputs.forEach(input => input.addEventListener('change', handleUpdate));
+        inputs.forEach(input => input.addEventListener('mousemove', handleUpdate));
+    </script>
+  </body>
+</html>
