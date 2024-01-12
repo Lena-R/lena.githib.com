@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Secret Code</title>
+	<script type="text/javascript" src = "http://cornify.com/js/cornify.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+		const pressed = [];
+		const secretCode = 'secret'
+		window.addEventListener('keyup', (e) => {
+			pressed.push(e.key);
+			pressed.splice(-secretCode.length -1, pressed.length - secretCode.length);
+			if (pressed.join('').includes(secretCode)) {
+				console.log('DING');
+				cornify_add();
+			}
+			console.log(pressed);
+		});
+	</script>
+</body>
+</html>
