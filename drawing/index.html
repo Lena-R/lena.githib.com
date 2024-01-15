@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Paint</title>
+
+    <!-- Bootstrap -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <canvas id = "draw" width = "800" height="800"></canvas>
+
+    <script type="text/javascript">
+      const canvas = document.querySelector('#draw');
+      const ctx = canvas.getContext('2d');
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+      ctx.strokeStyle = '#bada55'; //property of a line color
+      ctx.lineJoin = 'round'; //property of a line end (brush shape)
+      ctx.lineCap = 'round'; //property of the shape of a line
+      //ctx.lineWidth = 10; // line thickness
+
+
+      let isDrawing = false; //cursor position is unclicked
+      let lastX = 0; //point where was finished drowing a line (X coordinate)
+      let lastY = 0; //point where was finished drowing a line (Y coordinate)
+      let hex = 0; //color in HEX value, start position from zero equals black
+      let direction = true;
+
+      function draw (e) {
+        if (!isDrawing) return; //stop the function from running when tne mouse button is up 
+        console.log(e);
+        ctx.strokeStyle = `hsl(${hex}, 100%, 50%)`; 
+        ctx.beginPath(); //start from
+        ctx.moveTo(lastX, lastY); //go to coordinate
+        ctx.lineTo(e.offsetX, e.offsetY);
+        ctx.stroke();
+        hex++; //changes a color during moving mouse 
+        if (hex >=360) {
+          hex = 0;
+        }
+
+        if (ctx.lineWidth >= 40 || ctx.lineWidth <= 1) { //function for incrementing and decrementing line thickness from 1px to 40px and vise-versa
+          direction = !direction;
+        }
+        if (direction) {
+          ctx.lineWidth++;
+        } else {
+          ctx.lineWidth--;
+        }
+
+        [lastX, lastY] = [e.offsetX, e.offsetY];
+        lastX = e.offsetX;
+        lastY = e.offsetY;
+      }
+
+      canvas.addEventListener('mousemove', draw);
+      canvas.addEventListener('mousedown', (e) => {
+        isDrawing = true;
+        [lastX, lastY] = [e.offsetX, e.offsetY];
+      });
+      canvas.addEventListener('mouseup', () => isDrawing = false);
+      canvas.addEventListener('mouseout', () => isDrawing = false);
+    </script>
+  </body>
+</html>
