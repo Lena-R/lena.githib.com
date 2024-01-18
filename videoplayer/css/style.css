@@ -1,0 +1,21 @@
+.progress-filled {
+	height: 10px;
+	color: #cccccc;
+}
+
+.player-button {
+	background: lightblue;
+	width: 70px;
+	height: 30px;
+	border: none;
+	border-radius: 2px;
+	margin-left: 6px;
+}
+
+.range-class {
+	color: #cccccc;
+	font-family: : 'Calibri' serif;
+	font-size: 14px;
+	color: #cc0000;
+	margin: 0 10px 0 5px;
+}
