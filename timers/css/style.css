@@ -1,0 +1,46 @@
+body {
+	background: #3366ff;
+}
+
+.timer-controls {
+	display: flex;
+	justify-content: space-between;
+}
+
+.timer-button {
+	width: 200px;
+	height: 80px;
+	background: #0033cc;
+	border: 1px solid #002080;
+	color: #ffffff;
+	font-size: 24px;
+}
+
+.input {
+	width: 190px;
+	height: 75px;
+	/*background: #0033cc;*/
+	border: 1px solid #808080;
+	color: #000000;
+	font-size: 24px;
+	padding-left: 10px;
+}
+
+.display-timeleft {
+	color: #ffffff;
+	font-size: 100px;
+	font-weight: 600;
+
+}
+
+.display-endtime {
+	color: #ff0000;
+	font-size: 30px;
+	text-shadow: 0 2px 1px #b30000, 
+      -1px 2px 1px #800000, 
+      -2px 3px 1px #4d0000;
+}
+.display {
+	text-align: center;
+	margin-top: 5%;
+}
