@@ -52,6 +52,9 @@
       }
 
       function toggleActive(e) {
+        // Safari: a property 'transitionend event.propertyName === flex' 
+        // Chrome and FireFox: transitionend event.propertyName === flex-grow
+        //That's why propertyName has a propert 'includes' (that means to search any property with a key-word flex)
         if (e.propertyName.includes('flex')) {
           this.classList.toggle('open-active');
         }
