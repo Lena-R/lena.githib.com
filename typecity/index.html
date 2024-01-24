@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>AJAX Type ahead</title>
+
+    <link rel="stylesheet" href="css/style.css" >
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class = "form-wrapper">
+    <form class = "search-form">
+      <input type = "text" class = "search" placeholder="City or State">
+      <div class = "ul-container">
+      <ul class = "suggestions">
+        <li>Filter or a City</li>
+        <li>or a State</li>
+      </ul>
+    </div>
+    </form>
+  </div>
+    
+    <script type="text/javascript">
+      const endpoint = 'https://gist.githubusercontent.com/Miserlou/c5cd8364bf9b2420bb29/raw/2bf258763cdddd704f8ffd3ea9a3e81d25e2c6f6/cities.json';
+
+      const cities = [];
+
+      //const prom = fetch(endpoint); //returns 'promise'
+      //console.log(prom);
+
+      //fetch(endpoint).then(blob => console.log(blob));// 'then' works with 'promise' and returns a blob of data
+
+      //fetch(endpoint).then(blob => blob.json()).then(data => console.log(data));//to get all data (their properties and values)
+      fetch(endpoint).then(blob => blob.json()).then(data => cities.push(...data));
+
+      function findMatches(wordToMatch, cities) {
+        return cities.filter(place => {
+          const regex = new RegExp(wordToMatch, 'gi');
+          return place.city.match(regex) || place.state.match(regex);
+        });
+      };
+
+      function numberWithCommas(x) {
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+      };
+
+      function displayMatches() {
+        //console.log(this.value);
+        const matchArray = findMatches(this.value, cities);
+        console.log(matchArray);
+        const html = matchArray.map(place => {
+          const regex = new RegExp(this.value, 'gi');
+          const cityName = place.city.replace(regex, `<span class = "h2">${this.value}</span>`);
+          const stateName = place.state.replace(regex, `<span class = "h2">${this.value}</span>`);
+          return `
+          <li>
+            <span class = "name">${cityName}, ${stateName}</span>
+            <span class = "population">${numberWithCommas(place.population)}</span>
+          </li>
+          `;
+        }).join('');
+        suggestions.innerHTML = html;
+      };
+
+      const searchInput = document.querySelector('.search');
+      const suggestions = document.querySelector('.suggestions');
+      searchInput.addEventListener('keyup', displayMatches);
+
+     </script>
+  </body>
+</html>
