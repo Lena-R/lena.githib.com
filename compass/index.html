@@ -17,6 +17,7 @@
     <![endif]-->
   </head>
   <body>
+    <div class = "arrow"></div>
 
     <script type="text/javascript">
     const arrow = document.querySelector('.arrow');
@@ -24,7 +25,7 @@
 
     navigator.geolocation.watchPosition((data) => {
       console.log(data);
-      speed.textContent = data.coords.speed;
+      //speed.textContent = data.coords.speed;
       arrow.style.transform = `rotate(${data.coords.heading}deg)`;
     }, (err) => {console.error(err);
       allert('An unknown error occured');
