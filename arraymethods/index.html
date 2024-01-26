@@ -195,7 +195,7 @@
 
     //Map
     	document.querySelector('.button-map').addEventListener('click', function(){
-    	document.querySelector('.map-content').innerText = `${fullNames}`;
+    	document.querySelector('.map-content').innerText = `${fullNames.join(', ')}`;
     });
 
     //Sort
@@ -210,7 +210,7 @@
 
     //Sort 3	
         document.querySelector('.button-sort3').addEventListener('click', function(){
-    	document.querySelector('.sort3-content').innerText = `${alpha}`;
+    	document.querySelector('.sort3-content').innerText = `${alpha.join('.|| ')}`;
 	});
 
     //Reduce	
@@ -221,7 +221,7 @@
 	//Reduce	
         document.querySelector('.button-reduce2').addEventListener('click', function(){
     	document.querySelector('.reduce2-content').innerText = `${JSON.stringify(transportation)}`;
-	});   
+	});    
 
     </script>
     
