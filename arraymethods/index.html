@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Array Cardio Day 1</title>
+
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+  	<div class = "wrapper">
+  		<div class ="content">
+    <h1>JS Methods</h1>
+    <h2>Data</h2>
+    <p>An Array of Objects:
+    <div class = "array-wrapper">	
+    	<span class = "array-code">
+   	const inventors = [
+      {first: 'Albert', last: 'Einstein', year: 1879, passed: 1955},
+      {first: 'Isaac', last: 'Newton', year: 1643, passed: 1727},
+      {first: 'Galileo', last: 'Galilei', year: 1564, passed: 1642},
+      {first: 'Marie', last: 'Curie', year: 1867, passed: 1934},
+      {first: 'Johannes', last: 'Kepler', year: 1571, passed: 1630},
+      {first: 'Nicolaus', last: 'Copernicus', year: 1473, passed: 1543},
+      {first: 'Max', last: 'Planck', year: 1858, passed: 1947}
+    ];
+    	</span>
+    </div>
+    	
+    and a second array (people's names and surnames):
+    <div class = "array-wrapper">
+    	<span class = "array-code">
+    const people = ['Beck, Glenn', 'John, Zuman', 'Linda, Seem', "Lukas, Ronan", 'Mark, Reihard', 'Orlando, Mon', 'Vanessa, Godi', 'Maria, Ruber', 'Robert, Genn', 'Kristof, Tart', 'Karl, Romer', 'Stephan, Gorn', 'Luisa, Bona', 'Andy, Stork', 'Victoria, Munker'];		
+    	</span>
+    </div>
+    </p>
+    <h3>Here are provided examples of array methods: Map, Filter, Sort and Reduce:</h3>
+    <p>(also you can check the same results in browser's Console (Ctrl+Shift+I)</p>
+    	
+    	<ul>
+    		<li>
+    			<h3>1. Filter</h3>
+    			Here are provided filtered results by criteria 'year of birth' between 1500 and 1600
+    			<br>
+    			<button class = "button-filter">Filter</button>
+    			<br><br>
+    			<span class = "filter-content"></span>
+    		</li>
+    		<li>
+    			<h3>2. Map (Full Names)</h3>
+    			Here are provided First and Last names of inventors, listed in array as objects
+    			<br>
+    			<button class = "button-map">Map</button>
+    			<br><br>
+    			<span class = "map-content"></span>
+    		</li>
+    		<li>
+    			<h3>3. Sort</h3>
+    			Order inverntors by birthday from oldest to youngest
+    			<br>
+    			<button class = "button-sort">Sort</button>
+    			<br><br>
+    			<span class = "sort-content"></span>
+    		</li>
+    		<li>
+    			<h3>Sort (Number)</h3>
+    			Sort the inventors by number of years that they lived
+    			<br>
+    			<button class = "button-sort2">Sort</button>
+    			<br><br>
+    			<span class = "sort2-content"></span>
+    		</li>
+    		<li>
+    			<h3>Sort  (Alphabethical order)</h3>
+    			Sort the people alphabetically by the last name
+    			<br>
+    			<button class = "button-sort3">Sort</button>
+    			<br><br>
+    			<span class = "sort3-content"></span>
+    		</li>
+    		<li>
+    			<h3>4. Reduce</h3>
+    			How many years all inventors lived in general
+    			<br>
+    			<button class = "button-reduce">Reduce</button>
+    			<br><br>
+    			<span class = "reduce-content"></span>
+    		</li>
+    		<li>
+    			<h3>Reduce (2)</h3>
+    			Sum up the instances of each of given items in array (get the number of each the same item)	
+    			<br>
+    			<button class = "button-reduce2">Reduce</button>
+    			<br><br>
+    			<span class = "reduce2-content"></span>
+    		</li>
+    	</ul>
+    </p>
+</div>
+</div>
+
+        <script>
+      const inventors = [
+      {first: 'Albert', last: 'Einstein', year: 1879, passed: 1955},
+      {first: 'Isaac', last: 'Newton', year: 1643, passed: 1727},
+      {first: 'Galileo', last: 'Galilei', year: 1564, passed: 1642},
+      {first: 'Marie', last: 'Curie', year: 1867, passed: 1934},
+      {first: 'Johannes', last: 'Kepler', year: 1571, passed: 1630},
+      {first: 'Nicolaus', last: 'Copernicus', year: 1473, passed: 1543},
+      {first: 'Max', last: 'Planck', year: 1858, passed: 1947}
+    ];
+
+      const people = ['Beck, Glenn', 'John, Zuman', 'Linda, Seem', "Lukas, Ronan", 'Mark, Reihard', 'Orlando, Mon', 'Vanessa, Godi', 'Maria, Ruber', 'Robert, Genn', 'Kristof, Tart', 'Karl, Romer', 'Stephan, Gorn', 'Luisa, Bona', 'Andy, Stork', 'Victoria, Munker'];
+
+    //Methods of Array:
+    //1. Method Filter. Filter the list of inventors who were born in the 1500's
+    //inventors.filter(function(inventor){code of function}) the same as inventors.filter(inventor => code of function)
+    const fifteen = inventors.filter(function(inventor) {
+      if (inventor.year >= 1500 && inventor.year < 1600) {
+        return true; 
+      }
+    });
+    console.table(fifteen);
+    
+    //2. Method Map. Map takes an array or something from an array and returns a new array but at the same link.
+    //Map always returns the same items as you give it.
+    //inventor => inventor.first + ' ' + inventor.last  is the same as  inventor => `${inventor.first} ${inventor.last}`
+    const fullNames = inventors.map(inventor => inventor.first + ' ' + inventor.last);
+    console.log(fullNames);
+      
+    //3. Method Sort. To order inverntors by birthday from oldest to youngest.
+    const ordered = inventors.sort(function(firstPerson, secondPerson) {
+      if (firstPerson.year > secondPerson.year) {
+        return 1;
+      } else {
+        return -1;
+      }
+    });
+    //the same function as above with utilizing ternary operator:
+    //const ordered = inventors.sort((firstPerson, secondPerson) => firstPerson.year > secondPerson.year ? 1 : -1);
+    console.table(ordered);
+
+    //Sort the inventors by number of years that they lived
+    const oldest = inventors.sort(function(a, b) {
+    const lastInventor = a.passed - a.year;
+    const nextInventor = b.passed - b.year;
+    	if (lastInventor > nextInventor) {
+    		return -1;
+    	} else {
+    		return 1;
+    	}
+    });
+    console.table(oldest);
+
+    //Sort the people alphabetically by last name
+    const alpha = people.sort(function(lastOne, nextOne){
+    	const [aLast, aFirst] = lastOne.split(', ');//removes a comma between first name and last nae in array
+    	const [bLast, bFirst] = nextOne.split(', ');//removes a comma between first name and last nae in array
+    	return aLast > bLast ? 1 : -1;    	
+    });	
+    console.log(alpha);
+
+    //4. Method Reduse. Task: How many years all inventors lived in general.
+    const totalYears = inventors.reduce((total, inventor) => {
+    	return total + (inventor.passed - inventor.year);
+    }, 0);
+    console.log(totalYears);
+
+    //Task: Sum up the instances of each of given items in array (get the number of each the same item)
+    const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck'];
+    const transportation = data.reduce(function(obj, item) {
+    	if (!obj[item]) {
+    		obj[item] = 0;
+    	}
+    	obj[item]++;
+    	return obj;
+    }, {});
+    console.log(transportation);
+
+    //implementing all above results into HTML
+    //Filter
+        document.querySelector('.button-filter').addEventListener('click', function(){
+    	document.querySelector('.filter-content').innerText = `${JSON.stringify(fifteen)}`;
+    });
+
+    //Map
+    	document.querySelector('.button-map').addEventListener('click', function(){
+    	document.querySelector('.map-content').innerText = `${fullNames}`;
+    });
+
+    //Sort
+    	document.querySelector('.button-sort').addEventListener('click', function(){
+    	document.querySelector('.sort-content').innerText = `${JSON.stringify(ordered)}`;
+	});
+
+    //Sort 2	
+        document.querySelector('.button-sort2').addEventListener('click', function(){
+    	document.querySelector('.sort2-content').innerText = `${JSON.stringify(oldest)}`;
+	});
+
+    //Sort 3	
+        document.querySelector('.button-sort3').addEventListener('click', function(){
+    	document.querySelector('.sort3-content').innerText = `${alpha}`;
+	});
+
+    //Reduce	
+        document.querySelector('.button-reduce').addEventListener('click', function(){
+    	document.querySelector('.reduce-content').innerText = `${totalYears}`;
+	});  
+
+	//Reduce	
+        document.querySelector('.button-reduce2').addEventListener('click', function(){
+    	document.querySelector('.reduce2-content').innerText = `${JSON.stringify(transportation)}`;
+	});   
+
+    </script>
+    
+  </body>
+</html>
