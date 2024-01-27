@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Sorting Band names without articles</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class = "wrapper">
+      <div class = "container mar">
+      <p>
+        An array with names of the bands:<br><br>
+        <span class = "array">
+        `const bands = ['The Plot in You', 'Every Devil wears Prada', 'Pierce the Veil', 'Norma Jean', 'The Blead', 'Say Anything', 'The Midway State', 'We came as Romans', 'Counterparts', 'Oh, Sleeper', 'A Skylit Drive', 'Anywhere But Here', 'An Old Dog'];`
+        </span>
+        </p><br>
+      <p>Result: Sorted bands in alphabetical order skipping the articles ('A, An, The').</p>
+    
+    <div class = "mar blank">
+      <ul id = "bands"></ul>
+    </div>
+    </div>
+
+    <script>
+      const bands = ['The Plot in You', 'Every Devil wears Prada', 'Pierce the Veil', 'Norma Jean', 'The Blead', 'Say Anything', 'The Midway State', 'We came as Romans', 'Counterparts', 'Oh, Sleeper', 'A Skylit Drive', 'Anywhere But Here', 'An Old Dog'];
+
+      function strip(bandName) {
+        return bandName.replace(/^(a |the |an )/i, '').trim();//cropping the articles
+      };
+
+      const sortedBands = bands.sort(function(a, b) {
+        if (strip(a) > strip(b)) {//sorting in alphabetical order
+          return 1;
+        } else {
+          return -1;
+        }
+      });
+
+      document.querySelector('#bands').innerHTML = sortedBands.map(band => `<li>${band}</li>`).join('');
+
+      console.log(sortedBands);
+    </script>
+
+  </body>
+</html>
