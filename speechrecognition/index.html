@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Speech recognition</title>
+
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class = "words" contenteditable></div>
+
+    <script>
+      window.speechRecognition = window.speechRecognition || window.webkitSpeechRecognition;
+
+      const recognition = new speechRecognition();
+
+      recognition.interimResults = true; //writing results of speaking
+
+      let p = document.createElement('p'); //to create a text element
+      const words = document.querySelector('.words');
+      words.appendChild(p);
+
+      recognition.addEventListener('result', e => { //speech recognition
+        console.log(e.results);
+        const transcript = Array.from(e.results)
+          .map(result => result[0])
+          .map(result => result.transcript)
+          .join('');
+
+        p.textContent = transcript; 
+        if (e.results[0].isFinal) { //creates a new paragraph after finished talking
+          p = document.createElement('p');
+          words.appendChild(p);
+        }; 
+
+        console.log(transcript);
+      });
+
+      recognition.addEventListener('end', recognition.start); //runs a function of recognition again after the stop saying
+
+      recognition.start();
+    </script>
+  </body>
+</html>
