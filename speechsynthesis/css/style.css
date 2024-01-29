@@ -1,0 +1,154 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	background: rgb(14,116,23);
+	background: linear-gradient(90deg, rgba(14,116,23,1) 11%, rgba(21,169,196,1) 52%, rgba(149,0,255,1) 100%);
+	display: flex;
+	justify-content: center;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+.voiceinator {
+	margin: 5% 0;
+	width: 70%;
+	max-width: 600px;
+	min-width: 300px;
+	background-color: #ffffff;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;	
+	box-shadow: 1px 5px 10px #666666;
+}
+
+h1 {
+	background-color: #ffcc00;
+	font-family: cursive;
+	font-size: 30px;
+	line-height: 2;
+	text-align: center;
+	border-top-left-radius: 5px;
+	-webkit-border-top-left-radius: 5px;
+	-moz-border-top-left-radius: 5px;
+	-o-border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-top-right-radius: 5px;
+	-o-border-top-right-radius: 5px;
+}
+
+.mode-wrapper {
+	padding: 3%;
+}
+
+#voices {
+	width: 100%;
+	border: none;
+	background-color: #f4f4f4;
+	font-size: 16px;	
+}
+
+.range-wrapper {
+	padding: 5% 0;
+}
+
+.rate, .pitch {
+	width: 100%;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 5px;
+  border-radius: 5px;  
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%; 
+  background: #666666;
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%; 
+  background: #666666;
+  cursor: pointer;
+}
+
+textarea {
+	width: 100%;
+	border: none;
+	background-color: #f4f4f4;
+	padding: 5px;
+    box-sizing: border-box;
+}
+
+.buttons {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 5%;
+	width: 100%;
+}
+
+button {
+	width: 45%;
+	text-align: center;
+	font-family: cursive;
+	font-size: 22px;
+	border-radius: 5%;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;	
+	background-color: #ffcc00;
+	border: none;
+	padding: 2% 0;
+}
