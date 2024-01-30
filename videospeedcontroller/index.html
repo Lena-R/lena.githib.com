@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Video speed controller</title>
+
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class = "wrapper">
+    <video class = "flex" width = "765" height = "430" src = "dance.mp4" loop controls></video>
+    <div class = "speed">
+      <div class = "speed-bar">1x</div>
+    </div>
+  </div>
+
+    <script>
+      const speed = document.querySelector('.speed');
+      const bar = speed.querySelector('.speed-bar');
+      const video = document.querySelector('.flex');
+
+      speed.addEventListener('mousemove', function(e) {
+        const y = e.pageY - this.offsetTop;
+        //console.log(y);
+        const percent = y / this.offsetHeight; //convert a height in pixels (from 0 to 470) to values (from 0 to 1)
+        //console.log(percent);
+        const min = 0.4;
+        const max = 4;
+        const height = Math.round(percent * 100) + '%';
+        const playbackRate = percent * (max - min) + min;
+        //console.log(height);
+        bar.style.height = height; //make a height of a round-button the same as a position of cursor
+        bar.textContent = playbackRate.toFixed(2) + 'x';
+        //console.log(playbackRate);
+        video.playbackRate = playbackRate; // video speed = bar position 
+      });
+    </script>
+  </body>
+</html>
