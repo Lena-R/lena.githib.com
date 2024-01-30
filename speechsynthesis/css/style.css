@@ -151,4 +151,5 @@ button {
 	background-color: #ffcc00;
 	border: none;
 	padding: 2% 0;
+	cursor: pointer;
 }
