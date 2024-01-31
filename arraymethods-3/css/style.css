@@ -1,0 +1,97 @@
+.wrapper {
+	width: 100%;
+	height: auto;
+	padding: 5% 0;
+}
+
+.content {
+	padding: 0 5%;
+}
+
+h1 {
+    background: #999999;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+h2 {
+	font-size: 22px;
+	font-weight: 600;
+	margin: 2%;
+}
+
+h3 {
+	font-size: 20px;
+	font-weight: 600;
+	margin: 2%;
+	font-style: italic;
+}
+
+.array-wrapper {
+	background: #f2f2f2;
+	padding: 5px;
+	border-radius: 5px;
+	margin: 10px 0;
+}
+
+.array-code {	
+	color: #404040;
+	font-weight: 600;
+	line-height: 1.5;
+}
+
+.textcontent {
+	font-size: 38px;
+	font-weight: bold;
+
+}
+
+.chrome {
+	background: #222 -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff)) 0 0 no-repeat;
+	background-image: -webkit-linear-gradient(-40deg, transparent 0%, transparent 40%, #fff 50%, transparent 60%, transparent 100%);
+	-webkit-background-size: 200px;
+	color: rgba(255, 255, 255, 0);
+	-webkit-background-clip: text;
+	-webkit-animation-name: shine;
+	-webkit-animation-duration: 5s;
+	-webkit-animation-iteration-count: infinite;
+	text-shadow: 0 0px 0px rgba(255, 255, 255, 0.5);
+}
+
+@-webkit-keyframes shine {
+	0%, 10% {
+		background-position: -1000px;
+	}
+	20% {
+		background-position: top left;
+	}
+	90% {
+		background-position: top right;
+	}
+	100% {
+		background-position: 1000px;
+	}
+}
+
+.metallic-button {
+  font-size: 20px;
+  padding: 10px 20px;
+  font-weight: 400;
+  border: none;
+  outline: none;
+  color: #000;
+  background: linear-gradient(
+    45deg,
+    #999 5%,
+    #fff 10%,
+    #ccc 30%,
+    #ddd 50%,
+    #ccc 70%,
+    #fff 80%,
+    #999 95%
+  );
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Object and Arrays: Reference vs Copy</title>
+
+     <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class = "wrapper">
+      <div class = "content">
+    <h1>JS Methods for array iteration and operations with objects</h1>
+    <h2>Data</h2>
+    <p>An Array of Objects:
+    <div class = "array-wrapper"> 
+      <span class = "array-code">
+        const players = ["Wes", "Sarrah", "Ryan", "Poppy"];
+      </span>
+    </div>
+    <h3>Operator Spread</h3> 
+          <br>
+          <button class = "button-spread metallic-button">Spread</button>
+          <br><br>
+          <span class = "textcontent spread-content chrome"></span>
+
+    <h3>Method Slice</h3>    
+    <span>players.slice(2, 3);</span>
+          <br><br>
+          <button class = "button-slice metallic-button">Slice</button>
+          <br><br>
+          <span class = "textcontent slice-content chrome"></span>
+
+    <h3>Method Object.assign</h3>    
+      <div class = "array-wrapper"> 
+      <span class = "array-code">
+        const wes = {
+        name: "Wes", age: 60, social: {twitter: '@wesbos', facebook: 'wesbos.developer'}
+      };
+      </span>
+    </div>
+          <br><br>
+          <button class = "button-assign metallic-button">Assign</button>
+          <br><br>
+          <span class = "textcontent assign-content chrome"></span>
+
+</p>
+</div>
+</div>          
+
+    <script>
+      //1. Copy of array.
+      const players = ["Wes", "Sarrah", "Ryan", "Poppy"];
+      const team = players;
+      team[3] = "Lux";
+      console.log(team);
+
+      //2. Method Slice.
+      const team2 = players.slice(2, 3);
+      console.log(team2);
+
+      //3. Operator Spread (completable for ES6 and above). It takes each item of an array and puts it into the new array.
+      const team3 = [...players];
+      console.log(team3);
+
+      //4. Method Array.from.
+      const team4 = Array.from(players);
+
+      //5. Method Object.assign.
+      const wes = {
+        name: "Wes", age: 60, social: {twitter: '@wesbos', facebook: 'wesbos.developer'}
+      };
+
+      const dev = Object.assign({}, wes);
+      console.log(dev);
+
+      //6. Methods JSON. Parses an array and converts an object to a string.
+      const bos = {
+        name: "Wes", age: 60, social: {twitter: '@wesbos', facebook: 'wesbos.developer'}
+      };
+
+      const dev2 = JSON.parse(JSON.stringify(bos));
+      console.log(dev2);
+
+//implementing of all the above methods into HTML
+      document.querySelector('.button-spread').addEventListener('click', function(){
+      document.querySelector('.spread-content').innerHTML = `${team3}`;
+      }); 
+      
+      document.querySelector('.button-slice').addEventListener('click', function(){
+      document.querySelector('.slice-content').innerHTML = `${team2}`;
+      });  
+
+      document.querySelector('.button-assign').addEventListener('click', function(){
+      document.querySelector('.assign-content').innerHTML = `${JSON.stringify(dev)}`;
+      });  
+
+
+
+    </script>
+  </body>
+</html>
