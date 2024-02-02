@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>List of videos with timing</title>
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class = "container">
+    <h1>Videos</h1>
+    <ol>
+      <li><iframe data-time = "23:43" width="260" height="140" src="https://www.youtube.com/embed/LJn8rFInuao?si=KOi22qNFjBbv6Crs" title="YouTube video player" frameborder="4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><span>23:43</span></li>
+      <li><iframe data-time = "2:44" width="260" height="140" src="https://www.youtube.com/embed/9RWW1pI8kDo?si=YRezHTmfZZvB13CA" title="YouTube video player" frameborder="4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><span>2:44</span></li>
+      <li><iframe data-time = "2:48" width="260" height="140" src="https://www.youtube.com/embed/Y0ZsLudtfjI?si=6whLx5CQvYJ8jEVR" title="YouTube video player" frameborder="4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><span>2:48</span></li>
+      <li><iframe data-time = "7:21" width="260" height="140" src="https://www.youtube.com/embed/EBFGO9wbBS4?si=1hllVufb5ITmvieQ" title="YouTube video player" frameborder="4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><span>7:21</span></li>
+      <li><iframe data-time = "8:18" width="260" height="140" src="https://www.youtube.com/embed/ftnpGWFaEsQ?si=Oc5N7rFooDhHjBmI" title="YouTube video player" frameborder="4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><span>8:18</span></li>
+      <li><iframe data-time = "2:55" width="260" height="140" src="https://www.youtube.com/embed/MVbeoSPqRs4?si=E6eG19vDd56f37Vj" title="YouTube video player" frameborder="4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><span>2:55</span></li>
+    </ol>
+    
+    <p>Total time of all videos:</p><span class = "p"></span>
+  </div>
+
+  <script>
+    const timeNodes = [...document.querySelectorAll('[data-time]')];   
+
+    const seconds = timeNodes.map(node => node.dataset.time)
+    .map(timeCode => {
+      const [mins, secs] = timeCode.split(':').map(parseFloat);
+      return (mins * 60) + secs;
+    }).reduce((total, seconds) => {
+      return total + seconds;
+    });
+
+    let secondsLeft = seconds;
+    const hours = Math.floor(secondsLeft / 3600);
+    secondsLeft = secondsLeft % 3600;
+    const mins = Math.floor(secondsLeft / 60);
+    secondsLeft = secondsLeft % 60;
+
+    console.log(hours, mins);
+
+    const total = document.querySelector('.p');
+    total.innerText = `${hours}`+ ':' + `${mins}`;
+  </script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  </body>
+</html>

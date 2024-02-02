@@ -1,0 +1,24 @@
+body {
+	background-color: #f2f2f2;
+}
+
+li {
+	display: flex;
+	justify-content: space-between;
+	list-style-type: none;
+	margin: 20px 0;
+	border-bottom: 1px solid #cccccc;
+	padding: 10px 0;
+}
+
+li > span {
+	font-size: 18px;
+}
+
+p {
+	font-size: 20px;
+}
+
+.p {
+	font-size: 28px;
+}
