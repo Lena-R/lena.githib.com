@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Webcam Fun</title>
+
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="photoboot">
+      <div class = "controls">
+        <button onClick = "takePhoto()">Take Photo</button>
+        <div class = "rgb">
+          <label for ="rmin">Red min:</label>
+          <input type = "range" min = "0" max = "255" name = "rmin">
+          <label for ="rmax">Red max:</label>
+          <input type = "range" min = "0" max = "255" name = "rmax">
+          <br>
+          <label for ="gmin">Green min:</label>
+          <input type = "range" min = "0" max = "255" name = "gmin">
+          <label for ="gmax">Green max:</label>
+          <input type = "range" min = "0" max = "255" name = "gmax">
+          <br>
+          <label for ="bmin">Blue min:</label>
+          <input type = "range" min = "0" max = "255" name = "bmin">
+          <label for ="bmax">Blue max:</label>
+          <input type = "range" min = "0" max = "255" name = "bmax">
+        </div>
+      </div>
+
+      <canvas class = "photo"></canvas>
+      <video class = "player"></video>
+      <div class = "strip"></div>
+      <button class = "playvideo">Play Video</button>
+    </div>
+
+    <audio class = "snap" src = "http://wesbos.com/demos/photoboot/snap.mp3" hidden></audio>
+
+    <script type="text/javascript" src = "js/script-2.js"></script>
+  </body>
+</html>

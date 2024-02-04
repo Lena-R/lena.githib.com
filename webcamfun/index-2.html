@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script>
+        (async () => {
+            await navigator.mediaDevices.getUserMedia({ audio: true, video: true });
+            let devices = await navigator.mediaDevices.enumerateDevices();
+            console.log(devices);
+        })();
+    </script>
+</body>
+
+</html>
