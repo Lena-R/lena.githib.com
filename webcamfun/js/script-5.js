@@ -33,7 +33,13 @@ function paintToCanvas() {
 
   return setInterval(() => {
     ctx.drawImage(video, 0, 0, width, height);
-  }, 16)
+    let pixels = ctx.getImageData(0, 0, width, height);
+    //console.log(pixels);
+    pixels = redEffect(pixels); //red effect 
+    ctx.putImageData(pixels, 0, 0);
+    pixels = rgbSplit(pixels);
+    ctx.globalAlpha = 0.1;
+  }, 16);
 };
 
 function takePhoto() {
@@ -44,11 +50,33 @@ function takePhoto() {
   //console.log(data);
   const link = document.createElement('a');
   link.href = data;
-  link.setAttribute('download', 'handsome');
+  link.setAttribute('download', 'cool');
   link.textContent = 'Download Image';
   link.innerHTML = `<img src = "${data}" alt = "nice photo">`;
   strip.insertBefore(link, strip.firstChild);
 };
+
+function redEffect(pixels) {
+  for(let i = 0; i < pixels.data.length; i+=4) {
+    pixels.data[i + 0] = pixels.data[i + 0] + 100; //red
+    pixels.data[i + 1] = pixels.data[i + 1] - 50; //green
+    pixels.data[i + 2] = pixels.data[i + 2] * 0.5; //blue
+  };
+  return pixels;
+};
+
+function rgbSplit(pixels) {
+    for(let i = 0; i < pixels.data.length; i+=4) {
+    pixels.data[i - 150] = pixels.data[i + 0] + 100; //red
+    pixels.data[i + 100] = pixels.data[i + 1] - 50; //green
+    pixels.data[i - 150] = pixels.data[i + 2] * 0.5; //blue
+  };
+  return pixels;
+}
+
+function greenScreen(pixels) {
+
+}
 
 getVideo();
 
@@ -58,29 +86,7 @@ video.addEventListener('canplay', paintToCanvas);
 /////let clk = document.querySelector('.playvideo');
 ////clk.addEventListener('click', getVideo, false);
 
-//return the timer in case we ever need it
-//return setInterval(() => {
-  //ctx.drawImage(video, 0, 0, width, height);
-
-
-//get the pixels from the canvas
-//let pixels = ctx.getImageData(0, 0, width, height);
-
-//red effect
-//pixels = redEffect(pixels);
-
-//pixels = rgbSplit(pixels);
-//ctx.globalAlpha = 0.1;
 
 //Green Screen
-//pixels = greenScreen(pixels);
+//
 
-//Put the pixels back
-//ctx.putImageData(pixels, 0, 0);
-//}, 16);
-
-//function takePhoto() {
-
-//}
-
-//08^00
