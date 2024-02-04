@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Webcam Fun</title>
 
     <link href="css/style.css" rel="stylesheet">
@@ -17,34 +16,17 @@
     <![endif]-->
   </head>
   <body>
-    <div class="photoboot">
-      <div class = "controls">
-        <button onClick = "takePhoto()">Take Photo</button>
-        <div class = "rgb">
-          <label for ="rmin">Red min:</label>
-          <input type = "range" min = "0" max = "255" name = "rmin">
-          <label for ="rmax">Red max:</label>
-          <input type = "range" min = "0" max = "255" name = "rmax">
-          <br>
-          <label for ="gmin">Green min:</label>
-          <input type = "range" min = "0" max = "255" name = "gmin">
-          <label for ="gmax">Green max:</label>
-          <input type = "range" min = "0" max = "255" name = "gmax">
-          <br>
-          <label for ="bmin">Blue min:</label>
-          <input type = "range" min = "0" max = "255" name = "bmin">
-          <label for ="bmax">Blue max:</label>
-          <input type = "range" min = "0" max = "255" name = "bmax">
-        </div>
-      </div>
-
-      <canvas class = "photo"></canvas>
-      <video class = "player"></video>
-      <div class = "strip"></div>
+    <div class="photobooth">
+    <div class="controls">
+      <button onClick="takePhoto()">Take Photo</button>
     </div>
 
+    <canvas class="photo"></canvas>
+    <video class="player"></video>
+    <div class="strip"></div>
+  </div>
     <audio class = "snap" src = "snap.mp3" hidden></audio>
 
-    <script type="text/javascript" src = "js/script-6.js"></script>
+    <script type="text/javascript" src = "js/script.js"></script>
   </body>
 </html>
