@@ -25,9 +25,18 @@ console.log(localMediaStream);
 	});
 };
 
-//getVideo();
-let clk = document.querySelector('.playvideo');
-clk.addEventListener('click', getVideo, false);
+function paintToCanvas() {
+	const width = video.videoWidth;
+	const height = video.videoHeight;
+	console.log(width, height);
+}
+
+
+getVideo();
+
+//video.addEventListener('canplay', paintToCanvas);
+/////let clk = document.querySelector('.playvideo');
+////clk.addEventListener('click', getVideo, false);
 
 //return the timer in case we ever need it
 //return setInterval(() => {

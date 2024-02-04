@@ -12,28 +12,19 @@ canvas.width = width;
 canvas.height = height;
 
 function getVideo() {
-  navigator.mediaDevices.getUserMedia({ video: true, audio: false })
-    .then(localMediaStream => {
-      console.log(localMediaStream);
-    
-//  DEPRECIATION : 
-//       The following has been depreceated by major browsers as of Chrome and Firefox.
-//       video.src = window.URL.createObjectURL(localMediaStream);
-//       Please refer to these:
-//       Deprecated  - https://developer.mozilla.org/en-US/docs/Web/API/URL/createObjectURL
-//       Newer Syntax - https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/srcObject
-      
-      video.srcObject = localMediaStream;
-      video.play();
-    })
-    .catch(err => {
-      console.error(`OH NO!!!`, err);
-    });
+    navigator.mediaDevices.getUserMedia({ video: true, auddio: false })
+        .then(localMediaStream => {
+            console.log(localMediaStream);
+            video.srcObject = localMediaStream;
+            video.play();
+        })
+        .catch(err => {
+            console.error(`OH NO!!!`, err);
+        });
 }
+getVideo();
 
-//getVideo();
-let clk = document.querySelector('.playvideo');
-clk.addEventListener('click', getVideo, false);
+video.addEventListener('canplay', paintToCanvas);
 
 //return the timer in case we ever need it
 //return setInterval(() => {
