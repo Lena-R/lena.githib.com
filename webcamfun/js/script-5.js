@@ -12,23 +12,44 @@ canvas.width = width;
 canvas.height = height;
 
 function getVideo() {
-    navigator.mediaDevices.getUserMedia({ video: true, auddio: false })
-        .then(localMediaStream => {
-            console.log(localMediaStream);
-            video.srcObject = localMediaStream;
-            video.play();
-        })
-        .catch(err => {
-            console.error(`OH NO!!!`, err);
-        });
+  navigator.mediaDevices.getUserMedia({ video: true, audio: false })
+    .then(localMediaStream => {
+      console.log(localMediaStream);
+      
+      video.srcObject = localMediaStream;
+      video.play();
+    })
+    .catch(err => {
+      console.error(`OH NO!!!`, err);
+    });
 }
+
+function paintToCanvas() {
+  const width = video.videoWidth;
+  const height = video.videoHeight;
+  //console.log(width, height);
+  canvas.width = width;
+  canvas.height = height;
+
+  return setInterval(() => {
+    ctx.drawImage(video, 0, 0, width, height);
+  }, 16)
+};
+
+function takePhoto() {
+  
+}
+
+
 getVideo();
 
-video.addEventListener('canplay', paintToCanvas);
+//video.addEventListener('canplay', paintToCanvas);
+/////let clk = document.querySelector('.playvideo');
+////clk.addEventListener('click', getVideo, false);
 
 //return the timer in case we ever need it
 //return setInterval(() => {
-	//ctx.drawImage(video, 0, 0, width, height);
+  //ctx.drawImage(video, 0, 0, width, height);
 
 
 //get the pixels from the canvas
