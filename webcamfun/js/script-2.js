@@ -26,23 +26,34 @@ console.log(localMediaStream);
 };
 
 function paintToCanvas() {
-	const width = video.videoWidth;
-	const height = video.videoHeight;
-	//console.log(width, height);
-	canvas.width = width;
-	canvas.height = height;
+  const width = video.videoWidth;
+  const height = video.videoHeight;
+  //console.log(width, height);
+  canvas.width = width;
+  canvas.height = height;
 
-	return setInterval(() => {
-		ctx.drawImage(video, 0, 0, width, height);
-	}, 16)
+  return setInterval(() => {
+    ctx.drawImage(video, 0, 0, width, height);
+  }, 16)
 };
 
 function takePhoto() {
-	
-}
+  snap.currentTime = 0;
+  snap.play();
 
+  const data = canvas.toDataURL('image/jpeg');
+  //console.log(data);
+  const link = document.createElement('a');
+  link.href = data;
+  link.setAttribute('download', 'handsome');
+  link.textContent = 'Download Image';
+  link.innerHTML = `<img src = "${data}" alt = "nice photo">`;
+  strip.insertBefore(link, strip.firstChild);
+};
 
 getVideo();
+
+video.addEventListener('canplay', paintToCanvas);
 
 //video.addEventListener('canplay', paintToCanvas);
 /////let clk = document.querySelector('.playvideo');
