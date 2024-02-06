@@ -1,0 +1,144 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	padding: 0;
+	margin: 0;
+	font-family: 'Comic-Sans', cursive;
+
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+html {
+	box-sizing: border-box;
+	font-size: 10px;
+	background: lightgreen;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+h1 {
+	text-align: center;
+	font-size: 7rem;
+	margin-bottom: 0;
+}
+
+.game {
+	width: 600px;
+	height: 400px;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+}
+
+.score-wrapper {
+	display: flex;
+	justify-content: center;
+}
+
+.score {
+	background: #5c9f2a;
+	padding: 5px 20px;
+	border-radius: 1rem;
+	font-weight: 400;
+	font-size: 30px;
+	font-family: 'Comic-Sans', cursive;
+	margin: 2% 0;
+	color: #391313;
+}
+
+.hole {
+	flex: 1 0 33.33%;
+	overflow: hidden;
+	position: relative;
+}
+
+.hole:after {
+	display: block;
+	background: url('hole.webp') bottom center no-repeat;
+	background-size: contain;
+	content: '';
+	width: 100%;
+	height: 70px;
+	position: absolute;
+	z-index: 2;
+	bottom: -30px;
+}
+
+.mole {
+	background: url('mole.png') bottom center no-repeat;
+	background-size: 60%;
+	position: absolute;
+	top: 100%;
+	width: 100%;
+	height: 100%;
+	transition: all 0.4s;
+}
+
+.hole.up .mole {
+	top: 0;
+}
+
+.btn {
+	display: block;
+	margin: 20px auto;
+	font-size: 18px;
+	background: #391313;
+	color: #ffffff;
+	border: 4px solid #996600;
+	padding: 5px 10px;
+	border-radius: 12px;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	-o-border-radius: 12px;
+}
+
+.kicked {
+	background: url('mole-kicked.png') bottom center no-repeat;
+	background-size: 60%;
+	position: absolute;
+	top: 100%;
+	width: 100%;
+	height: 100%;
+	transition: all 0.4s;
+}
