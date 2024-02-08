@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Local Storage</title>
+
+      <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <h1>Dishes</h1>
+    <div class = "wrapper">
+      <h2>Local tapas</h2>
+      <p></p>
+      <ul class = "plates">
+        <li>Loading tapas...</li>
+      </ul>
+    
+
+    <form class = "add-items">
+      <input type = "text" name = "item" placeholder = "Item Name" required>
+      <input type = "submit" value = "+ Add Item">
+    </form>
+    </div>
+
+    <script>
+      const addItems = document.querySelector('.add-items');
+      const itemsList = document.querySelector('.plates');
+      const items = JSON.parse(localStorage.getItem('items')) || []; //stores in local storage
+
+      function addItem(e) {
+        e.preventDefault(); //a page is not reloading after submitting
+        const text = (this.querySelector('[name = item]').value);
+        const item = {
+          text: text,
+          done: false
+        };
+        //console.log(item);
+        items.push(item);
+        populateList(items, itemsList);
+        localStorage.setItem('items', JSON.stringify(items));
+        this.reset();
+      };
+
+      function populateList(plates = [], platesList) {
+        platesList.innerHTML = plates.map((plate, i) => {
+          return `<li>
+          <input type = "checkbox" data-index = ${i} id = "item${i}" ${plate.done ? 'checked' : ''} >
+          <label for = "item${i}">${plate.text}</label></li>`;
+        }).join('');
+      };
+
+      function toggleDone(e) {
+        if (!e.target.matches('input')) return;
+        const el = e.target;
+        //console.log(el.dataset.index);
+        const index = el.dataset.index;
+        items[index].done = !items[index].done;
+        localStorage.setItem('items', JSON.stringify(items));
+        populateList(items, itemsList);
+      };
+
+      addItems.addEventListener('submit', addItem);
+      itemsList.addEventListener('click', toggleDone);
+
+      populateList(items, itemsList);
+
+      const checkBoxes = document.querySelectorAll('input');
+           
+    </script>
+  </body>
+</html>
