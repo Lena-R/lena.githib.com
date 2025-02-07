@@ -1,0 +1,49 @@
+html, body {
+    background: var(--yellow);
+    color: var(--red);
+}
+
+h1, p {
+    color: var(--red);
+}
+
+#navbar a {
+    color: var(--red);
+}
+
+.item {
+    background: var(--beige);
+}
+
+button {
+    background: var(--red);
+    color: var(--beige);
+}
+
+.featured {
+    --red: #ff6f69;
+   --yellow: #ffeead;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: var(--columns);
+    grid-auto-rows: 140px;
+}
+
+@media all and (max-width: 450px) {
+    .grid {
+        --columns: 200px;
+    }
+}
+
+/*Variable declarations*/
+:root {
+    --red: #ff6f69;
+    --beige: #ffcc5c;
+    --yellow: #ffeead;
+}
+
+.grid {
+    --columns: 200px 200px;
+}
