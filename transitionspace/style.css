@@ -1,0 +1,117 @@
+.earth {
+    position: absolute;
+      top: calc(50% - 150px);
+      left: calc(50% - 150px);
+  }
+
+.earth img {
+    height: 300px;
+    position: absolute;
+      top: 0;
+      left: 0;
+    width: 300px;
+  }
+
+.moon-container {
+    position: absolute;
+      top: calc(50% - 25px);
+      left: calc(50% - 25px);
+  } 
+  
+.moon {
+    animation: spin 20s linear infinite;
+    background: none;
+    height: 50px;
+    pointer-events: none;
+    transform-origin: 25px;
+    width: 50px;
+  } 
+  
+.moon img {
+    height: 80px;
+    transform: translateX(-200px) translateY(-200px);
+    width: 80px;
+  }  
+
+.earth img, .moon img {
+    border-radius: 50%;
+    box-shadow: 0 0 12em 1em rgba(110, 140, 200, .6);
+  } 
+  
+.earth img, .moon img {
+    border-radius: 50%;
+    box-shadow: 0 0 12em 1em rgba(110, 140, 200, .6);
+  }  
+
+.earth .more-info {
+    background-image: linear-gradient(to bottom, rgba(10,10,10,1), black);
+    border-radius: 1em;
+    color: #fff;
+    opacity: 0;
+    padding: 1em;
+    transform-origin: 0 0;
+    transform: scale(.8);
+    width: 400px;
+  }
+  
+.earth .more-info {
+    margin: 0 0 1em;
+    text-align: right;
+  } 
+
+.earth:hover img { transform: translateX(-75px) translateY(-75px) scale(.5); } 
+
+.earth:hover ~ .moon-container { transform: translateX(-75px) translateY(-75px) scale(.5); }
+
+.earth:hover ~ .moon-container img { transform: translateX(-140px) translateY(-140px); }
+
+.earth:hover .more-info { opacity: 1; transform: none; }
+  
+.earth-demo * {
+    transition: all 4s cubic-bezier(0,1.5,.3,1);
+  } 
+
+.earth-demo:before {
+    background: url(space.jpg) repeat center;
+    background-size: cover;
+    content: "";
+    opacity: .5;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }  
+  
+.earth-demo > ul > li {
+    opacity: 0;
+    font-size: 16px;
+    line-height: 2.5;
+    font-weight: 900;
+  }  
+
+.earth-demo:hover > ul > li {
+    opacity: 0;
+  } 
+
+.earth-demo:hover li:nth-child(1) {
+    transition-delay: 0s;
+  }
+  
+.earth-demo:hover li:nth-child(2) {
+    transition-delay: 0.2s;
+  }
+  
+.earth-demo:hover li:nth-child(3) {
+    transition-delay: 0.4s;
+  }
+  
+.earth-demo:hover li:nth-child(4) {
+    transition-delay: 0.6s;
+  } 
+  
+  @keyframes spin {
+    to {
+      transform: rotateZ(360deg);
+    }
+  }  
